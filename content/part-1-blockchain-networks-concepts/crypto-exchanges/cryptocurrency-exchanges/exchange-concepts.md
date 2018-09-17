@@ -32,9 +32,21 @@ They are form of interpretation of price and volume charts
 The next large group of technical analysis tools are the so-called chart patterns. They are part of the classical technical analysis. 
 The technical analysis isn`t an officially recognized science but the most known authors divided patterns into three groups: trend-confirming (continuation),  turning (reversal) and bilateral figures.
 The most common continuation chart patterns are Wedge (Falling or Rising), Rectangle (Bullish or Bearish), Pennant (Bullish or Bearish) etc. 
+![](/assets/Chapter 1.8. Crypto Trading and Exchang/pennant.jpg)
+
+
+
 
 The reversed figures includes the following patterns: Double Top or Double Bottom, Head and Shoulders or Inversive Head and Shoulders, Rising Wedge or Falling Wedge etc. 
+![](/assets/Chapter 1.8. Crypto Trading and Exchang/double_top_01.jpg)
+
+
+
+
+
 The group of Bilateral Patterns included patterns possibly following into two scenarios depending on the direction of the price break. 
+- Wave Theory of Elliot
+
 
 
 
