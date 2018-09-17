@@ -188,7 +188,7 @@
     * [Truffle Install and Configure](content/part-2-dapps-ethereum-and-solidity/ganache-and-truffle/ganache-and-truffle-framework/truffle-install-and-configure.md)
     * [Compile Contracts](content/part-2-dapps-ethereum-and-solidity/ganache-and-truffle/ganache-and-truffle-framework/compile-contracts.md)
     * [Migrations](content/part-2-dapps-ethereum-and-solidity/ganache-and-truffle/ganache-and-truffle-framework/migrations.md)
-    * [Exercises: Install Ganache and Truffle](content/part-2-dapps-ethereum-and-solidity/ganache-and-truffle/exercises-install-ganache-and-truffle/install-ganache-truffle.md)
+    * [Unit Testing](content/part-2-dapps-ethereum-and-solidity/ganache-and-truffle/ganache-and-truffle-framework/unit-testing.md)
     * [Exercises: Run Smart Contract in Ganache](content/part-2-dapps-ethereum-and-solidity/ganache-and-truffle/exercises-deploy-smart-contract-ganache/deploy-smart-contract-ganache.md)
     * Migrations
   * [2.5. DApp Architectures](content/part-2-dapps-ethereum-and-solidity/dapp-architectures/overview.md)
