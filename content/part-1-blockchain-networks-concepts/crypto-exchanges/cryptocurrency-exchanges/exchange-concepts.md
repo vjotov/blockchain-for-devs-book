@@ -1,6 +1,6 @@
 # Exchange Concept
 
-In this chapter we will introduce you some of the major concepts you will encounter in the world of **exchanges**. We'll tell you about the main types of analytics that traders do to make a trading decision. Also you will learn about concepts like Order Bookр, Margin Trading etc.
+In this chapter we will introduce you some of the major concepts you will encounter in the world of **exchanges**. We'll tell you about the main types of analytics that traders do to make a trading decision. Also you will learn about concepts like Order Book, Margin Trading etc.
 
 ![](/assets/Chapter 1.8. Crypto Trading and Exchang/bitcoin-exchange.jpg)
 
@@ -19,13 +19,20 @@ Second main factor influence the prices of crypto coins is adoption. As more peo
 Technical analyzations, or chartists, analyzing statistics gathered from trading activity, such as price movements and volume. This is a method of analyzing financial markets that tries to solve players' psychology. 
 - Mathematical Indicators
 
-First main type of technical analysis is using of mathematical technical indicators. Mathematical analysis use a series of mathematical calculations applied on the data taken from the charts. The goal of this is to predict where and in which direction the price will move in the future. The indicators attempts to catch a mathematical relationships between the future and past prices. There are dozens and hundreds of indicators in the toolbox of technical analysts. These indicators can be classified as trendfollowing and oscillators. 
+First main type of technical analysis is using of **mathematical technical** indicators. Mathematical analysis use a series of mathematical calculations applied on the data taken from the charts. The goal of this is to predict where and in which direction the price will move in the future. The indicators attempts to catch a mathematical relationships between the future and past prices. There are dozens and hundreds of indicators in the toolbox of technical analysts. These indicators can be classified as trendfollowing and oscillators. 
 With oscillators the analyzers try to catch the overbought and oversold levels of prices. When the value of the oscillator approaches the upper extreme value, analysts interpret that information to mean that the asset is overbought, and as it approaches the lower extreme, analysts consider the asset to be oversold. Examples of oscillators are MACD, stochastic oscillator, RSI e.t.c. 
 
+![](/assets/Chapter 1.8. Crypto Trading and Exchang/macd-indicator.png)
+
+
+
 They are form of interpretation of price and volume charts
+- Chart Patterns
+
 The next large group of technical analysis tools are the so-called chart patterns. They are part of the classical technical analysis. 
 The technical analysis isn`t an officially recognized science but the most known authors divided patterns into three groups: trend-confirming (continuation),  turning (reversal) and bilateral figures.
 The most common continuation chart patterns are Wedge (Falling or Rising), Rectangle (Bullish or Bearish), Pennant (Bullish or Bearish) etc. 
+
 The reversed figures includes the following patterns: Double Top or Double Bottom, Head and Shoulders or Inversive Head and Shoulders, Rising Wedge or Falling Wedge etc. 
 The group of Bilateral Patterns included patterns possibly following into two scenarios depending on the direction of the price break. 
 
