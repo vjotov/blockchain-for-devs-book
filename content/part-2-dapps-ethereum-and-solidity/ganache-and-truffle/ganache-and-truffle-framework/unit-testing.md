@@ -9,6 +9,8 @@ contract('Simple Storage contract', (accounts) => {
     // The tests should be here
 }
 ```
-In **mocha** we have `describe` and for truffle is modified as `contract`. We can add multiple contracts in one file, but keep it clear and use one file per contract.
+In **mocha** we have `describe` and for truffle is modified as `contract`. We can add multiple contracts in one file, but keep it clear and use one file per contract. When you run `truffle test` mocha will loop all files in the directory and run them.
 
 Now inside the contract we will write our test cases, the contract is simple and we will check the **set** function and we will compare the result from the **get** function.
+
+
