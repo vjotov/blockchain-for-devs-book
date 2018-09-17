@@ -13,4 +13,45 @@ In **mocha** we have `describe` and for truffle is modified as `contract`. We ca
 
 Now inside the contract we will write our test cases, the contract is simple and we will check the **set** function and we will compare the result from the **get** function.
 
+```js
+
+it('Should set X correctly', () => {
+    let contract = await SimpleStorage.deployed()
+    contract.set(4, { from: accounts[0] })
+    let result = await contract.get()
+    assert.equal(result, 4, "Amount was not correct")
+})	
+```
+
+In the first line we deployed the contract
+```js
+let contract = await SimpleStorage.deployed()
+```
+When we have the contract we can interact with it. We will **set** data to the variable
+```js
+contract.set(4, { from: accounts[0] })
+```
+
+After that we can call the getter method and compare the result with assert.
+```js
+let result = await contract.get()
+assert.equal(result, 4, "Amount was not correct")
+```
+
+Now we have our first test and we can run to test is it everything alright, go to the terminal and run 
+```
+$ truffle test
+Using network 'development'.
+Compiling .\contracts\SimpleStorage.sol...
+
+   Contract: Simple Storage contract
+      √ Should set X correctly
+  
+  1 passing (78ms)
+```
+If you have similar output, everything is correct and you can continue to the solidity tests.
+## Solidity Tests
+
+
+
 
