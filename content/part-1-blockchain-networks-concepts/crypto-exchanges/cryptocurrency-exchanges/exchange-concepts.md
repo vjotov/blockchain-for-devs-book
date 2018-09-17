@@ -58,6 +58,13 @@ That correction, wave (2), is followed by waves (3), (4) and (5) to complete an 
 Elliott's highly specific rules keep the number of valid interpretations (or "alternate counts") to a minimum. The analyst usually considers as "preferred" the one that satisfies the largest number of guidelines. The top "alternate" is the one that satisfies the next largest number of guidelines, and so on. Alternates are an essential part of using the Elliott Wave Principle.
 View the Elliott Wave Principle as your road map to the market and your investment idea as a trip. We start the trip with a specific plan in mind, but conditions along the way may force us to alter our course. "Alternate counts" are simply side roads that sometimes end up being the best path. 
 
+## Order Book
+Order book is a list of buy and sell orders, organized by price level. It lists the volume of crypto coins being bid or offered at each price point, or market depth. The order book shows pending orders imbalances, which may provide clues to the price direction in the very short term. For example: a massive imbalance of buy orders compared to sell orders, may indicate for a incoming appreciation of the cryptos due to buying pressure. 
+
+![](/assets/Chapter 1.8. Crypto Trading and Exchang/OrderBook.png)
+
+The order book is also useful in determination of a potential support and resistance levels. For example: a large amount of buying orders at a specific price, may indicate a level of support, while a crowding of sell orders near at one price may suggest an area of resistance. 
+
 
 
 
