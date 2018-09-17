@@ -50,6 +50,61 @@ Compiling .\contracts\SimpleStorage.sol...
   1 passing (78ms)
 ```
 If you have similar output, everything is correct and you can continue to the solidity tests.
+
+### Test Token Contract
+Now we will make a simple token contract and we will test it.
+The contract will have a mapping of balances and method which returns the balance of the sender.
+
+```js
+pragma solidity ^0.4.24;
+
+contract Token {
+    address owner;
+    mapping (address => uint) balances;
+    
+    constructor(uint256 totalSupply) public {
+        owner = msg.sender;   
+        balances[owner] = totalSupply;
+    }
+    
+    function getBalance() public view returns(uint256){
+        return balances[msg.sender];
+    }
+}
+```
+When we have the contract we can write the tests for it. Create a new file `TokenTest.js` file for the tests. 
+
+```js
+const Token = artifacts.require('Token')
+
+contract('Token contract', (accounts) => {
+
+    beforeEach(async function () {
+	    token = await Token.new(1000);
+	})
+	
+	it('should start with a totalSupply of 1000', async () => {
+        let balance = await token.getBalance()
+		assert.equal(balance.toNumber(), 1000 , "The totalSupply is different")
+	})
+})
+```
+We are deploying the contract with **1000** for the total supply **before each test** and after that checking the balance.
+```
+$ truffle test
+```
+Output 
+```
+Using network 'development'.
+    Contract: Simple Storage contract
+       √ Should set X correctly (66ms)
+    Contract: Token contract
+       √ should start with a totalSupply of 0
+       
+   2 passing (199ms)
+```
+
+
 ## Solidity Tests
 
 
