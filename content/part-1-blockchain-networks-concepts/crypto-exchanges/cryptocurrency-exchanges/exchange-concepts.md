@@ -47,6 +47,21 @@ The reversed figures includes the following patterns: Double Top or Double Botto
 The group of Bilateral Patterns included patterns possibly following into two scenarios depending on the direction of the price break. 
 - Wave Theory of Elliot
 
+Ralph Nelson Elliott is the father of the Wave Theory, which is commonly called and more accurately described as the Elliott Wave Principle. The Elliott Wave Principle is attempts to find the principles which describing how groups of people behave. It reveals that mass psychology swings from pessimism to optimism and back in a natural sequence, creating specific and measurable patterns. Elliott's pattern consists of "impulsive waves" and "corrective waves." An impulsive wave is composed of five subwaves. It moves in the same direction as the trend of the next larger size. A corrective wave is divided into three subwaves. It moves against the trend of the next larger size.
+
+As the figure below shows, these basic patterns build to form five and three-wave structures of increasingly larger size (larger "degree," as Elliott said).
+
+![](/assets/Chapter 1.8. Crypto Trading and Exchang/Elliot_waves_01.gif)
+In the above illustration, waves 1, 2, 3, 4 and 5 together complete a larger impulsive sequence, labeled wave (1). The impulsive structure of wave (1) tells us that the movement at the next larger degree of trend is also upward. It also warns us to expect a three-wave correction -- in this case, a downtrend.
+
+That correction, wave (2), is followed by waves (3), (4) and (5) to complete an impulsive sequence of the next larger degree, labeled as wave 1. At that point, again, a three-wave correction of the same degree occurs, labeled as wave 2.
+Elliott's highly specific rules keep the number of valid interpretations (or "alternate counts") to a minimum. The analyst usually considers as "preferred" the one that satisfies the largest number of guidelines. The top "alternate" is the one that satisfies the next largest number of guidelines, and so on. Alternates are an essential part of using the Elliott Wave Principle.
+View the Elliott Wave Principle as your road map to the market and your investment idea as a trip. We start the trip with a specific plan in mind, but conditions along the way may force us to alter our course. "Alternate counts" are simply side roads that sometimes end up being the best path. 
+
+
+
+
+
 
 
 
