@@ -65,6 +65,14 @@ Order book is a list of buy and sell orders, organized by price level. It lists 
 
 The order book is also useful in determination of a potential support and resistance levels. For example: a large amount of buying orders at a specific price, may indicate a level of support, while a crowding of sell orders near at one price may suggest an area of resistance. 
 
+## Margin Trading
+Margin trading is using of borrowed funds from a broker to trade a financial asset, which forms the collateral for this loan. This manner of trading gives the trader opportunity to buy this bigger quantity then he is able to do normally. 
+
+![](/assets/Chapter 1.8. Crypto Trading and Exchang/MarginTrading.png)
+
+
+For example, if you trade with 10% margin this means that you can buy 10 times more quantity, but the price movement will impact your account 10 times harder. Margin Ratio is the ratio between the trader's own funds and the open position (purchased securities) in which the trader has invested. For example, a ratio of 10: 1 means that with a $ 1,000 margin deposited with the broker, the trader can buy securities (open a position) of $ 10,000. 
+So, in our example if the price goes hi you will receive the 10-time more profit, but if the price goes against you it will produce ten times more loses. Margin trade is extremely risky, so the brokers insist a collateral called margin. The margin is an amount of money that the holder of a financial instrument must deposit with a counterparty (most often their broker) to cover the credit risk the holder poses for the counterparty.
 
 
 
