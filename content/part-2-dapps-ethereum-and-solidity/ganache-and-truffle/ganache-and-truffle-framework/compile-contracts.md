@@ -20,7 +20,7 @@ contract SimpleStorage {
 
 Now we have a contract and we can compile it. The compile command will generate everything needed for deployment in the `build` directory.
 ```
-truffle compile
+$ truffle compile
 ```
 Output
 ```
