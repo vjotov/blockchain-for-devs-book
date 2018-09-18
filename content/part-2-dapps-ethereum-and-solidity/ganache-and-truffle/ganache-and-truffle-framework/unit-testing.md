@@ -104,10 +104,76 @@ Using network 'development'.
    2 passing (199ms)
 ```
 ## Time Travel
-Sometimes is big challenge to test your contract. Sometimes you need to check what will happen after 100 block or 10 minutes and it is tricky to do that. For example if you want to check expiration of Crowdfund campaign or burn of some tokens you can test it with **Ganache**. 
+Sometimes is big challenge to test your contract. Sometimes you need to check what will happen after **100** block or **10 minutes** and it is tricky to do that. For example if you want to check expiration of Crowdfund campaign or burn of some tokens. Time travel is not available in Ethereum Mainnet and all Testnet networks, you should use **ganache** to test it.
+There are two functions that can help us:
+```
+evm_increaseTime
+evm_mine
+```
+These functions can be triggered with a normal transaction
+e.g.
+```js
+web3.currentProvider.send({
+     jsonrpc: "2.0",
+     method: "evm_increaseTime",
+     params: [600],
+     id: 123
+ })
+```
+and for evm_mine
+```js
+web3.currentProvider.send({
+     jsonrpc: "2.0",
+     method: "evm_mine",
+     id: 123
+ })
+```
+
+# TODO : add example
+
 
 ## Solidity Tests
+We learned how we can use JavaScript tests now we will learn how to write solidity tests. The feature that we have with solidity tests that we have isolated environment without need **web3** and we can concentrate in the components of the contract. You do not need to choose between **solidity** and **JavaScript** you can use the both.
+Now we will create our firs solidity test, in the test folder create `SimpleStorageTest.sol`, the name needs to end with **Test**
+```js
+pragma solidity ^0.4.24;
 
+import "truffle/Assert.sol";
+import "truffle/DeployedAddresses.sol";
+import "../contracts/SimpleStorage.sol";
 
+contract SimpleStorageTest {
+
+    function testSetValue() public {
+	SimpleStorage myContract = SimpleStorage(DeployedAddresses.SimpleStorage());
+	myContract.set(4);
+	uint256 value = myContract.get();
+	Assert.equal(value, 4, "The value is setted correctly");
+	}
+}
+```
+
+In the first lines we imported these libraries
+
+```
+import "truffle/Assert.sol";
+import "truffle/DeployedAddresses.sol";
+import "../contracts/SimpleStorage.sol";
+```
+- Assert.sol - Library from truffle that has **Asserts**
+- DeployedAddresses.col - The addresses of all contracts that are deployed from migrations, you can use it with `DeployedAddresses.<contract name>()`
+- SimpleStorage.sol - This is the written contract that we will test.
+
+After that you need to add tests. Each method in the contract is **Test** scenario and the name of the methods should start with **test** in our case `testSetValue`
+
+```js
+SimpleStorage myContract = SimpleStorage(DeployedAddresses.SimpleStorage());
+```
+In this line we are getting instance of the contract that is already deployed.
+```
+myContract.set(4);
+uint256 value = myContract.get();
+```
+In this line we make transaction to set value and read the value from the contract.
 
 
