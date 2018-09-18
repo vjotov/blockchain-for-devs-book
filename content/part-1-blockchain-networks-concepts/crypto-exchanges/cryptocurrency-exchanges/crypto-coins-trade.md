@@ -23,7 +23,6 @@ Market participants can use a couple types of exchange orders. The first is mark
 ![](/assets/Chapter 1.8. Crypto Trading and Exchang/market_order.png)
 
 
-
 The final price will be aggregation from prices of quantities available in the order book.  Final price will be weighted average of matched prices. In many exchanges for market orders the traders pay more fees because they consume liquidity. When market players place orders they can be makers (they place pending orders in the orders book and create liquidity) or takers (they place orders matching pending orders from the order book and “consume” liquidity by reducing the number of orders on the book). Takers pay higher fees then makers (can be double for example). Usually the fees depend also from the trade volume. 
 For example: This is the Bitfinex trading structure
 
