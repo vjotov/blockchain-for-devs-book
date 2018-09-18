@@ -145,6 +145,7 @@
     * [Altcoins Concept](content/part-1-blockchain-networks-concepts/crypto-exchanges/cryptocurrency-exchanges/altcoins.md)
     * [Exchange Concept](content/part-1-blockchain-networks-concepts/crypto-exchanges/cryptocurrency-exchanges/exchange-concepts.md)
     * [Crypto Coins Trade](content/part-1-blockchain-networks-concepts/crypto-exchanges/cryptocurrency-exchanges/crypto-coins-trade.md)
+    * [Cryptocurrency Buying Platforms](content/part-1-blockchain-networks-concepts/crypto-exchanges/cryptocurrency-exchanges/cryptocurrency-buying-platforms.md)
     * [Exercises: Hodl Hodl p2p Exchange](content/part-1-blockchain-networks-concepts/crypto-exchanges/exercises-hodl-hodl/play-with-hodl-hodl.md)
     * [Exercises: Trading on Bittrex](content/part-1-blockchain-networks-concepts/crypto-exchanges/exercises-bittrex/trading-on-bittrex.md)
     * [Exercises: Exchange APIs](content/part-1-blockchain-networks-concepts/crypto-exchanges/exercises-exchange-apis/using-exchange-apis.md)
