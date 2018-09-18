@@ -155,7 +155,7 @@ contract SimpleStorageTest {
 
 In the first lines we imported these libraries
 
-```
+```js
 import "truffle/Assert.sol";
 import "truffle/DeployedAddresses.sol";
 import "../contracts/SimpleStorage.sol";
@@ -170,10 +170,38 @@ After that you need to add tests. Each method in the contract is **Test** scenar
 SimpleStorage myContract = SimpleStorage(DeployedAddresses.SimpleStorage());
 ```
 In this line we are getting instance of the contract that is already deployed.
-```
+```js
 myContract.set(4);
 uint256 value = myContract.get();
 ```
 In this line we make transaction to set value and read the value from the contract.
+```js
+Assert.equal(value, 4, "The value is setted correctly");
+```
+Finally we are asserting the value with the result with the number. 
+Let's run the tests and check is everything working
+```
+$ truffle test
+Using network 'development'.
+Compiling .\contracts\SimpleStorage.sol...
+Compiling .\test\SimpleStorageTest.sol...
+Compiling truffle/Assert.sol...
+Compiling truffle/DeployedAddresses.sol...
 
+ SimpleStorageTest
+    √ testSetValue (41ms)
+
+  Contract: Simple Storage contract
+    √ Should set X correctly
+
+  Testing helper functions
+    √ Should advance the blockchain forward a block (458ms)
+    √ should be able to advance time and block together (450ms)
+
+  Contract: Token contract
+    √ should start with a totalSupply of 0
+
+
+  5 passing (2s)
+```
 
