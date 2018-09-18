@@ -12,4 +12,10 @@ Now when ganache is running we need to go to the Remix IDE (https://remix.ethere
 
 After that remix will ask you about the provider, you need to fill the Url of the instance in our case is **http://localhost:8545** or **http://127.0.0.1:8545**
 Now when remix is connected the transaction will be executed in your local environment immediately.
-![](/assets/ganache-truffle-images/transaction-in-ganache-cli.png)
+```
+Transaction: 0xb28540fc23a7f0dafaac3f0fd5d6905bb0d75832798ebf4f2426b980191e8733
+  Contract created: 0x77d19fa305440e35ca79b05d9c56e5504ed38213
+  Gas usage: 88269
+  Block Number: 1
+  Block Time: Tue Sep 18 2018 17:23:53 GMT+0300 (FLE Daylight Time)
+```
