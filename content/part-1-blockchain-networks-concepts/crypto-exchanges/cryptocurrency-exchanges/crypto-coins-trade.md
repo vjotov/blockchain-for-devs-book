@@ -11,7 +11,8 @@ Remember: If you hold your coins in crypto-enchange, then the exchange poses the
 Then you can buy Bitcoins / altcoins info wallet e.g. from Coinbase, Bitpanda or directly inside the wallet with ShapeShift. 
 Once you have own coins you can make trade with them. First you have to send some amount to an exchange such as Bittrex, Kraken, etc. Then you can trade the coins inside your exchange account. Finally you can transfer back coins into your personal wallet or withdraw money into your bank account. 
 
-
+## Order types
+An order is an instruction to buy or sell on the cryptocurrency exchange. These instructions can be simple or complicated, and can be sent to either a broker or directly to the exchange via direct market access with web site or rading app. There are some standard instructions for such orders.
 ![](/assets/Chapter 1.8. Crypto Trading and Exchang/trading-1024x72.png)
 
 
