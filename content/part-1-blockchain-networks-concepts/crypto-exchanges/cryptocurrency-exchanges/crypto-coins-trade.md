@@ -13,7 +13,10 @@ Once you have own coins you can make trade with them. First you have to send som
 
 ## Order types
 An order is an instruction to buy or sell on the cryptocurrency exchange. These instructions can be simple or complicated, and can be sent to either a broker or directly to the exchange via direct market access with web site or rading app. There are some standard instructions for such orders.
-![](/assets/Chapter 1.8. Crypto Trading and Exchang/trading-1024x72.png)
+
+![](/assets/Chapter 1.8. Crypto Trading and Exchang/How-to-trade-cryptocurrencies.png)
+
+
 
 
 
