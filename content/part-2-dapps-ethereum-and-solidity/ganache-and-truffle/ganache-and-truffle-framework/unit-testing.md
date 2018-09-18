@@ -103,7 +103,8 @@ Using network 'development'.
        
    2 passing (199ms)
 ```
-
+## Time Travel
+Sometimes is big challenge to test your contract. Sometimes you need to check what will happen after 100 block or 10 minutes and it is tricky to do that. For example if you want to check expiration of Crowdfund campaign or burn of some tokens you can test it with **Ganache**. 
 
 ## Solidity Tests
 
