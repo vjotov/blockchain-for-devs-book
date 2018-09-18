@@ -192,6 +192,7 @@
     * [Migrations](content/part-2-dapps-ethereum-and-solidity/ganache-and-truffle/ganache-and-truffle-framework/migrations.md)
     * [Unit Testing](content/part-2-dapps-ethereum-and-solidity/ganache-and-truffle/ganache-and-truffle-framework/unit-testing.md)
     * [Code Coverage](content/part-2-dapps-ethereum-and-solidity/ganache-and-truffle/ganache-and-truffle-framework/code-coverage.md)
+    * [Frameworks](content/part-2-dapps-ethereum-and-solidity/ganache-and-truffle/ganache-and-truffle-framework/frameworks.md)
     * [Exercises: Run Smart Contract in Ganache](content/part-2-dapps-ethereum-and-solidity/ganache-and-truffle/exercises-deploy-smart-contract-ganache/deploy-smart-contract-ganache.md)
   * [2.5. DApp Architectures](content/part-2-dapps-ethereum-and-solidity/dapp-architectures/overview.md)
     * [DApps Architectures](content/part-2-dapps-ethereum-and-solidity/dapp-architectures/architectures-for-dapps/dapp-architectures.md)
