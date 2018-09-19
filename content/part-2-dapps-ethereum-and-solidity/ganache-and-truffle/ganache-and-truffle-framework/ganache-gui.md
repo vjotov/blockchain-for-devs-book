@@ -22,15 +22,15 @@ When you want to see the transactions in the block, click on the block and it wi
 ![](/assets/ganache-truffle-images/ganache-gui-block.png)
 
 In the block explorer we have block headers:
-- Gas used
-- Gas limit
-- Mined on
-- Block hash
+- **Gas used**
+- **Gas limit**
+- **Mined on**
+- **Block hash**
 
 After the block headers you can find a list of transactions. 
 In each transaction you can find:
-- Transaction hash.
-- Created contract address, if the transaction is for deploying contract.
+- **Transaction hash.**
+- **Created contract address,** if the transaction is for deploying contract.
 
 ### Settings
 In the settings page you can customize ganache for your needs. The settings page is divided in 5 tabs.
