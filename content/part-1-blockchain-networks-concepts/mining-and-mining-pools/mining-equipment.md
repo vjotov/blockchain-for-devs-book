@@ -2,10 +2,10 @@
 
 Bitcoin mining hardware has evolved throughout the years:
 
-1. CPU.
-2. GPU.
-3. FPGA (Field-Programmable Gate Array; used to coexist with GPU mining for a while).
-4. ASIC (Application-Specific Integrated Circuit).
+- **CPU**
+- **GPU*
+- **FPGA** - Field-Programmable Gate Array; used to coexist with GPU mining for a while
+- **ASIC** - Application-Specific Integrated Circuit
 
 The least efficient, but also simplest way, was CPU mining; you just use some SHA256 library and that's it. You can use multi-threading to more fully utilize multi-core CPUs.
 
@@ -29,4 +29,4 @@ It should be noted that some coins, like Ethereum, use mining algorithms that ar
 
 (*Source: https://github.com/ifdefelse/ProgPOW*)
 
-[^1]: Laszlo Hanyecz, the same person that famously bought two pizzas for 10,000 BTC in the first Bitcoin transaction that involved physical goods.
+[^1]: This programmer was Laszlo Hanyecz, the same person that famously bought two pizzas for 10,000 BTC in the first Bitcoin transaction that involved physical goods.
