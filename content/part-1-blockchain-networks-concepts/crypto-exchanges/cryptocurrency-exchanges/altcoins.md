@@ -3,11 +3,11 @@
 In this chapter we will learn some of the major concepts existing in the world of **exchanges**. We'll talk about the main types of analytics that traders do to make a trading decision. Also we will learn about concepts like Order Book, Margin Trading etc.
 
 The first and most popular crypto coin is **Bitcoin**. All another coins created after this are known like alternative coins or just **“altcoins”**. In nowadays we have a thousands of altcoins and nobody knows their exact count. The most popular altcoins are Ethereum, DASH, Monero etc.  
-Some of the crypto currencies are newly created coins, and some of them are forks of already existing coins. For example, Bitcoin Gold and Bitcoin Cash are forks of the Bitcoin, and EtherZero is fork of Ethereum.
+Some of the crypto currencies are newly created coins, and some of them are forks of already existing ones. For example, Bitcoin Gold and Bitcoin Cash are forks of the Bitcoin, and EtherZero is fork of Ethereum.
 
 ![](/assets/Chapter 1.8. Crypto Trading and Exchang/Altcoins.png)
 
-Some of these crypto currencies are accepted for trading on different trading platforms or exchanges and traders can make deals with them.
+Some of these crypto currencies are accepted for trading on different trading platforms or exchanges and traders can make deals with them. Others are not listed for trading on the exchanges. The reasons are on the one hand, because markets do not consider them to be meaningful enough. On the other hand, the creators of a new cripto currencyes have to pay a lot of money on the exchanges to accept their coins for trade.
 
 ## Cryptocurrency Exchanges
 
