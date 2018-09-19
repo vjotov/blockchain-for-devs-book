@@ -3,7 +3,7 @@
 Bitcoin mining hardware has evolved throughout the years:
 
 - **CPU**
-- **GPU*
+- **GPU**
 - **FPGA** - Field-Programmable Gate Array; used to coexist with GPU mining for a while
 - **ASIC** - Application-Specific Integrated Circuit
 
