@@ -123,8 +123,64 @@ web3.currentProvider.send({
      id: 123
  })
 ```
+Let's create a folder with name `helpers` and create file with name `timeTravelHelper.js`.
+```js
+const timeTravel = function (time) {
+  return new Promise((resolve, reject) => {
+    web3.currentProvider.sendAsync({
+      jsonrpc: "2.0",
+      method: "evm_increaseTime",
+      params: [time], // 86400 is num seconds in day
+      id: new Date().getTime()
+    }, (err, result) => {
+      if(err){ return reject(err) }
+      return resolve(result)
+    });
+  })
+}
 
-# TODO : add example
+const mine = function () {
+  return new Promise((resolve, reject) => {
+    web3.currentProvider.sendAsync({
+      jsonrpc: "2.0",
+      method: "evm_mine",
+      params: [], // 86400 is num seconds in day
+      id: new Date().getTime()
+    }, (err, result) => {
+      if(err){ return reject(err) }
+      return resolve(result)
+    });
+  })
+}
+
+module.exports = {
+    timeTravel,
+    mine
+}
+```
+With these function we can test what will happen in the network after some time. Now let's test it, create file in the test folder called `testTimeTravel.js`.
+
+```js
+const helper = require('../helpers/timeTravelHelper.js')
+
+describe("Testing helper functions", () => {
+	it("Should advance the blockchain forward a block", async () => {
+		const originalBlockHash = web3.eth.getBlock('latest').hash
+		
+		await helper.timeTravel(86400)
+		await helper.mine()
+
+		let newBlockHash = web3.eth.getBlock('latest').hash
+		assert.notEqual(originalBlockHash, newBlockHash)
+	})
+})
+``` 
+It is very simple test, we just compare the hash of the latest block plus the hash of the block tommorow. 
+```js
+await helper.timeTravel(86400)
+await helper.mine()
+```
+Here is the magic, we set the time in seconds and after that mine the block.
 
 
 ## Solidity Tests
