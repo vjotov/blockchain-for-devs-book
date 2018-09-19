@@ -2,8 +2,8 @@
 
 Miners get rewarded for helping secure the network in two ways:
 
-1. Block subsidy.
-2. Transaction fees.
+-  **Block subsidy**
+- **Transaction fees**
 
 The block subsidy is a special transaction (called "coinbase[^1] transaction") that miners get to add once per block, with a pre-determined output amount. This is the only transaction that is allowed to not reference any inputs - it essentially creates new coins. In Bitcoin the subsidy started out at 50 BTC, and is halved every 210,000 blocks; at the time of writing this book, it's 12.5 BTC. It will go down to zero in the year 2140.
 
@@ -17,5 +17,5 @@ In order to keep the block time relatively constant (e.g. 10 minutes in Bitcoin)
 
 Something interesting to note is that there's a correlation between Bitcoin's price and mining difficulty; as Bitcoin increases in value, more miners are attracted to it, thus increasing its security (a network with more hash rate is harder to attack).
 
-[^1]: Not related to the cryptocurrency exchange of the same name.
+[^1]: Not related to the coinbase.com exchange of the same name.
 [^2]: A Satoshi is the smallest unit of Bitcoin, kind of like cents for US dollars.
