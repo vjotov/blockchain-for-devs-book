@@ -12,19 +12,19 @@ Trading on exchanges and taking trading decisions is a very hard, complex and ri
 
 ![](/assets/Chapter 1.8. Crypto Trading and Exchang/funtamental-analysis.jpg)
 
-Fundamental analysis is the **cornerstone of investing**. In global scope it takes into account all factors from **real economy** which form the **value** of the analyzed asset. In fact, some would say that you aren't really investing if you aren't performing fundamental analysis. 
+Fundamental analysis is the **cornerstone of investing**. In global scope it takes into account all factors from **real economy** which form the **value** of the analyzed asset. In fact, some would say that you aren't really investing if you aren't performing fundamental analysis.
 
-Many conservative analysts say that crypto coins aren't real assets like gold for example. They think that in crypto coins markets only human's greed and psychology factors drive the prices. This is very superficial opinion. Crypto currencies has real value because they **bring the real benefits**. Many of them \(like Bitcoin\) can **transfer value** on chipper prices than alternatives using fiat. Some blockchains \(like Ethereum\) **offers opportunity** to **running smart contracts** and **DAPPs**. Another coins give access to the **real utilities**. For example, with **LookTrip\`s LOC coins** people can **book hotel room without commissions**.  It brings a unique benefits for the crypto currency possessors. The volumes and intensity of use of this currency has a direct impact on its price.   
-Behind the crypto coins stay a **technology** and if somebody wants to use it he must buy coins. The price of cryptos depends on the technology used in their blockchain. So if you want to make long term investments in cryptos the **most important factor** that must be taken into account is the **quality of technology behind the coins**. Many serious crypto investors said: I believe in technology! And this technology is 100% real asset. For example: the development of the **Lighting network** push the price of the Bitcoin higher and this is logical because if you want to use lighting cannels you must lock bitcoins. Never spend your money for projects with good-for-nothing technology! This is money thrown on the wind.   
+Many conservative analysts say that crypto coins aren't real assets like gold for example. They think that in crypto coins markets only human's greed and psychology factors drive the prices. This is very superficial opinion. Crypto currencies has real value because they **bring the real benefits**. Many of them \(like Bitcoin\) can **transfer value** on chipper prices than alternatives using fiat. Some blockchains \(like Ethereum\) **offers opportunity** to **running smart contracts** and **DAPPs**. Another coins give access to the **real utilities**. For example, with **LookTrip\`s LOC coins** people can **book hotel room without commissions**.  It brings a unique benefits for the crypto currency possessors. The volumes and intensity of use of this currency has a direct impact on its price.  
+Behind the crypto coins stay a **technology** and if somebody wants to use it he must buy coins. The price of cryptos depends on the technology used in their blockchain. So if you want to make long term investments in cryptos the **most important factor** that must be taken into account is the **quality of technology behind the coins**. Many serious crypto investors said: I believe in technology! And this technology is 100% real asset. For example: the development of the **Lighting network** push the price of the Bitcoin higher and this is logical because if you want to use lighting cannels you must lock bitcoins. Never spend your money for projects with good-for-nothing technology! This is money thrown on the wind.  
 **Second main factor** influence the prices of crypto coins is **adoption**. As more people and countries adopt the using of cryptos as higher will go the prices of coins. This is a consequence of the laws of demand and supply. All news related to the adoption of cryptos is beneficial to their costs. Conversely, the news that, for example, a country forbids the possession of crypto coins or transactions with them has a negative impact on their prices.
 
 ## Technical Analysis
 
-Technical analyzations, or chartists, analyzing statistics gathered from trading activity, such as price movements and volume. This is a method of analyzing financial markets that tries to solve players' psychology.
+Technical analysts, analyzing statistics gathered from trading activity, such as price movements and volume. This is a method of analyzing financial markets that tries to solve players' psychology.
 
 * Mathematical Indicators
 
-First main type of technical analysis is using of **mathematical technical** indicators. Mathematical analysis use a series of mathematical calculations applied on the data taken from the charts. The goal of this is to predict where and in which direction the price will move in the future. The indicators attempts to catch a mathematical relationships between the future and past prices. There are dozens and hundreds of indicators in the toolbox of technical analysts. These indicators can be classified as trendfollowing and oscillators.   
+First main type of technical analysis is using of **mathematical technical** indicators. Mathematical analysis use a series of mathematical calculations applied on the data taken from the charts. The goal of this is to predict where and in which direction the price will move in the future. The indicators attempts to catch a mathematical relationships between the future and past prices. There are dozens and hundreds of indicators in the toolbox of technical analysts. These indicators can be classified as trendfollowing and oscillators.  
 With oscillators the analyzers try to catch the overbought and oversold levels of prices. When the value of the oscillator approaches the upper extreme value, analysts interpret that information to mean that the asset is overbought, and as it approaches the lower extreme, analysts consider the asset to be oversold. Examples of oscillators are MACD, stochastic oscillator, RSI e.t.c.
 
 ![](/assets/Chapter 1.8. Crypto Trading and Exchang/macd-indicator.png)
@@ -33,12 +33,12 @@ They are form of interpretation of price and volume charts
 
 * Chart Patterns
 
-The next large group of technical analysis tools are the so-called chart patterns. They are part of the classical technical analysis.   
+The next large group of technical analysis tools are the so-called chart patterns. They are part of the classical technical analysis.  
 The technical analysis isn\`t an officially recognized science but the most known authors divided patterns into three groups: trend-confirming \(continuation\),  turning \(reversal\) and bilateral figures.  
-The most common continuation chart patterns are Wedge \(Falling or Rising\), Rectangle \(Bullish or Bearish\), Pennant \(Bullish or Bearish\) etc.   
+The most common continuation chart patterns are Wedge \(Falling or Rising\), Rectangle \(Bullish or Bearish\), Pennant \(Bullish or Bearish\) etc.  
 ![](/assets/Chapter 1.8. Crypto Trading and Exchang/pennant.jpg)
 
-The reversed figures includes the following patterns: Double Top or Double Bottom, Head and Shoulders or Inversive Head and Shoulders, Rising Wedge or Falling Wedge etc.   
+The reversed figures includes the following patterns: Double Top or Double Bottom, Head and Shoulders or Inversive Head and Shoulders, Rising Wedge or Falling Wedge etc.  
 ![](/assets/Chapter 1.8. Crypto Trading and Exchang/double_top_01.jpg)
 
 The group of Bilateral Patterns included patterns possibly following into two scenarios depending on the direction of the price break.
@@ -70,12 +70,12 @@ Margin trading is using of borrowed funds from a broker to trade a financial ass
 
 ![](/assets/Chapter 1.8. Crypto Trading and Exchang/MarginTrading.png)
 
-For example, if you trade with 10% margin this means that you can buy 10 times more quantity, but the price movement will impact your account 10 times harder. Margin Ratio is the ratio between the trader's own funds and the open position \(purchased securities\) in which the trader has invested. For example, a ratio of 10: 1 means that with a $ 1,000 margin deposited with the broker, the trader can buy securities \(open a position\) of $ 10,000.   
+For example, if you trade with 10% margin this means that you can buy 10 times more quantity, but the price movement will impact your account 10 times harder. Margin Ratio is the ratio between the trader's own funds and the open position \(purchased securities\) in which the trader has invested. For example, a ratio of 10: 1 means that with a $ 1,000 margin deposited with the broker, the trader can buy securities \(open a position\) of $ 10,000.  
 So, in our example if the price goes hi you will receive the 10-time more profit, but if the price goes against you it will produce ten times more loses. Margin trade is extremely risky, so the brokers insist a collateral called margin. The margin is an amount of money that the holder of a financial instrument must deposit with a counterparty \(most often their broker\) to cover the credit risk the holder poses for the counterparty.
 
 ## Arbitrage
 
-The price of one crypto coin can vary significant on the different exchanges. Some traders exploiting price differences between currency pairs and exchanges. They buy cryptos cheaply on one exchange, and then send them to another where it’s more expensive \(due to lack of sellers\).   
-Triangular arbitrage is where an intermediate pair allows trader to get a better price than between the two original pairs.   
+The price of one crypto coin can vary significant on the different exchanges. Some traders exploiting price differences between currency pairs and exchanges. They buy cryptos cheaply on one exchange, and then send them to another where it’s more expensive \(due to lack of sellers\).  
+Triangular arbitrage is where an intermediate pair allows trader to get a better price than between the two original pairs.  
 Arbitrage helps normalize the price across pairs and exchanges. This type of exchange strategies is usually done by bots. Make money from interexchange arbitrage sounds very attractive, but opportunities for arbitrage are short-lived and the differences between the exchanges are very small. So, a lot of capital is needed to make a reasonable profit. And be careful: if you see a big price difference that is lasting for hours, odds are some exchange has crashed and it’s not possible to trade there!
 
