@@ -132,4 +132,4 @@ All files           |      100 |       50 |      100 |      100 |               
 --------------------|----------|----------|----------|----------|----------------|
 ```
 The tool generates **html** report in your truffle project in the **coverage** folder. When we open the **index.html** file in the browser we will see the same stats but in the browser.
-
+![](/assets/ganache-truffle-images/code-coverage.png)
