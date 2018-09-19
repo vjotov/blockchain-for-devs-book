@@ -1,3 +1,3 @@
 ## Ganache
 
-Ganache is a tool for running local Ethereum environment. It can help you to deploy and interact with smart-contracts faster and easier. Ganache is a part of Truffle Suite (https://truffleframework.com/). There are 2 different variants of ganache one with User Interface and one with Command-line interface, in the next chapters we will learn the both.
+Ganache is a tool for running a local Ethereum environment. It can help you deploy and interact with smart contracts in a faster and easier way. Ganache is a part of the Truffle Suite (https://truffleframework.com/). There are two different versions of Ganache - one with a Graphical User Interface (GUI) and one with Command Line Interface (CLI); in the next chapters we will learn about both of them.
