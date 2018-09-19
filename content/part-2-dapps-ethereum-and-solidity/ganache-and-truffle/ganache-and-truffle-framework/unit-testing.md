@@ -180,7 +180,7 @@ It is very simple test, we just compare the hash of the latest block plus the ha
 await helper.timeTravel(86400)
 await helper.mine()
 ```
-Here is the magic, we set the time in seconds and after that mine the block.
+Here is the magic, we set the time in seconds and after that mine the block. 
 
 
 ## Solidity Tests
