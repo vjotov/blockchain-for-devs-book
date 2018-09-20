@@ -20,16 +20,18 @@ Behind the crypto coins stay a **technology** and if somebody wants to use it he
 
 ## Technical Analysis
 
-Technical analysts, using statistics gathered from trading activity, such as price movements and volume. This is a method of analyzing financial markets that tries to riddle players' psychology. 
+Technical analysts, using statistics gathered from trading activity, such as price movements and volume. This is a method of analyzing financial markets that tries to riddle players' psychology. The technical analysis includes many different approaches.
+
+The more popular of them are **mathematical analysis,** **chart patterns **and **Wave Theory of Elliot**.
 
 * Mathematical Indicators
 
-First main type of technical analysis is using of **mathematical technical** indicators. Mathematical analysis use a series of mathematical calculations applied on the data taken from the charts. The goal of this is to predict where and in which direction the price will move in the future. The indicators attempts to catch a mathematical relationships between the future and past prices. There are dozens and hundreds of indicators in the toolbox of technical analysts. These indicators can be classified as trendfollowing and oscillators.  
-With oscillators the analyzers try to catch the overbought and oversold levels of prices. When the value of the oscillator approaches the upper extreme value, analysts interpret that information to mean that the asset is overbought, and as it approaches the lower extreme, analysts consider the asset to be oversold. Examples of oscillators are MACD, stochastic oscillator, RSI e.t.c.
+First main type of technical analysis is using of **mathematical technical** indicators. Mathematical analysis use a series of calculations applied on the data taken from the charts. The goal of this is to predict **where** and in **which direction** the price will move in the future. The indicators attempts to catch a mathematical relationships between the future and past prices. There are dozens and hundreds of indicators in the toolbox of technical analysts. These indicators can be classified as **trendfollowing** and **oscillators**.  
+With oscillators the analyzers try to catch the **overbought** and **oversold** levels of prices. When the value of the oscillator approaches the upper extreme value, analysts interpret that information to mean that the asset is overbought, and as it approaches the lower extreme, analysts consider the asset to be oversold. Examples of oscillators are MACD, stochastic oscillator, RSI e.t.c.
 
 ![](/assets/Chapter 1.8. Crypto Trading and Exchang/macd-indicator.png)
 
-They are form of interpretation of price and volume charts
+Mathematical Indicators are form of interpretation of price and volume charts. When there is a discrepancy in the signals that give the indicators and signals that come from the charts themselves, the charts are of greater importance.
 
 * Chart Patterns
 
