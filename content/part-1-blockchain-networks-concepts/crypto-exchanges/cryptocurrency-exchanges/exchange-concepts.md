@@ -20,7 +20,7 @@ Behind the crypto coins stay a **technology** and if somebody wants to use it he
 
 ## Technical Analysis
 
-Technical analysts, analyzing statistics gathered from trading activity, such as price movements and volume. This is a method of analyzing financial markets that tries to solve players' psychology.
+Technical analysts, using statistics gathered from trading activity, such as price movements and volume. This is a method of analyzing financial markets that tries to riddle players' psychology. 
 
 * Mathematical Indicators
 
