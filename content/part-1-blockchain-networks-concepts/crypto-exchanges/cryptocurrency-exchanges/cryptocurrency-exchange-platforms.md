@@ -8,32 +8,29 @@ Use only trusted exchanges and check their status regularly!
 
 ## Kraken
 
-Coinbase is a digital currency wallet and platform where merchants and consumers can transact with digital currencies. The platform was founded in June of 2012.  Coinbase is based in San Francisco, California and required to comply with US law. This platform is considered as one of the most secure. For professional traders Coinbase operates like Coinbase Pro \(former GDAX\).
+![](/assets/Kraken.png)
+
+Founded in 2011, San Francisco-based Kraken is one of the largest Bitcoin exchanges. There traders can trade with Euro, Canadian dollars, US dollars, British pounds and Japanese yen. Kraken offers margin trading for a couple of cryptocurrencies. In some of them leverage trading is up to 5x. The exchange has iOS mobile app for trading. Kraken offers security with 2FA \(two factor authentication\) and encryption. 
 
 * Pros
-  * Excellent Reputation
-  * FDIC Insured
-  * Easy to Use
-  * Very Secure
-  * Accepts Credit / Debit Cards
+  * Beginner friendliness
+  * Low fees
+  * Payment methods
 * Cons
-  * Slow Customer Support
-  * Limited Currencies Available
+  * Customer support
 
-## BitPanda
+## Bittrex
 
-![](/assets/Chapter 1.8. Crypto Trading and Exchang/BitPanda.png)
+![](/assets/Bittrex.png)
 
-Bitpanda GmbH is a fintech company based in Vienna, Austria specialised in selling and buying cryptocurrencies. It is very popular around Europe with over than 850,000 users.
+Founded in 2014 by three cybersecurity engineers, Bittrex is one of the biggest crypto exchanges. The exchange offers multi wallets for 250+ altcoins.
 
 * Pros
-  * Wide variety of payment options 
-  * Relatively low fees 
-  * Beginner friendly 
-  * Accepts Credit / Debit Cards
+  * 250+ Trading Pairs 
+  * Better customer support than Poloniex 
+  * Easy to achieve basic account verification 
 * Cons
-  * Not available Worldwide 
-  * Fees are not stated explicitly
+  * No fiat trading available
 
 
 
