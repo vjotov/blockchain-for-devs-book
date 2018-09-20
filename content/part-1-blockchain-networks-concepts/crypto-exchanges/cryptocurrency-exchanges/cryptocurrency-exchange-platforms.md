@@ -1,6 +1,6 @@
-# Cryptocurrency Buying Platforms
+# Cryptocurrency Exchange Platforms
 
-In this chapter, we'll learn about some of the most popular Cryptocurrency Buying Platforms. This type of platforms give the traders opportunities to buy and sell coins but do not offer standard operations that can be made on the crypto exchanges.
+In this chapter, we'll look at some of the more popular cripto exchanges. They allow exchange trading with crypto coins, but do not support buying and selling coins against fiat money. 
 
 ![](/assets/Chapter 1.8. Crypto Trading and Exchang/CryptocurrencyBuyingPlatforms.png)
 
