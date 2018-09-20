@@ -1,6 +1,6 @@
 # Exchange Concept
 
-In this chapter we will learn some of the major concepts you will encounter in the world of **exchanges**. We'll talk about the main types of analytics that traders do to make a trading decision. Also we will learn about concepts like Order Book, Margin Trading etc.
+In this chapter we will learn some of the major concepts you will encounter in the world of **exchanges**. We'll talk about concepts like Order Book, Margin Trading etc.
 
 ![](/assets/Chapter 1.8. Crypto Trading and Exchang/bitcoin-exchange.jpg)
 
