@@ -20,9 +20,7 @@ Behind the crypto coins stay a **technology** and if somebody wants to use it he
 
 ## Technical Analysis
 
-Technical analysts, using statistics gathered from trading activity, such as price movements and volume. This is a method of analyzing financial markets that tries to riddle players' psychology. The technical analysis includes many different approaches.
-
-The more popular of them are **mathematical analysis,** **chart patterns **and **Wave Theory of Elliot**.
+Technical analysts, using statistics gathered from trading activity, such as price movements and volume. This is a method of analyzing financial markets that tries to riddle players' psychology. Technical analysis is not an officially recognized science, but it is very well accepted by exchange traders. There are many well-defined schools of technical analysis in the whole world. Technical indicators have a very serious psychological and statistical rationale. The technical analysis includes many different approaches. The more popular of them are **mathematical analysis,** **chart patterns **and **Wave Theory of Elliot**.
 
 * Mathematical Indicators
 
@@ -35,8 +33,7 @@ Mathematical Indicators are form of interpretation of price and volume charts. W
 
 * Chart Patterns
 
-The next large group of technical analysis tools are the so-called chart patterns. They are part of the classical technical analysis.  
-The technical analysis isn\`t an officially recognized science but the most known authors divided patterns into three groups: trend-confirming \(continuation\),  turning \(reversal\) and bilateral figures.  
+The next large group of technical analysis tools are the so-called **chart patterns**. The most known authors divided patterns into three groups: trend-confirming \(continuation\),  turning \(reversal\) and bilateral figures.  
 The most common continuation chart patterns are Wedge \(Falling or Rising\), Rectangle \(Bullish or Bearish\), Pennant \(Bullish or Bearish\) etc.  
 ![](/assets/Chapter 1.8. Crypto Trading and Exchang/pennant.jpg)
 
