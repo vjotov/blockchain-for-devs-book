@@ -1,6 +1,6 @@
 # Cryptocurrency Exchange Platforms
 
-In this chapter, we'll look at some of the more popular cripto exchanges. They allow exchange trading with crypto coins, but do not support buying and selling coins against fiat money. 
+In this chapter, we'll look at some of the more popular cripto exchanges. They allow exchange trading with crypto coins, but do not support buying and selling coins against fiat money. Of course, some of the exchanges have the buying platforms included, so they support both types of operations.
 
 ![](/assets/Chapter 1.8. Crypto Trading and Exchang/CryptocurrencyBuyingPlatforms.png)
 
