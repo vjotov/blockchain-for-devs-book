@@ -4,7 +4,7 @@ In this chapter we will learn some of the major concepts you will encounter in t
 
 ![](/assets/Chapter 1.8. Crypto Trading and Exchang/bitcoin-exchange.jpg)
 
-## Stock exchange analysis
+## Exchange analysis
 
 Trading on exchanges and taking trading decisions is a very hard, complex and risky job. There are two main types of analysis that help traders make decisions in the ocean of data and information: fundamental and technical analysis.
 
@@ -33,7 +33,9 @@ Mathematical Indicators are form of interpretation of price and volume charts. W
 
 * Chart Patterns
 
-The next large group of technical analysis tools are the so-called **chart patterns**. The most known authors divided patterns into three groups: trend-confirming \(continuation\),  turning \(reversal\) and bilateral figures.  
+The next large group of technical analysis tools are the so-called **chart patterns**. The most known authors divided patterns into three groups: **trend-confirming** \(continuation\),  **turning** \(reversal\) and **bilateral** figures.  
+
+
 The most common continuation chart patterns are Wedge \(Falling or Rising\), Rectangle \(Bullish or Bearish\), Pennant \(Bullish or Bearish\) etc.  
 ![](/assets/Chapter 1.8. Crypto Trading and Exchang/pennant.jpg)
 
