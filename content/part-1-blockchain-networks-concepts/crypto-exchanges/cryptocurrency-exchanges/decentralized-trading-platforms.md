@@ -1,10 +1,6 @@
 # Decentralized Trading Platforms
 
-In this chapter, we'll look at some of the more popular cripto exchanges. They allow exchange trading with crypto coins, but do not support buying and selling coins against fiat money. Of course, some of the exchanges have the buying platforms included, so they support both types of operations. There is a lot of platforms offering opportunity of trading crypto currencies. They have various trading conditions and different functionalities. The most important characteristic of the exchanges is their stability. The history keeps many memories for exchanges fall to bankruptcy in which the people lost all crypto coins deposited in there.
-
-Always remember: when you deposit coins in the exchange, only the exchange keeps private keys for this cryptos, you have only deposit in the exchange and nothing more! If you have ethers and buy tokens from your exchange account, the tokens will go to exchange account, not to you!
-
-Use only trusted exchanges and check their status regularly!
+In this chapter, we'll look at some of the more popular decentralized exchanges. The decentralized exchanges do not rely on a third party service to hold the customer's funds. Instead, trades occur directly between users through an automated process.
 
 ![](/assets/import.png)
 
