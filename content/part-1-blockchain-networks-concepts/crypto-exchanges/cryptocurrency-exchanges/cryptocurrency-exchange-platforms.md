@@ -1,6 +1,6 @@
 # Cryptocurrency Exchange Platforms
 
-In this chapter, we'll look at some of the more popular cripto exchanges. They allow exchange trading with crypto coins, but do not support buying and selling coins against fiat money. Of course, some of the exchanges have the buying platforms included, so they support both types of operations. There is a lot of platforms offering opportunity of trading crypto currencies. They have various trading conditions and different functionalities. The most important characteristic of the exchanges is their stability. The history keeps many memories for exchanges fall to bankruptcy in which the people lost all crypto coins deposited in there. 
+In this chapter, we'll look at some of the more popular cripto exchanges. They allow exchange trading with crypto coins, but do not support buying and selling coins against fiat money. Of course, some of the exchanges have the buying platforms included, so they support both types of operations. There is a lot of platforms offering opportunity of trading crypto currencies. They have various trading conditions and different functionalities. The most important characteristic of the exchanges is their stability. The history keeps many memories for exchanges fall to bankruptcy in which the people lost all crypto coins deposited in there.
 
 Always remember: when you deposit coins in the exchange, only the exchange keeps private keys for this cryptos, you have only deposit in the exchange and nothing more! If you have ethers and buy tokens from your exchange account, the tokens will go to exchange account, not to you!
 
@@ -35,4 +35,12 @@ Founded in 2014 by three cybersecurity engineers, Bittrex is one of the biggest 
   * No fiat trading available
 
 
+
+## ShapeShift 
+
+![](/assets/ShapeShift.png)
+
+ShapeShift is a Swiss-based digital asset exchange service formed in 2014 by Erik Voorhees. It is a web and API platform created to provide instant Bitcoin and altcoin conversion. ShapeShift is primarily designed to help websites accept cryptocurrencies as payment through its website and through its API. The platform gives the power to quickly swap between assets in a seamless, safe, and secure environment. Now ShapeShift is one of the fastest way to exchange cryptocurrencies. ShapeShift has a strict "no fiat" policy so it can not be used to purchase cryptocurrencies with credit/debit cards.  ShapeShift also provides a number of special tools and features like the ShapeShift Lens and Shifty Button. These tools allow users to buy items with any alternative cryptocurrency and to easily receive and exchange altcoin payments as a merchant.
+
+Jaxx wallet partners with ShapeShift to enable in-wallet conversion between some crypto coins.
 
