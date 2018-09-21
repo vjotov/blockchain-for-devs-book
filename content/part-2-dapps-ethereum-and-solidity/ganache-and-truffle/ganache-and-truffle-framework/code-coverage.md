@@ -1,17 +1,17 @@
 # Code coverage
-Code coverage is testing determining how much code is being tested, with code coverage you can see how well your unit tests exercise your codebase. The library that we will use is **istanbul.js** 
+Code coverage helps determine how much code is being tested; with code coverage you can see how well your unit tests exercise your codebase. The library that we will use is **istanbul.js** 
 
-We need a truffle project to use `solidity-coverage`, create a new project.
+We need a truffle project to use `solidity-coverage`, create a new project:
 ```
 truffle init
 ```
-After that we need to make **npm** package and install `solidity-coverage`. We can initialize new **npm** package with
+After that we need to make an **npm** package and install `solidity-coverage`. We can initialize a new **npm** package with:
 ```
 npm init -y
 ```
 The **-y** flag will skip questions like **What is the name of your package, version, github url etc. etc.**
 
-Now let's write contract and test it after that. The contract that we will use is `SimpleStorage` which we have used before.
+Now let's write a contract and test it after that. The contract that we will use is `SimpleStorage`, which we have used before.
 ```js
 pragma solidity ^0.4.24;
 
@@ -27,7 +27,7 @@ contract SimpleStorage {
     }
 }
 ```
-Create a new file in the test directory
+Create a new file in the test directory:
 ```js
 const SimpleStorage = artifacts.require('SimpleStorage')
 
@@ -43,12 +43,12 @@ contract('Simple Storage contract', (accounts) => {
 })
 ```
 
-Now let's install `solidity-coverage` and check our coverage score. 
-Run
+Now let's install `solidity-coverage` and check our coverage score.
+Run:
 ```
 npm install --save solidity-coverage
 ```
-Now you have `solidity-coverage` command attached in your **cmd** and when we run the command we will see our coverage score.
+Now you have the `solidity-coverage` command and when we run the command we will see our coverage score:
 ```
 $ solidity-coverage
 Contract: Simple Storage contract
@@ -64,9 +64,9 @@ All files           |      100 |      100 |      100 |      100 |               
 --------------------|----------|----------|----------|----------|----------------|
 ```
 
- We have 100 percent coverage because we tested every line of our contract, the contract is simple but if you have many complex contracts will be harder. Sometimes is **impossible** to reach 100% code coverage.
+We have 100 percent coverage because we tested every line of our contract; the contract is simple, but if you have many complex contracts it will be harder. Sometimes it is **impossible** to reach 100% code coverage.
 
-Let's make new contract in the contract directory and see what will happen.
+Let's make a new contract in the contract directory and see what will happen.
 SimpleToken.sol
 ```js
 pragma solidity ^0.4.20;
@@ -93,7 +93,7 @@ contract SimpleToken {
 }
 
 ```
-Now if we run `solidity-coverage` the coverage will be 50% because we have tests only for one contract of two.
+Now if we run `solidity-coverage`, the coverage will be 50% because we have tests only for one contract of two.
 ```
 --------------------|----------|----------|----------|----------|----------------|
 File                |  % Stmts | % Branch |  % Funcs |  % Lines |Uncovered Lines |
@@ -105,7 +105,7 @@ File                |  % Stmts | % Branch |  % Funcs |  % Lines |Uncovered Lines
 All files           |       50 |      100 |       50 |       50 |                |
 --------------------|----------|----------|----------|----------|----------------|
 ```
-Now let's test second contract and reach high coverage.
+Now let's test the second contract and reach a high coverage.
 ```js
 const SimpleToken = artifacts.require('SimpleToken')
 
@@ -119,7 +119,7 @@ contract('Simple Token contract', (accounts) => {
 	})
 })
 ```
-We tested the transfer function and is the transaction has included in block and the coverage is 100% again.
+We tested the transfer function and the coverage is 100% again:
 ```
 --------------------|----------|----------|----------|----------|----------------|
 File                |  % Stmts | % Branch |  % Funcs |  % Lines |Uncovered Lines |
@@ -131,5 +131,8 @@ File                |  % Stmts | % Branch |  % Funcs |  % Lines |Uncovered Lines
 All files           |      100 |       50 |      100 |      100 |                |
 --------------------|----------|----------|----------|----------|----------------|
 ```
-The tool generates **html** report in your truffle project in the **coverage** folder. When we open the **index.html** file in the browser we will see the same stats but in the browser.
+The tool generates an **HTML** report in your Truffle project in the **coverage** folder. When we open the **index.html** file in the browser we will see the same stats, but in the browser:
+
 ![](/assets/ganache-truffle-images/code-coverage.png)
+
+You can click the contract names to see line-by-line results.

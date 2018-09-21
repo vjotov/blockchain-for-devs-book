@@ -1,17 +1,22 @@
 # Unit Testing
-Truffle uses Mocha testing framework and Chai for assertions. If you are not familiar with Mocha go to https://mochajs.org and read the getting started section, it will help you to understand the tests better. In the test directory add new file. There is no convension, if you want to make it clearer with `test` in the name`SimpleStorageTest.js`.
+Truffle uses the Mocha testing framework and Chai for assertions. If you are not familiar with Mocha go to https://mochajs.org and read the "Getting Started" section, it will help you to understand the tests better.
 
-`const SimpleStorage = artifacts.require('SimpleStorage')`
-You can use artifacts to get the contract, same as in the **Migrations** chapter.
+In the `test` directory, add new file. There is no convention, if you want you can add `test` to the contract name, e.g. `SimpleStorageTest.js`.
+
+```js
+const SimpleStorage = artifacts.require('SimpleStorage')`
+```
+
+You can use `artifacts` to get the contract, same as in the **Migrations** chapter.
 
 ```js
 contract('Simple Storage contract', (accounts) => {
     // The tests should be here
 }
 ```
-In **mocha** we have `describe` and for truffle is modified as `contract`. We can add multiple contracts in one file, but keep it clear and use one file per contract. When you run `truffle test` mocha will loop all files in the directory and run them.
+In **Mocha** we have `describe` and for Truffle it is modified to `contract`. We can add multiple contracts in one file, but keep it clear and use one file per contract. When you run `truffle test` Mocha will loop through all files in the directory and run them.
 
-Now inside the contract we will write our test cases, the contract is simple and we will check the **set** function and we will compare the result from the **get** function.
+Now inside the contract we will write our test cases; the contract is simple and we will check the `set` function and we will compare the result from the `get` function.
 
 ```js
 
@@ -23,22 +28,22 @@ it('Should set X correctly', () => {
 })	
 ```
 
-In the first line we deployed the contract
+In the first line we waited for the contract to be deployed:
 ```js
 let contract = await SimpleStorage.deployed()
 ```
-When we have the contract we can interact with it. We will **set** data to the variable
+When we have the contract, we can interact with it. We will `set` the variable:
 ```js
 contract.set(4, { from: accounts[0] })
 ```
 
-After that we can call the getter method and compare the result with assert.
+After that we can call the getter method and compare the result with assert:
 ```js
 let result = await contract.get()
 assert.equal(result, 4, "Amount was not correct")
 ```
 
-Now we have our first test and we can run to test is it everything alright, go to the terminal and run 
+Now we have our first test and we can run it to test if our contract is working correctly. Go to the terminal and run:
 ```
 $ truffle test
 Using network 'development'.
@@ -49,7 +54,7 @@ Compiling .\contracts\SimpleStorage.sol...
   
   1 passing (78ms)
 ```
-If you have similar output, everything is correct and you can continue to the solidity tests.
+If you have similar output, everything is working correctly.
 
 ### Test Token Contract
 Now we will make a simple token contract and we will test it.
@@ -72,7 +77,7 @@ contract Token {
     }
 }
 ```
-When we have the contract we can write the tests for it. Create a new file `TokenTest.js` file for the tests. 
+When we have the contract we can write the tests for it. Create a new file `TokenTest.js` file for the tests: 
 
 ```js
 const Token = artifacts.require('Token')
@@ -104,9 +109,11 @@ Using network 'development'.
    2 passing (199ms)
 ```
 ## Time Travel
-Sometimes is big challenge to test your contract. Sometimes you need to check what will happen after **100** block or **10 minutes** and it is tricky to do that. For example if you want to check expiration of Crowdfund campaign or burn some tokens . Time travel is not available in Ethereum Mainnet and all Testnet networks, you should use **ganache** to test it.
+Sometimes testing your contract can be a big challenge. Sometimes you need to check what will happen after **100** blocks or **10 minutes** and it is tricky to do that. For example, if you want to check the expiration of a crowdfunding campaign, or burn some tokens. Time travel is not available in Ethereum Mainnet and all Testnet networks; you should use **Ganache** to test it.
+
 The functions that can help us are `evm_increaseTime` and `evm_mine`. These functions can be triggered with a normal transaction. 
-With **evm_increaseTime** you are increasing the time but do not force the mining process. 
+
+With **evm_increaseTime** you are increasing the time, but in older versions of Ganache this might not take effect immediately.
 
 ```js
 web3.currentProvider.send({
@@ -116,7 +123,7 @@ web3.currentProvider.send({
      id: 123
  })
 ```
-and **evm_mine** to mine the block after successful **time increasing**
+You can use **evm_mine** to force the time increase to take effect (if you're on one of these older versions):
 ```js
 web3.currentProvider.send({
      jsonrpc: "2.0",
@@ -124,7 +131,7 @@ web3.currentProvider.send({
      id: 123
  })
 ```
-Let's create a folder with name `helpers` and create file with name `timeTravelHelper.js`.
+Let's create a folder with name `helpers` and create a file named `timeTravelHelper.js`.
 ```js
 const timeTravel = function (time) {
   return new Promise((resolve, reject) => {
@@ -159,7 +166,7 @@ module.exports = {
     mine
 }
 ```
-With these function we can test what will happen in the network after some time. Now let's test it, create file in the test folder called `testTimeTravel.js`.
+With these functions we can test what will happen in the network after some time. Now let's try it - create a file in the `test` folder named `testTimeTravel.js`:
 
 ```js
 const helper = require('../helpers/timeTravelHelper.js')
@@ -176,7 +183,7 @@ describe("Testing helper functions", () => {
 	})
 })
 ``` 
-It is very simple test, we just compare the hash of the latest block plus the hash of the block tommorow. 
+It is a very simple test, we just compare the hash of the latest block plus the hash of the block tomorrow. 
 ```js
 await helper.timeTravel(86400)
 await helper.mine()
@@ -185,8 +192,9 @@ Here is the magic, we set the time in seconds and after that mine the block.
 
 
 ## Solidity Tests
-We learned how we can use JavaScript tests now we will learn how to write solidity tests. The feature that we have with solidity tests that we have isolated environment without need **web3** and we can concentrate in the components of the contract. You do not need to choose between **solidity** and **JavaScript** you can use the both.
-Now we will create our firs solidity test, in the test folder create `SimpleStorageTest.sol`, the name needs to end with **Test**
+We learned how we can use JavaScript tests, now we will learn how to write Solidity tests. The feature that we have with Solidity tests is that we have an isolated environment without the need for **web3**, and we can concentrate on the components of the contract. You do not need to choose between **Solidity** and **JavaScript** you can use the both.
+
+Now we will create our first Solidity test - in the `test` folder create `SimpleStorageTest.sol`; the name needs to end with **Test**:
 ```js
 pragma solidity ^0.4.24;
 
@@ -205,18 +213,18 @@ contract SimpleStorageTest {
 }
 ```
 
-In the first lines we imported these libraries
+In the first lines we imported these libraries:
 
 ```js
 import "truffle/Assert.sol";
 import "truffle/DeployedAddresses.sol";
 import "../contracts/SimpleStorage.sol";
 ```
-- Assert.sol - Library from truffle that has **Asserts**
-- DeployedAddresses.col - The addresses of all contracts that are deployed from migrations, you can use it with `DeployedAddresses.<contract name>()`
-- SimpleStorage.sol - This is the written contract that we will test.
+- **Assert.sol**: Library from Truffle that adds support for assertions.
+- **DeployedAddresses.sol**: The addresses of all contracts that are deployed from migrations, you can use it with `DeployedAddresses.<contract name>()`
+- **SimpleStorage.sol**: This is the contract that we will test.
 
-After that you need to add tests. Each method in the contract is **Test** scenario and the name of the methods should start with **test** in our case `testSetValue`
+After that you need to add the tests. Each method in the contract is a **Test** scenario and the name of the methods should start with **test**; in our case, `testSetValue`:
 
 ```js
 SimpleStorage myContract = SimpleStorage(DeployedAddresses.SimpleStorage());
@@ -228,10 +236,11 @@ uint256 value = myContract.get();
 ```
 In this line we make transaction to set value and read the value from the contract.
 ```js
-Assert.equal(value, 4, "The value is setted correctly");
+Assert.equal(value, 4, "The value was set correctly");
 ```
-Finally we are asserting the value with the result with the number. 
-Let's run the tests and check is everything working
+Finally we are asserting that the returned value is correct.
+
+Let's run the tests and check if everything is working:
 ```
 $ truffle test
 Using network 'development'.

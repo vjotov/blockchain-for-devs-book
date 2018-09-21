@@ -1,14 +1,9 @@
 # Exercises: Deploy and Run a Solidity Smart Contract in Ganache
 
-The goal of this exercise is to build a simple counter smart contract.
-The contract will be written in **Solidity**. Before we get started, you
-must have **Ganache** installed, which will be the tool we will use to
-create a **private blockchain** that runs on our machine only. You will
-also need to download your own copy of **MyEtherWallet**. Throughout
-this exercise, we will launch a blockchain on our own machine, deploy a
-smart contract to it, and interact with the contract. This is very
-similar to the workflow of professional Ethereum smart contract
-developers.
+The goal of this exercise is to build a simple counter smart contract. The contract will be written in **Solidity**. Before we get started, you must have **Ganache** installed, which will be the tool we will use to create a **private blockchain** that runs on our machine only. You will
+also need to download your own copy of **MyEtherWallet**.
+
+Throughout this exercise, we will launch a blockchain on our own machine, deploy a smart contract to it, and interact with the contract. This is very similar to the workflow of professional Ethereum smart contract developers.
 
 This exercise is based on this project:
 <https://medium.com/crypto-currently/build-your-first-smart-contract-fc36a8ff50ca>.
