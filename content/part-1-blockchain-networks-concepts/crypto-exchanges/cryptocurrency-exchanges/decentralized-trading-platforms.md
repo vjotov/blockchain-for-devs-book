@@ -54,13 +54,21 @@ Interesting fact is that Stellar Lumens \(XLM\) and Ripple \(XRP\) are both fou
 
 ### Stellar Decentralized Exchange \(SDEX\)
 
-Stellar Decentralized Exchange \(SDEX\) is a Stellar\`s project. At the end of 2017 Stellar recruited a team to build a front-end for Stellar’s SDEX. SDEX will enable on-chain, protocol-level trades for any Stellar token. SDEX is the Stellar network per se. 
+Stellar Decentralized Exchange \(SDEX\) is a Stellar\`s project. At the end of 2017 Stellar recruited a team to build a front-end for Stellar’s SDEX. SDEX will enable on-chain, protocol-level trades for any Stellar token. SDEX is the Stellar network per se.
 
 ### StellarTerm
 
 ![](/assets/StellarTerm.png)
 
-StellarTerm is different from the SDEX. It is a client or an application that is built on top of SDEX and uses SDEX backend \(the network\) to exchange assets. StellarTerm is an open source client for the Stellar network, developed by Iris Li, a former employee of the Stellar Development Foundation. The project is independent of the Stellar Development Foundation. 
+StellarTerm is different from the SDEX. It is a client or an application that is built on top of SDEX and uses SDEX backend \(the network\) to exchange assets. StellarTerm is an open source client for the Stellar network, developed by Iris Li, a former employee of the Stellar Development Foundation. The project is independent of the Stellar Development Foundation.
+
+## Waves Platform
+
+![](/assets/WavesPlatform.png)
+
+Waves Platform is an open blockchain platform. It is decentralized multi-purpose exchange platform which provides the services of launching, distributing and trading crypto token. Cryptos, fiat currencies, and all types of real-world commodities and assets can be issued, transferred and exchanged. Waves is built on top of the Scorex framework. In Waves platform the fiat-crypto problem is solved through Waves fiat gateways. 
+
+Waves came up in 2016 and is the 7th most successful crowdfunding raised roughly 30,000 BTC.
 
 
 
