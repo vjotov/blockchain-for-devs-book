@@ -105,7 +105,8 @@ Using network 'development'.
 ```
 ## Time Travel
 Sometimes is big challenge to test your contract. Sometimes you need to check what will happen after **100** block or **10 minutes** and it is tricky to do that. For example if you want to check expiration of Crowdfund campaign or burn some tokens . Time travel is not available in Ethereum Mainnet and all Testnet networks, you should use **ganache** to test it.
-The function that can help us is `evm_increaseTime`. This function can be triggered with a normal transaction
+The functions that can help us are `evm_increaseTime` and `evm_mine`. These functions can be triggered with a normal transaction. 
+With **evm_increaseTime** you are increasing the time but do not force the mining process. 
 
 ```js
 web3.currentProvider.send({
@@ -115,7 +116,7 @@ web3.currentProvider.send({
      id: 123
  })
 ```
-and for evm_mine
+and **evm_mine** to mine the block after successful **time increasing**
 ```js
 web3.currentProvider.send({
      jsonrpc: "2.0",
