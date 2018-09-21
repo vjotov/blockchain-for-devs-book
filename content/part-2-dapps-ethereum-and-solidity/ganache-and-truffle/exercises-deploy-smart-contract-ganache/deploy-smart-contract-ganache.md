@@ -186,13 +186,3 @@ Decrement Count
 
 2.  What happens when you decrement the counter when it is 0? Think for
     a solution, deploy the new contract and test it.
-
-What to Submit?
-===============
-
-Create a **zip file** (e.g.
-**your-username**-**build-smart-contract-exercise.zip**) holding the
-screenshots with your experiments. Make screenshots of **MyEtherWallet**
-results.
-
-Submit your **zip** file as **homework** at the course Web site.
