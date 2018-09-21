@@ -80,6 +80,8 @@ $ truffle migrate --network live
 ``` 
 After this command your contracts will be deployed to the Mainnet.
 
+**Disclaimer: The examples are made with Truffle v4.1.14 if you use different version it is possible some difference with the syntax.**
+
 
 
 
