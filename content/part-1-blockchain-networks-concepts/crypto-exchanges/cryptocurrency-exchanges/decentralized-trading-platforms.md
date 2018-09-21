@@ -6,9 +6,13 @@ Some of this exchanges use proxy tokens that represent a certain fiat or crypto 
 
 Using decentralized cryptocurrency exchanges brings a lot of benefits. Many decentralized cryptocurrency exchanges are hosted on decentralized servers or existing solely in the cloud. This make decentralized exchanges much harder to hack than traditionally hosted exchanges. Decentralization gives more security to user data and funds. Decentralized cryptocurrency exchanges are much harder to regulate or even shut down by the government. This reduces political risk.
 
-Decentralized exchanges require the registration of a trading account. But unlike traditional exchanges, they require much less information, allowing users to maintain a much more privacy. 
+Decentralized exchanges require the registration of a trading account. But unlike traditional exchanges, they require much less information, allowing users to maintain a much more privacy.
 
 When people use centralized exchanges, they lost control over private keys and have only records in exchange database. Decentralized exchanges on the other hand leave ownership of cryptocurrency in the hands of their users and simply act as a place for peer-to-peer trading.
+
+Decentralized exchanges are less used than traditional ones, which is reflected in weaker liquidity. Generally, they are more complex to use and create difficulties for new users. The weak regulation of this type of exchanges is both an advantage and a disadvantage. Very often it is not known who is behind these exchanges and who controls them.
+
+
 
 ![](/assets/DecentralizedTradingPlatforms.png)
 
