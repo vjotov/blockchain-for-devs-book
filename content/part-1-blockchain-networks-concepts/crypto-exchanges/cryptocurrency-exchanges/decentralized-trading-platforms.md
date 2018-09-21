@@ -48,15 +48,19 @@ Native asset of the Stellar network is called Lumen \(XLM\). In 2014 the Stellar
 
 * Lumens may facilitate multi-currency transactions. Lumens sometimes facilitate trades between pairs of currencies between which there is not a large direct market, acting as a bridge. This function is possible when there is a liquid market between the lumen and each currency involved.
 
-Lumen supply is determined by fixed, protocol-level rules. Every year, there is a 1% inflation rate. New lumens cannot be generated arbitrarily by anyone. 
+Lumen supply is determined by fixed, protocol-level rules. Every year, there is a 1% inflation rate. New lumens cannot be generated arbitrarily by anyone.
 
-Interesting fact is that Stellar Lumens \(XLM\) and Ripple \(XRP\) are both founded by Jed McCaleb. 
+Interesting fact is that Stellar Lumens \(XLM\) and Ripple \(XRP\) are both founded by Jed McCaleb.
 
+### Stellar Decentralized Exchange \(SDEX\)
 
+Stellar Decentralized Exchange \(SDEX\) is a Stellar\`s project. At the end of 2017 Stellar recruited a team to build a front-end for Stellar’s SDEX. SDEX will enable on-chain, protocol-level trades for any Stellar token. SDEX is the Stellar network per se. 
 
+### StellarTerm
 
+![](/assets/StellarTerm.png)
 
-
+StellarTerm is different from the SDEX. It is a client or an application that is built on top of SDEX and uses SDEX backend \(the network\) to exchange assets. StellarTerm is an open source client for the Stellar network, developed by Iris Li, a former employee of the Stellar Development Foundation. The project is independent of the Stellar Development Foundation. 
 
 
 
