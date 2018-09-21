@@ -2,7 +2,7 @@
 Truffle works with every JavaScript framework you can use **Vue.js, Angular,React** or other front end framework. 
 
 ### Truffle boxes
-Truffle boxes are basic boilerplates that can help you with your project. The boxes can contain **solidity contracts** and libraries, front-end frameworks and more. You can find full list of truffle boxes here https://truffleframework.com/boxes
+Truffle boxes are basic boilerplates that can help you with your project. The boxes contain **solidity contracts** and libraries, front-end frameworks and more. Boxes can save you a lot of time with the structure of your **dApp**.You can find full list of truffle boxes here https://truffleframework.com/boxes
 You have a boxes for **react**, **vue** and many more.
 
 One of the famous box is **Metacoin**. Metacoin is box that represent simple token, in the box you can find a smart-contract `MetaCoin.sol` and two test files `TestMetacoin.sol` and `metacoin.js`. We can install the project with
