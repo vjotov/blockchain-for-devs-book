@@ -59,3 +59,6 @@ In this tab we have settings for the accounts being generated.
 ![](/assets/ganache-truffle-images/ganache-gui-gas.png)
 
 In this tab you can specify the Gas Limit and the Gas price.
+
+
+**Disclaimer: The examples are made with Ganache v1.2.2 if you use different version it is possible some difference in the interface.**
