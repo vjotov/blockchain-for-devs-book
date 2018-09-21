@@ -1,10 +1,14 @@
 # Decentralized Trading Platforms
 
-In this chapter, we'll look at some of the more popular decentralized exchanges. The decentralized exchanges do not rely on a third party service to hold the customer's funds. Instead, trades occur directly between users through an automated process.  Decentralized cryptocurrency exchanges require users to register for an account before they can trade. 
+In this chapter, we'll look at some of the more popular decentralized exchanges. The decentralized exchanges do not rely on a third party service to hold the customer's funds. Instead, trades occur directly between users through an automated process.  Decentralized cryptocurrency exchanges require users to register for an account before they can trade.
 
-Some of this exchanges use proxy tokens that represent a certain fiat or crypto currency. Others use assets that are like shares in a company. Another way to achieve decentralisation is using of a decentralized multi-signature escrow system. 
+Some of this exchanges use proxy tokens that represent a certain fiat or crypto currency. Others use assets that are like shares in a company. Another way to achieve decentralisation is using of a decentralized multi-signature escrow system.
 
 Using decentralized cryptocurrency exchanges brings a lot of benefits. Many decentralized cryptocurrency exchanges are hosted on decentralized servers or existing solely in the cloud. This make decentralized exchanges much harder to hack than traditionally hosted exchanges. Decentralization gives more security to user data and funds. Decentralized cryptocurrency exchanges are much harder to regulate or even shut down by the government. This reduces political risk.
+
+Decentralized exchanges require the registration of a trading account. But unlike traditional exchanges, they require much less information, allowing users to maintain a much more privacy. 
+
+When people use centralized exchanges, they lost control over private keys and have only records in exchange database. Decentralized exchanges on the other hand leave ownership of cryptocurrency in the hands of their users and simply act as a place for peer-to-peer trading.
 
 ![](/assets/DecentralizedTradingPlatforms.png)
 
