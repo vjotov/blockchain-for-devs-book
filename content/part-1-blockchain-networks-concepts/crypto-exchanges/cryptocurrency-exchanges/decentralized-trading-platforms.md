@@ -1,12 +1,16 @@
 # Decentralized Trading Platforms
 
-In this chapter, we'll look at some of the more popular decentralized exchanges. The decentralized exchanges do not rely on a third party service to hold the customer's funds. Instead, trades occur directly between users through an automated process.
+In this chapter, we'll look at some of the more popular decentralized exchanges. The decentralized exchanges do not rely on a third party service to hold the customer's funds. Instead, trades occur directly between users through an automated process.  Decentralized cryptocurrency exchanges require users to register for an account before they can trade. 
 
-![](/assets/import.png)
+Some of this exchanges use proxy tokens that represent a certain fiat or crypto currency. Others use assets that are like shares in a company. Another way to achieve decentralisation is using of a decentralized multi-signature escrow system. 
 
-## Kraken
+Using decentralized cryptocurrency exchanges brings a lot of benefits. Many decentralized cryptocurrency exchanges are hosted on decentralized servers or existing solely in the cloud. This make decentralized exchanges much harder to hack than traditionally hosted exchanges. Decentralization gives more security to user data and funds. Decentralized cryptocurrency exchanges are much harder to regulate or even shut down by the government. This reduces political risk.
 
-![](/assets/Kraken.png)
+![](/assets/DecentralizedTradingPlatforms.png)
+
+## Stellar
+
+![](/assets/Stellar.png)
 
 Founded in 2011, San Francisco-based Kraken is one of the largest Bitcoin exchanges. There traders can trade with Euro, Canadian dollars, US dollars, British pounds and Japanese yen. Kraken offers margin trading for a couple of cryptocurrencies. In some of them leverage trading is up to 5x. The exchange has iOS mobile app for trading. Kraken offers security with 2FA \(two factor authentication\) and encryption.
 
