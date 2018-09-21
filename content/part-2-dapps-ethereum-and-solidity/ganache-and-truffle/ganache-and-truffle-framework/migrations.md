@@ -13,10 +13,12 @@ module.exports = function(deployer) {
 ```
 In the first line we are getting an instance of our smart contract's code:
 
-`var Migrations = artifacts.require("./Migrations.sol")`
+```js
+var Migrations = artifacts.require("./Migrations.sol")
+```
 
 After that we are deploying the contract with these lines:
-```
+```js
 module.exports = function(deployer) {
   deployer.deploy(Migrations);
 };
