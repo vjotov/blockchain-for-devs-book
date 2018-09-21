@@ -1,14 +1,14 @@
 # Ganache CLI
 
-Ganache-cli is a node module that you can use if you prefer command-line interface. Ganache-cli is written in JavaScript and distributed as a Node package via **npm**
+Ganache-cli is a Node module that you can use if you prefer a command-line interface. Ganache-cli is written in JavaScript and distributed as a Node package via **npm**
 ```
 $ npm install -g ganache-cli
 ```
-After successful installation you will have ganache-cli command in your terminal.
+After successful installation you will have a `ganache-cli` command in your terminal:
 ```
 $ ganache-cli <options>
 ```
-You have a lot of options you can specify before running your ganache-cli. If you type just **ganache-cli** command it will load the default options. You will receive 10 Ethereum addresses, each one will have 100 ethers. You can use this accounts for deploying contracts and send transactions.
+There are a lot of options you can specify for `ganache-cli`. If you type just `ganache-cli` it will load with the default options. You will receive 10 Ethereum addresses, each one will have 100 ethers. You can use these accounts for deploying contracts and sending transactions.
 
 ```
 Available Accounts
@@ -25,9 +25,9 @@ Available Accounts
 (9) 0xa64f754b8bb3c147954c74f14006341d54104498 (~100 ETH)
 ```
 
-**Disclaimer: Do not use these accounts on production**
+**Disclaimer: Do not use these accounts in production.**
 
-You have the corresponding private keys for them.
+You have the corresponding private keys for them:
 
 ```
 Private Keys
@@ -44,7 +44,7 @@ Private Keys
 (9) 0x72f21d53a484930d5246a4952b33d5ee6a18dedce80655a7e73c27d1812db67a
 ```
 
-These accounts are generated from deterministic wallet and you have the mnemonic phrase for unlocking this wallet.
+These accounts are generated from a deterministic wallet and you have the mnemonic phrase for unlocking this wallet:
 
 ```
 HD Wallet
@@ -53,7 +53,7 @@ Mnemonic:      pink bonus spoil quality hen crisp pull crime elite debate panthe
 Base HD Path:  m/44'/60'/0'/0/{account_index}
 ```
 
-Additional information that you will have is the Gas Price, Gas Limit and the URL of the RPC (Remote procedure call)
+Additional information that you have is the Gas Price, Gas Limit and the URL of the Remote Procedure Call (RPC) interface:
 
 ```
 Gas Price
@@ -72,11 +72,11 @@ These settings can be changed from the options parameters.
 ### Options
 You have several settings that you can specify when running a **ganache-cli**.
 
-- **-a** or **--accounts**: Specify the number of the accounts to generate at startup. Default is 10 
+- **-a** or **--accounts**: Specify the number of the accounts to generate at startup. Default is 10. 
 - **-e** or **--defaultBalanceEther**: Amount of ether to assign each test account. Default is 100 ethers.
-- **-b** or **--blockTime**: Specify the blockTime in seconds for automatic mining. If you do not specify this flag, ganache will instantly mine a new block for every transaction. Using the –blockTime flag is discouraged unless you have tests which require a specific mining interval.
+- **-b** or **--blockTime**: Specify the blockTime in seconds for automatic mining. If you do not specify this flag, ganache will instantly mine a new block for every transaction. Using the --blockTime flag is discouraged unless you have tests which require a specific mining interval.
 - **-d** or **--determenistic**: Generate determenistic address based on pre-defined mnemonic phrase
-- **-m** or **--mnemonic**: Use bip39 mnemonic phrase for generating a PRNG seed, which is in turn used for hierarchical deterministic (HD) account generation.
+- **-m** or **--mnemonic**: Use a BIP-39 mnemonic phrase for generating a PRNG seed, which is in turn is used for hierarchical deterministic (HD) account generation.
 - **-p** or **--port**: Port number to listen on. Default is 8545.
 - **-h** or **--host** or --hostname: Hostname to listen on. Defaults to 127.0.0.1 (defaults to 0.0.0.0 for Docker instances of ganache-cli)
 - **-g** or **--gasPrice**: The price of gas in wei. Default is 20000000000

@@ -1,9 +1,9 @@
 # Migrations
-Migrations are JavaScript files that help you to deploy contracts. These files are responsible for our deployment tasks and the `Migration.sol` contract keep record of them. 
+Migrations are JavaScript files that help you deploy contracts. These files are responsible for our deployment tasks, and the `Migration.sol` contract will keep a record of them (on the various networks that we have deployed to).
 
-In the `migrations` folder you can find the tasks for deployment. Truffle automatically makes `1_initial_migration.js` when you initialize project.
+In the `migrations` folder you can find the tasks for deployment. Truffle automatically makes `1_initial_migration.js` when you initialize the project.
 
-When we open the file we will see this code
+When we open the file we will see this code:
 ```js
 var Migrations = artifacts.require("./Migrations.sol");
 
@@ -11,20 +11,20 @@ module.exports = function(deployer) {
   deployer.deploy(Migrations);
 };
 ```
-In the first line we are getting the compiled smart-contract from the `build` directory.
+In the first line we are getting an instance of our smart contract's code:
 
 `var Migrations = artifacts.require("./Migrations.sol")`
 
-After that we are deploying the contract with these lines
+After that we are deploying the contract with these lines:
 ```
 module.exports = function(deployer) {
   deployer.deploy(Migrations);
 };
 ```
-This is just simple deployment script, if we need we can make more complex deployment with link libraries and deploy contract and pass the address in other contract that we will deploy as well.
+This is just a simple deployment script - if we need we can create more complex deployment tasks, with parameters, linked libraries, and we can pass the addresses in other contracts that we will deploy as well.
 
-### Lets Migrate Contract
-Let's make it from scratch, first we will write a contract and we will write a migration for it after that we will run it. When we finish with this contract we will make more advanced migration.
+### Let's Migrate a Contract
+Let's make it from scratch - first we will write a contract, then we will write a migration for it, and then we will run it. When we finish with this contract, we will write a more advanced migration.
 
 ```js
 pragma solidity ^0.4.24;
@@ -42,8 +42,8 @@ contract SimpleStorage {
 }
 ```
 
- Save the contract in the contracts folder and make new file in migrations folder. We have a name convention for the migrations. We have number **(1,2,3)**, this is the order of execution, **1** - will run first, **2** - will run after that etc. etc. underscore and the name of the script. 
- e.g `2_deply_simple_storage.js`
+ Save the contract in the `contracts` folder and make new file in the `migrations` folder. We have a naming convention for the migrations; we have a sequential number (1,2,3...) - this is the order of execution, **1** - will run first, **2** - will run after that etc., then underscore and the name of the script. 
+For example, `2_deploy_simple_storage.js`
 
   ```js
 var SimpleStorage = artifacts.require("./SimpleStorage");
@@ -57,7 +57,7 @@ Now we can **migrate** our contracts.
 ```
 $ truffle migrate
 ```
-Output
+Output:
 ```
 using Network 'development'
 Deploying SimpleStorage...
@@ -67,11 +67,11 @@ Saving successful migration to network...
 Saving artifacts...
 ```
 
-Our contracts are deployed to the network and we can see the transactions and to find the addresses of the contracts.
+Our contracts are deployed to the network and we can see the transactions and find the addresses of the contracts.
 
-### Advanced migration
+### Advanced Migration
 Now we will make our migration script more complex. We will deploy the script and after that will set value for the `x` variable.
-Open `2_deply_simple_storage.js` again and change content of the file.
+Open `2_deploy_simple_storage.js` again and change content of the file:
  
 ```js
 var SimpleStorage = artifacts.require("./SimpleStorage");
@@ -82,12 +82,14 @@ module.exports = function(deployer) {
   })
 };
 ```
-Now we deployed the contract and after that were called contract method. It is possible to migrate more than one contract
+**Note**: you may need to reset your Ganache blockchain, because the `Migrations.sol` will refuse to execute a migration that starts with the number "2" (because it sees it has already done such a migration).
+
+Now we deployed the contract and after that we called a contract method. It is possible to migrate more than one contract:
 ```js
 var SimpleStorage = artifacts.require("./SimpleStorage");
 var SecondContract = artifacts.require("./SecondContract");
 ```
-After that you can deploy in module function
+You can deploy in the module exports function:
 ```js
 module.exports = function(deployer) {
   deployer.deploy(SimpleStorage);

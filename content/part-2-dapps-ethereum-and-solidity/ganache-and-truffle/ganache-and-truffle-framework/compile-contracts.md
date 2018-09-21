@@ -1,7 +1,7 @@
-# Compile Contracts
-In this chapter we will write and compile contracts. In our folder structure you find `contracts` folder, this is the folder where we can put our contracts. You will find `Migrations.sol` contract which is responsible for the migrations, do not delete it. 
+# Compiling Contracts
+In this chapter, we will write and compile contracts. In our folder structure we can find the `contracts` folder, this is the folder where we can put our code. In that same folder we will also find the `Migrations.sol` contract, which is responsible for tracking the migrations - do not delete it!
 
-Now we will create our first contract `SimpleStorage.sol`
+Now we will create our first contract, `SimpleStorage.sol`
 ```js
 pragma solidity ^0.4.24;
 
@@ -18,7 +18,7 @@ contract SimpleStorage {
 }
 ```
 
-Now we have a contract and we can compile it. The compile command will generate everything needed for deployment in the `build` directory.
+Now we have a contract and we can compile it. The `compile` command will generate everything needed for the deployment in the `build` directory.
 ```
 $ truffle compile
 ```
@@ -27,23 +27,23 @@ Output
 Compiling .\contracts\SimpleStorage.sol...
 Writing artifacts to .\build\contracts
 ```
-In the build folder you can find `build/contracts/{contract_name}.json`, this file contains the abi and the bytecode of the contract.
+In the `build` folder you can find `build/contracts/{contract_name}.json`, this file contains the Application Binary Interface (ABI) and the bytecode of the contract.
 
 ### Truffle console
-Sometimes it is nice interact with your contracts faster and directly in the terminal. Truffle has two different consoles 
-- **Truffle console** - Basic interactive console connecting to any Ethereum client. It is useful when you want to import your own wallet, when you are almost ready to deploy your app to the network. 
-- **Truffle develop** - For long term development, does not specify **mnemonic** and accounts. It comes with local network and you do not need Ganache or other third party software, you have local blockchain in the terminal.
+Sometimes it is nice interact with your contracts directly in the terminal. Truffle has two different consoles: 
+- **Truffle console**: Basic interactive console that can connect to any Ethereum client. It is useful when you want to import your own wallet, when you are almost ready to deploy your app to the network. 
+- **Truffle develop**: For long-term development, does not specify **mnemonic** and accounts. It comes with a local network and you do not need Ganache or other third party software, you have a local blockchain in the terminal.
 
 ```
 $ truffle console
 truffle(development)>
 ```
-Now we are running interactive console that is connected to the network from our **config** file, so it can be Ganache, Testnet, Mainnet etc. etc. We have web3 inside and we can run everything from the **web3** library
+Now we are running an interactive console that is connected to the network from our **config** file, so it can be Ganache, Testnet, Mainnet... We have `web3` inside and we can use everything from the **web3** library:
 ```
 truffle(development)> web3.eth.blockNumber
 3
 ```
-We asked for the number of the last block. We can deploy and interact contracts, you will learn it in the Server-side apis. 
+We asked for the number of the last block. We can deploy and interact with contracts, we will learn more about this in the "Server-Side APIs" chapter. 
 ```
 truffle(development)> web3.eth.getBalance('0xf5b5546761331ba399788c1661708fe693ed61c1').toNumber()
 100000000000000000000
@@ -92,8 +92,8 @@ truffle(develop)> web3.eth.blockNumber
 truffle(develop)> web3.eth.getBalance('0x627306090abab3a6e1400e9345bc60c78a8bef57').toNumber()
 ```
 
-### Play with contract
-We have our `SimpleStorage` contract in the contracts folder and we can play with it with the **truffle console**. The example will works with the both versions of the console.
+### Play with a contract
+We have our `SimpleStorage` contract in the contracts folder and we can play with it with the **truffle console**. The example will work with both versions of the console.
 ```
 truffle(develop)> compile
 Compiling .\contracts\Migrations.sol...
@@ -101,7 +101,7 @@ Compiling .\contracts\SimpleStorage.sol...
 Compiling .\contracts\Token.sol...
 Writing artifacts to .\build\contracts
 ``` 
-We compiled the contracts, we use **compile** instead **truffle compile** because we are inside a truffle console.
+We compiled the contracts, we use just `compile` instead `truffle compile`, because we are already inside a Truffle console.
 ```
 truffle(develop)> migrate
 Using network 'develop'.
@@ -123,11 +123,11 @@ Saving successful migration to network...
 Saving artifacts...
 ```
 
-Now the contracts are deployed we can play with them directly in the terminal
+Now the contracts are deployed we can play with them directly in the terminal:
 ```
 var contract = SimpleStorage.at('0x30753e4a8aad7f8597332e813735def5dd395028')
 ```
-It is javascript terminal and we can use it for interacting.
+It is a JavaScript terminal and we can use it to call methods and do anything that we can do in JS:
 ```
 truffle(develop) > contract.set(10)
 { tx: '0x5d55c1c602355b843f35b8daea01b819db217faf32ef5592a6c338ceb88cdfbf',
@@ -144,12 +144,12 @@ truffle(develop) > contract.set(10)
      logsBloom: '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000' },
   logs: [] }
 ```
-When we want to call the `get` method
+When we want to call the `get` method:
 ```
 truffle(develop)> contract.get()
 BigNumber { s: 1, e: 1, c: [ 10 ] }
 ```
 
-This is the way how you can test faster with truffle console.
+This is how you can test faster with `truffle console`.
 
 
