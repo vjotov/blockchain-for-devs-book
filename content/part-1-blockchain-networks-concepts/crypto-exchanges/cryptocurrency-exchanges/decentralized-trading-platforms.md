@@ -32,9 +32,25 @@ Stellar can be used to build sophisticated smart contracts.
 
 Stellar smart contracts is much different from Ethereum smart contracts. They are not Turing complete. They are implemented as an agreement between multiple parties and enforced by transactions. A single transaction on the Stellar network costs only ~$0.0000002.
 
+### Stellar Operations
 
+Transactions in Stallar are made up of a list of operations. Each operation is an individual command that mutates the ledger. For example: Create Account has Result: CreateAccountResult.
 
+![](/assets/StellarOperations.png)
 
+### Lumen \(XLM\)
+
+![](/assets/LumenXML.png)
+
+Native asset of the Stellar network is called Lumen \(XLM\). In 2014 the Stellar network launched with 100 billion stellars, the original name of the network’s native asset. In 2015, with the launch of the upgraded network, the name of the native asset changed from stellar to lumen to distinguish it from: first, the Stellar network itself and second, Stellar.org, the nonprofit organization that contributes to development of the network. Lumens are essential to the Stellar network—they contribute to the ability to move money around the world and to conduct transactions between different currencies. Lumen, serves two purposes:
+
+* Lumens play a small anti-spam role. Lumens are needed for transaction fees and minimum balances on accounts on the Stellar network in order to prevent people from overwhelming the network and to aid in prioritization. Each transaction has a minor fee—0.00001 lumens—associated with it. This fee prevents users with malicious intentions from flooding the network \(otherwise known as a DoS attack\). Lumens serve as a security measure that mitigates DoS attacks that attempt to generate large numbers of transactions or consume large amounts of space in the ledger. Similarly, the Stellar network requires all accounts to hold a minimum balance of 0.5 lumens. This requirement incentivizes users to declutter the ledger by eliminating abandoned accounts, thereby that ensuring that all accounts are likely to have economic utility on the network.
+
+* Lumens may facilitate multi-currency transactions. Lumens sometimes facilitate trades between pairs of currencies between which there is not a large direct market, acting as a bridge. This function is possible when there is a liquid market between the lumen and each currency involved.
+
+Lumen supply is determined by fixed, protocol-level rules. Every year, there is a 1% inflation rate. New lumens cannot be generated arbitrarily by anyone. 
+
+Interesting fact is that Stellar Lumens \(XLM\) and Ripple \(XRP\) are both founded by Jed McCaleb. 
 
 
 
