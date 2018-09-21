@@ -48,7 +48,7 @@ Run
 ```
 npm install --save solidity-coverage
 ```
-Now you have `solidity-coverage` attached in your **cmd** and when we run the command we will see our coverage score.
+Now you have `solidity-coverage` command attached in your **cmd** and when we run the command we will see our coverage score.
 ```
 $ solidity-coverage
 Contract: Simple Storage contract
