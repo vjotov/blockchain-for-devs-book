@@ -12,22 +12,23 @@ When people use centralized exchanges, they lost control over private keys and h
 
 Decentralized exchanges are less used than traditional ones, which is reflected in weaker liquidity. Generally, they are more complex to use and create difficulties for new users. The weak regulation of this type of exchanges is both an advantage and a disadvantage. Very often it is not known who is behind these exchanges and who controls them.
 
-
-
 ![](/assets/DecentralizedTradingPlatforms.png)
 
 ## Stellar
 
 ![](/assets/Stellar.png)
 
-Founded in 2011, San Francisco-based Kraken is one of the largest Bitcoin exchanges. There traders can trade with Euro, Canadian dollars, US dollars, British pounds and Japanese yen. Kraken offers margin trading for a couple of cryptocurrencies. In some of them leverage trading is up to 5x. The exchange has iOS mobile app for trading. Kraken offers security with 2FA \(two factor authentication\) and encryption.
+Stellar is open-source, distributed payments infrastructure. The Stellar network \(Horizon API and Stellar Core\) is a distributed blockchain based ledger and database that facilitates cross-asset transfers of value, including payments. The native cryptocurrency of Stellar is called Lumens \(XLM\). Stellar has a small testnet open to developers. 
+
+
+
+ading is up to 5x. The exchange has iOS mobile app for trading. Kraken offers security with 2FA \(two factor authentication\) and encryption.
 
 * Pros
   * Beginner friendliness
   * Low fees
   * Payment methods
-* Cons
-  * Customer support
+* Con
 
 ## Bittrex
 
