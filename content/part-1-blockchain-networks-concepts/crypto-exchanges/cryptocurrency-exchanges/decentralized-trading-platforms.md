@@ -18,9 +18,17 @@ Decentralized exchanges are less used than traditional ones, which is reflected 
 
 ![](/assets/Stellar.png)
 
-Stellar is open-source, distributed payments infrastructure. The Stellar network \(Horizon API and Stellar Core\) is a distributed blockchain based ledger and database that facilitates cross-asset transfers of value, including payments. The native cryptocurrency of Stellar is called Lumens \(XLM\). Stellar has a small testnet open to developers. 
+Stellar is open-source, distributed payments infrastructure. The Stellar network \(Horizon API and Stellar Core\) is a distributed blockchain based ledger and database that facilitates cross-asset transfers of value, including payments. The native cryptocurrency of Stellar is called Lumens \(XLM\). Stellar has a small testnet open to developers.
+
+Stellar-core is the backbone of the Stellar network. It maintains a local copy of the ledger, communicating and staying in sync with other instances of stellar-core on the network. Optionally, stellar-core can store historical records of the ledger and participate in consensus. 
+
+Stellar-core is a replicated state machine that maintains a local copy of a cryptographic ledger and processes transactions against it, in consensus with a set of peers. It implements the Stellar Consensus Protocol, a federated consensus protocol. It is written in C++11 and runs on Linux, OSX and Windows. Learn more by reading the overview document.
+
+Horizon is the client-facing API server for the Stellar ecosystem. It acts as the interface between Stellar Core and applications that want to access the Stellar network. Horizon allows you to submit transactions to the network, check the status of accounts, and subscribe to event streams. For more details, see an overview of the Stellar network.
 
 
+
+You can interact directly with Horizon via cURL or a web browser. Stellar.org also provides a JavaScript SDK for clients to use to interact with Horizon.
 
 ading is up to 5x. The exchange has iOS mobile app for trading. Kraken offers security with 2FA \(two factor authentication\) and encryption.
 
