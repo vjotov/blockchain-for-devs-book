@@ -29,3 +29,7 @@ The price of one crypto coin can vary significant on the different exchanges. So
 Triangular arbitrage is where an intermediate pair allows trader to get a better price than between the two original pairs.  
 Arbitrage helps normalize the price across pairs and exchanges. This type of exchange strategies is usually done by bots. Make money from interexchange arbitrage sounds very attractive, but opportunities for arbitrage are short-lived and the differences between the exchanges are very small. So, a lot of capital is needed to make a reasonable profit. And be careful: if you see a big price difference that is lasting for hours, odds are some exchange has crashed and it’s not possible to trade there!
 
+Now we shall learn how to register and trade on Bittrex. 
+
+
+
