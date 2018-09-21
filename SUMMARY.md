@@ -149,7 +149,7 @@
     * [Cryptocurrency Buying Platforms](content/part-1-blockchain-networks-concepts/crypto-exchanges/cryptocurrency-exchanges/cryptocurrency-buying-platforms.md)
     * [Cryptocurrency Exchange Platforms](content/part-1-blockchain-networks-concepts/crypto-exchanges/cryptocurrency-exchanges/cryptocurrency-exchange-platforms.md)
     * [Exercises: Exchange APIs](content/part-1-blockchain-networks-concepts/crypto-exchanges/exercises-exchange-apis/using-exchange-apis.md)
-    * [Exercises: Exchange APIs](content/part-1-blockchain-networks-concepts/crypto-exchanges/exercises-exchange-apis/using-exchange-apis.md)
+    * [Decentralized Trading Platforms](content/part-1-blockchain-networks-concepts/crypto-exchanges/cryptocurrency-exchanges/decentralized-trading-platforms.md)
   * [1.9. Blockchain Networks Scalability](content/part-1-blockchain-networks-concepts/blockchain-networks-scalability/overview.md)
     * [Offchain and Payment Channels](content/part-1-blockchain-networks-concepts/blockchain-networks-scalability/offchain-transactions-payment-channels/offchain-transactions.md)
     * [Exercises: Lightning Network Desktop App](content/part-1-blockchain-networks-concepts/blockchain-networks-scalability/exercises-lightning-network-desktop-app/lightning-network-desktop-app.md)
