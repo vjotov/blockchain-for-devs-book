@@ -1,6 +1,6 @@
 # Crypto Coins Trade
 
-In this chapter we will introduce you the steps that must be completed to trade with crypto coins. We will talk about the different types of orders and differences between them.
+Now we will talk about the key steps that need to be taken to buy crypto coins. When make deals on the exchange traders use different types of orders. Now we will learn about them.
 
 ![](/assets/Chapter 1.8. Crypto Trading and Exchang/trading-1024x727.png)
 
@@ -48,5 +48,5 @@ A limit order is an order placed with intention to buy or sell crypto coins at a
 Traditionally is used for taking-profit. A limit order is not a market order, it may not be executed if the price wasn\`t met. Limit orders also allow an investor to limit the length of time an order can be outstanding before being canceled.   
 Like in stop orders, validity time of limit orders can be limited. Stop orders can be limited in time.
 
-Now we can practice our new knolige with Hodl Hodl exchange.
+Now let`s practice our new knowledge with Hodl Hodl exchange.
 
