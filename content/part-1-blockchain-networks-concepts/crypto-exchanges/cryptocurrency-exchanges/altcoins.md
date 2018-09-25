@@ -12,17 +12,19 @@ Some of these crypto currencies are accepted for trading on different trading pl
 ![](/assets/Chapter 1.8. Crypto Trading and Exchang/BuyCoins.png)
 
 
-If someone wants to own crypto currencies he has to buy them from somewhere (unless he's a crypto miner). On Buying Platforms like Coinbase and Bitpanda people can buy or sell bitcoins/altcoins for fiat money. This kind of institutions do not offer standard trading operations between coins that can be made on the crypto exchanges. We will talk more about this platforms in chapter: Cryptocurrency Buying Platforms and Exchanges
+If someone wants to own crypto currencies he has to buy them from somewhere (unless he's a crypto miner). On Buying Platforms like Coinbase and Bitpanda people can buy or sell bitcoins/altcoins for fiat money. This kind of institutions do not offer standard trading operations between coins that can be made on the crypto exchanges. We will talk more about this platforms in chapter: Cryptocurrency Buying Platforms and Exchanges.
 
   
   
 
-## Where to Trade with Crypto Coins
+## Where to Trade with Crypto Coins?
 
 ![](/assets/Chapter 1.8. Crypto Trading and Exchang/TradeCoins.png)
 
 
-Traders can make deals between coins on the crypto exchanges like Bittrex and Kraken. There traders can exchange crypto currencies like any other exchange-traded asset with online platform that acts as an intermediary between buyers and sellers.  
+Traders can make deals between coins on the crypto exchanges like Bittrex and Kraken. There traders can exchange crypto currencies like any other exchange-traded asset with online platform that acts as an intermediary between buyers and sellers. There is more info for crypto exchanges in chapter: Cryptocurrency Buying Platforms and Exchanges
+
+
   
 
 Now, go to [https://en.wikipedia.org/wiki/List\_of\_cryptocurrencies](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) or any similar site and get to know the different types of altcoins.  
