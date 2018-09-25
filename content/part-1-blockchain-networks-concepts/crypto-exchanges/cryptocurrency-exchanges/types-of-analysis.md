@@ -50,3 +50,5 @@ That correction, wave \(2\), is followed by waves \(3\), \(4\) and \(5\) to comp
 Elliott's highly specific rules keep the number of valid interpretations \(or "alternate counts"\) to a minimum. The analyst usually considers as "preferred" the one that satisfies the largest number of guidelines. The top "alternate" is the one that satisfies the next largest number of guidelines, and so on. Alternates are an essential part of using the Elliott Wave Principle.  
 View the Elliott Wave Principle as your road map to the market and your investment idea as a trip. We start the trip with a specific plan in mind, but conditions along the way may force us to alter our course. "Alternate counts" are simply side roads that sometimes end up being the best path.
 
+Now, visit https://www.bitfinex.com/trading or any other exchange and play with charts and indicators.
+
