@@ -9,7 +9,7 @@ Some of these crypto currencies are accepted for trading on different trading pl
 
 ## Cryptocurrency Exchanges
 
-If someone wants to own cripto currencies he have to buy them from somewhere \(unless he's a crypto miner\). There are two options:
+If someone wants to own crypto currencies he have to buy them from somewhere (unless he's a crypto miner). The deals with crypto currencies are possible in two kind of institutions:
 
 * Platforms for buing/selling bitcoins/altcoins for fiat money. For example: Coinbase and Bitpanda.  
   ![](/assets/Chapter 1.8. Crypto Trading and Exchang/BuyCoins.png)
