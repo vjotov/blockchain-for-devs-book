@@ -33,157 +33,157 @@ Setup the Project
 2.  Create a folder **lib/** and import the two libraries from the
     resources given in the site.
 
-    ![](/assets/exercises-decentralized-document-registry-metamask-ipfs-012.png)
+![](/assets/exercises-decentralized-document-registry-metamask-ipfs-012.png)
 
 3.  Copy the following css code and paste it into
     **document-registry.css**
-```
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
 
-body {
-    font-family: Lato;
-    font-weight: 300;
-}
 
-#menu {
-    font-weight: 400;
-    background: #DDD;
-    text-align: center;
-    padding: 5px;
-    line-height: 1.5;
-    border-radius: 3px;
-    overflow: auto;
-}
-
-#menu a {
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-#menu a:hover {
-    background: #BBB;
-}
-
-main > section {
-    display: none;
-    padding: 20px 5px;
-}
-
-section#viewHome {
-    display: block;
-}
-
-section h1 {
-    margin: 10px 0px;
-    font-size: 1.2em;
-}
-
-#infoBox, #errorBox, #loadingBox {
-    width: 80%;
-    margin: 10px auto;
-    color: white;
-    text-align: center;
-    padding: 5px;
-    border-radius: 3px;
-}
-
-#infoBox>header, #errorBox>header, #loadingBox>header {
-    float: right;
-    margin-right: 5px;
-}
-
-#infoBox>header:hover, #errorBox>header:hover, #loadingBox>header:hover {
-    transition: all 0.2s;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-#loadingBox {
-    background: #7CB3E9;
-}
-#infoBox {
-    background: #393;
-}
-#errorBox {
-    background: #F50;
-}
-
-footer {
-    background: #DDD;
-    padding: 5px 10px;
-    font-size: 0.8em;
-    text-align: center;
-    border-radius: 3px;
-}
-div {
-    border: 1px solid #DDD;
-    border-radius: 4px;
-    padding: 5px;
-    max-width: 100%;
-    height: auto;
-    margin: 10px;
-}
-
-```
+    @import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+    
+    body {
+        font-family: Lato;
+        font-weight: 300;
+    }
+    
+    #menu {
+        font-weight: 400;
+        background: #DDD;
+        text-align: center;
+        padding: 5px;
+        line-height: 1.5;
+        border-radius: 3px;
+        overflow: auto;
+    }
+    
+    #menu a {
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    
+    #menu a:hover {
+        background: #BBB;
+    }
+    
+    main > section {
+        display: none;
+        padding: 20px 5px;
+    }
+    
+    section#viewHome {
+        display: block;
+    }
+    
+    section h1 {
+        margin: 10px 0px;
+        font-size: 1.2em;
+    }
+    
+    #infoBox, #errorBox, #loadingBox {
+        width: 80%;
+        margin: 10px auto;
+        color: white;
+        text-align: center;
+        padding: 5px;
+        border-radius: 3px;
+    }
+    
+    #infoBox>header, #errorBox>header, #loadingBox>header {
+        float: right;
+        margin-right: 5px;
+    }
+    
+    #infoBox>header:hover, #errorBox>header:hover, #loadingBox>header:hover {
+        transition: all 0.2s;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    #loadingBox {
+        background: #7CB3E9;
+    }
+    #infoBox {
+        background: #393;
+    }
+    #errorBox {
+        background: #F50;
+    }
+    
+    footer {
+        background: #DDD;
+        padding: 5px 10px;
+        font-size: 0.8em;
+        text-align: center;
+        border-radius: 3px;
+    }
+    div {
+        border: 1px solid #DDD;
+        border-radius: 4px;
+        padding: 5px;
+        max-width: 100%;
+        height: auto;
+        margin: 10px;
+    }
+    
+    ```
 Create HTML - index.html
 -----------------
-```
-<!DOCTYPE html>
 
-<html>
+    <!DOCTYPE html>
+    
+    <html>
+    
+    <head>
+        <meta charset="utf-8" />
+        <title>Document Registry DApp</title>
+        <link rel="stylesheet" type="text/css" href="document-registry.css" />
+        <script src="lib/jquery-3.3.1.min.js"></script>
+        <script src="lib/sha256.min.js"></script>
+        <script src="document-registry.js"></script>
+    </head>
+    
+    <body>
+    <header id="menu">
+        <a href="#" id="linkHome">Home</a>
+        <a href="#" id="linkSubmitDocument">Submit Document</a>
+        <a href="#" id="linkGetDocuments">View Documents</a>
+    </header>
+    
+    <main>
+        <section id="loadingBox">Loading ...</section>
+    
+        <section id="infoBox"><header>x</header><p>Info</p></section>
+    
+        <section id="errorBox"><header>x</header><p>Error</p></section>
+    
+        <section id="viewHome">
+            <h1>Document Registry</h1>
+            Welcome to the "Document Registry" DApp. This distributed app runs on the Ethereum blockchain network and holds a registry of documents as Solidity smart contract.
+            <ul>
+                <li>The registry keeps images of documents along with their publish date.</li>
+                <li><b>Contract owner</b> can submit new documents to be stored on the blockchain.</li>
+                <li><b>Users</b> can view the existence of certain documents in the registry.</li>
+            </ul>
+        </section>
+    
+        <section id="viewSubmitDocument">
+            <h1>Submit a Document</h1>
+            <p>Contract owners can register (upload) new documents to the "Document Registry" smart contract on the Ethereum blockchain decentralized network.</p>
+            <input type="file" id="documentForUpload" /><br/>
+            <input type="button" id="documentUploadButton" value="Submit" />
+        </section>
+    
+        <section id="viewGetDocuments">
+            <h1>View Documents</h1>
+            <p>Blockchain users can view documents in the registry on the Ethereum network.</p>
+        </section>
+    </main>
+    
+    <footer>Document Registry - JavaScript & Ethereum DApp</footer>
+    </body>
+    </html>
 
-<head>
-    <meta charset="utf-8" />
-    <title>Document Registry DApp</title>
-    <link rel="stylesheet" type="text/css" href="document-registry.css" />
-    <script src="lib/jquery-3.3.1.min.js"></script>
-    <script src="lib/sha256.min.js"></script>
-    <script src="document-registry.js"></script>
-</head>
-
-<body>
-<header id="menu">
-    <a href="#" id="linkHome">Home</a>
-    <a href="#" id="linkSubmitDocument">Submit Document</a>
-    <a href="#" id="linkGetDocuments">View Documents</a>
-</header>
-
-<main>
-    <section id="loadingBox">Loading ...</section>
-
-    <section id="infoBox"><header>x</header><p>Info</p></section>
-
-    <section id="errorBox"><header>x</header><p>Error</p></section>
-
-    <section id="viewHome">
-        <h1>Document Registry</h1>
-        Welcome to the "Document Registry" DApp. This distributed app runs on the Ethereum blockchain network and holds a registry of documents as Solidity smart contract.
-        <ul>
-            <li>The registry keeps images of documents along with their publish date.</li>
-            <li><b>Contract owner</b> can submit new documents to be stored on the blockchain.</li>
-            <li><b>Users</b> can view the existence of certain documents in the registry.</li>
-        </ul>
-    </section>
-
-    <section id="viewSubmitDocument">
-        <h1>Submit a Document</h1>
-        <p>Contract owners can register (upload) new documents to the "Document Registry" smart contract on the Ethereum blockchain decentralized network.</p>
-        <input type="file" id="documentForUpload" /><br/>
-        <input type="button" id="documentUploadButton" value="Submit" />
-    </section>
-
-    <section id="viewGetDocuments">
-        <h1>View Documents</h1>
-        <p>Blockchain users can view documents in the registry on the Ethereum network.</p>
-    </section>
-</main>
-
-<footer>Document Registry - JavaScript & Ethereum DApp</footer>
-</body>
-</html>
-
-```
   
 Create the Smart Contract
 -------------------------
@@ -224,30 +224,26 @@ Create the Smart Contract
 Create JavaScript Front-end
 ---------------------------
 
-1.  Create the jQuery function which will run as soon as the pages DOM
+1. Create the jQuery function which will run as soon as the pages DOM
     become safe to manipulate:
 
 ![](/assets/exercises-decentralized-document-registry-metamask-ipfs-032.png)
 
-2.  In the function, **insert** the constants of the contract address
+2. In the function, **insert** the constants of the contract address
     and contract **ABI**, which will get after deploying our contract
     after a while:
 
 ![](/assets/exercises-decentralized-document-registry-metamask-ipfs-02.png)
 
 3.  Now it is time to **add** **IPFS API** to our project. Go to
-    **index.html** and add in the script:
+    **index.html** and add in the script:  
 
-  ```
-  <script src="https://unpkg.com/ipfs-api/dist/index.js"></script>
-  ```
-
-> ![](/assets/exercises-decentralized-document-registry-metamask-ipfs-04.png)
+![](/assets/exercises-decentralized-document-registry-metamask-ipfs-04.png)
 
 4.  Insert the code below for the buttons to the functions and
     visibility in **document-registry.js**:
 
-    ```
+
     $('#linkHome').click(function () {
         showView("viewHome")
     });
@@ -293,7 +289,6 @@ Create JavaScript Front-end
         });
     }
     
-    ```
 5.  Create a function for **uploading** the document:
 
 ![](/assets/exercises-decentralized-document-registry-metamask-ipfs-05.png)
@@ -311,7 +306,7 @@ Create JavaScript Front-end
 8.  In the **onload** property check whether web3 is included. Then use
     **Buffer** to get a buffer from the file reader result.
 
-    ![](/assets/exercises-decentralized-document-registry-metamask-ipfs-08.png)
+![](/assets/exercises-decentralized-document-registry-metamask-ipfs-08.png)
 
 9.  Then use IPFS to add the document. After it is uploaded, call the
     contract by its **ABI** and **address** and add the document.
@@ -321,7 +316,7 @@ Create JavaScript Front-end
 10. Now the function showing the documents. First, it will check if web3
     is defined:
 
-    ![](/assets/exercises-decentralized-document-registry-metamask-ipfs-010.png)
+![](/assets/exercises-decentralized-document-registry-metamask-ipfs-010.png)
 
 11. Then call the contract and get the count of the documents. After the
     documents count is returned, we will make a simple for cycle
@@ -332,7 +327,7 @@ Create JavaScript Front-end
     **\<p\>** tag. Then append them both in a **\<div\>** and append it
     to **viewGetElements**.
 
-> ![](/assets/exercises-decentralized-document-registry-metamask-ipfs-011.png)
+![](/assets/exercises-decentralized-document-registry-metamask-ipfs-011.png)
 
 Play with the Document Registry
 -------------------------------
@@ -355,7 +350,7 @@ Play with the Document Registry
 
 5.  Click **\[Run\]** and **\[Create\]** the contract.
 
-    ![](/assets/exercises-decentralized-document-registry-metamask-ipfs-013.png)
+![](/assets/exercises-decentralized-document-registry-metamask-ipfs-013.png)
 
 6.  After the creation, the contract will appear beneath. **Copy** the
     contract address:
