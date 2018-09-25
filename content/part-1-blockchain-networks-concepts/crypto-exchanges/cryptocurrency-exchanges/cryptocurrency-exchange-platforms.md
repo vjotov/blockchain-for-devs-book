@@ -39,6 +39,5 @@ Founded in 2014 by three cybersecurity engineers, Bittrex is one of the biggest 
 ![](/assets/ShapeShift.png)
 
 ShapeShift is a Swiss-based digital asset exchange service formed in 2014 by Erik Voorhees. It is a web and API platform created to provide instant Bitcoin and altcoin conversion. ShapeShift is primarily designed to help websites accept cryptocurrencies as payment through its website and through its API. The platform gives the power to quickly swap between assets in a seamless, safe, and secure environment. Now ShapeShift is one of the fastest way to exchange cryptocurrencies. ShapeShift has a strict "no fiat" policy so it can not be used to purchase cryptocurrencies with credit/debit cards.  It also provides a number of special tools and features like the ShapeShift Lens and Shifty Button. These tools allow users to buy items with any alternative cryptocurrency and to easily receive and exchange altcoin payments as a merchant.
-
 Jaxx wallet partners with ShapeShift to enable in-wallet conversion between some crypto coins.
 
