@@ -7,15 +7,23 @@ Some of the crypto currencies are newly created coins, and some of them are fork
 
 Some of these crypto currencies are accepted for trading on different trading platforms or exchanges and traders can make deals with them. Others are not listed for trading on the exchanges. The reasons are on the one hand, because markets do not consider them to be meaningful enough. On the other hand, the creators of a new cripto currencyes have to pay a lot of money on the exchanges to accept their coins for trade.
 
-## Cryptocurrency Exchanges
+## Where to Buy/Sell Cryptocurrencies?
 
-If someone wants to own crypto currencies he have to buy them from somewhere (unless he's a crypto miner). The deals with crypto currencies are possible in two kind of institutions:
+![](/assets/Chapter 1.8. Crypto Trading and Exchang/BuyCoins.png)
 
-* Platforms for buing/selling bitcoins/altcoins for fiat money. For example: Coinbase and Bitpanda.  
-  ![](/assets/Chapter 1.8. Crypto Trading and Exchang/BuyCoins.png)
 
-* Exchanges for trading like Bittrex and Kraken. A crypto exchange is a digital marketplace where traders can buy and sell crypto coins using different fiat currencies, bitcoins or alt coins. The traders can exchange crypto currencies like any other exchange-traded asset with online platform that acts as an intermediary between buyers and sellers.  
-  ![](/assets/Chapter 1.8. Crypto Trading and Exchang/TradeCoins.png)
+If someone wants to own crypto currencies he have to buy them from somewhere (unless he's a crypto miner). On Buying Platforms like Coinbase and Bitpanda people can buy or sell bitcoins/altcoins for fiat money. This kind of institutions do not offer standard trading operations between coins that can be made on the crypto exchanges. We will talk more about this platforms in chapter: Cryptocurrency Buying Platforms and Exchanges
+
+  
+  
+
+## Where to Trade with Crypto Coins
+
+![](/assets/Chapter 1.8. Crypto Trading and Exchang/TradeCoins.png)
+
+
+Traders can make deals between coins on the crypto exchanges like Bittrex and Kraken. There traders can exchange crypto currencies like any other exchange-traded asset with online platform that acts as an intermediary between buyers and sellers.  
+  
 
 Now, go to [https://en.wikipedia.org/wiki/List\_of\_cryptocurrencies](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) or any similar site and get to know the different types of altcoins.  
 Check out the sites on different platforms and exchanges and learn about their trading conditions.
