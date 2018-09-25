@@ -25,27 +25,26 @@ Setup the Project
 
 2.  After that:
 
-  -------------------
+  ```
   npm i --D truffle
-  -------------------
-
+  ```
+  
 to install the contract's framework truffle in this project as a
 developing dependency
 
 3.  Then execute:
 
-  --------------
+  ```
   truffle init
-  --------------
+  ```
 
 This will start the project.
 
 4.  Then:
 
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  ```
   npm i -D webpack react react-dom babel-core babel-loader babel-preset-react babel-preset-es2015 babel-preset-stage-2 css-loader style-loader json-loader web3
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+  ```
 ![](/assets/exercises-decentralized-casino-metamask-oraclize-05.png)
 
 5.  After you finished downloading the node modules, go to your project
@@ -53,16 +52,296 @@ This will start the project.
     that will combine all of our JavaScript files and css to create a
     single file **build.js** that will hold all the JavaScript code in
     one place and paste the following code in it:
+    
+    **webpack.config.js**:
+    ```
+    const path = require('path')
+    
+    module.exports = {
+        entry: path.join(__dirname, 'src/js', 'index.js'), // Our frontend will be inside the src folder
+        output: {
+            path: path.join(__dirname, 'dist'),
+            filename: 'build.js' // The final file will be created in dist/build.js
+        },
+        module: {
+            loaders: [{
+                test: /\.css$/, // To load the css in react
+                use: ['style-loader', 'css-loader'],
+                include: /src/
+            }, {
+                test: /\.jsx?$/, // To load the js and jsx files
+                loader: 'babel-loader',
+                exclude: /node_modules/,
+                query: {
+                    presets: ['es2015', 'react', 'stage-2']
+                }
+            }, {
+                test: /\.json$/, // To load the json files
+                loader: 'json-loader'
+            }]
+        }
+    }
+
+    ```
 
 6.  Create the folder **src/** in the project and inside that folder,
     create the folders **js/** and inside it create **index.js** and
     **css/** and inside it create **index.css** to organize the source
     code
+    
+    **index.js**
+    ```
+    import React from 'react'
+    import ReactDOM from 'react-dom'
+    import Web3 from 'web3'
+    import './../css/index.css'
+    
+    class App extends React.Component {
+       constructor(props){
+          super(props)
+          this.state = {
+             lastWinner: 0,
+             numberOfBets: 0,
+             minimumBet: 0,
+             totalBet: 0,
+             maxAmountOfBets: 0,
+          }
+    
+          if(typeof web3 != 'undefined'){
+             console.log("Using web3 detected from external source like Metamask")
+             this.web3 = new Web3(web3.currentProvider)
+          }else{
+             console.log("No web3 detected. Falling back to http://localhost:8545. You should remove this fallback when you deploy live, as it's inherently insecure. Consider switching to Metamask for development. More info here: http://truffleframework.com/tutorials/truffle-and-metamask");
+             this.web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"))
+          }
+    
+          const MyContract = web3.eth.contract([{"constant":false,"inputs":[],"name":"generateNumberWinner","outputs":[],"payable":true,"type":"function"},{"constant":false,"inputs":[{"name":"myid","type":"bytes32"},{"name":"result","type":"string"}],"name":"__callback","outputs":[],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"numberOfBets","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"_queryId","type":"bytes32"},{"name":"_result","type":"string"},{"name":"_proof","type":"bytes"}],"name":"__callback","outputs":[],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"player","type":"address"}],"name":"checkPlayerExists","outputs":[{"name":"","type":"bool"}],"payable":false,"type":"function"},{"constant":false,"inputs":[],"name":"kill","outputs":[],"payable":false,"type":"function"},{"constant":false,"inputs":[],"name":"resetData","outputs":[],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"bets","type":"uint256"}],"name":"updateMaxBets","outputs":[],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"number","type":"uint256"}],"name":"bet","outputs":[],"payable":true,"type":"function"},{"constant":false,"inputs":[{"name":"amountWei","type":"uint256"}],"name":"updateMinimumBet","outputs":[],"payable":false,"type":"function"},{"constant":false,"inputs":[],"name":"distributePrizes","outputs":[],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"numberWinner","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"minimumBet","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"maxAmountOfBets","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"players","outputs":[{"name":"","type":"address"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"totalBet","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"inputs":[{"name":"_maxAmountOfBets","type":"uint256"}],"payable":false,"type":"constructor"},{"payable":true,"type":"fallback"}])
+          this.state.ContractInstance = MyContract.at("0x430d959fa54714aca8eecd61fae2661fca900e04")
+    
+          window.a = this.state
+       }
+    
+       componentDidMount(){
+          this.updateState()
+          this.setupListeners()
+    
+          setInterval(this.updateState.bind(this), 7e3)
+       }
+    
+       updateState(){
+          this.state.ContractInstance.minimumBet((err, result) => {
+             if(result != null){
+                this.setState({
+                   minimumBet: parseFloat(web3.fromWei(result, 'ether'))
+                })
+             }
+          })
+          this.state.ContractInstance.totalBet((err, result) => {
+             if(result != null){
+                this.setState({
+                   totalBet: parseFloat(web3.fromWei(result, 'ether'))
+                })
+             }
+          })
+          this.state.ContractInstance.numberOfBets((err, result) => {
+             if(result != null){
+                this.setState({
+                   numberOfBets: parseInt(result)
+                })
+             }
+          })
+          this.state.ContractInstance.maxAmountOfBets((err, result) => {
+             if(result != null){
+                this.setState({
+                   maxAmountOfBets: parseInt(result)
+                })
+             }
+          })
+       }
+    
+       // Listen for events and executes the voteNumber method
+       setupListeners(){
+          let liNodes = this.refs.numbers.querySelectorAll('li')
+          liNodes.forEach(number => {
+             number.addEventListener('click', event => {
+                event.target.className = 'number-selected'
+                this.voteNumber(parseInt(event.target.innerHTML), done => {
+    
+                   // Remove the other number selected
+                   for(let i = 0; i < liNodes.length; i++){
+                      liNodes[i].className = ''
+                   }
+                })
+             })
+          })
+       }
+    
+       voteNumber(number, cb){
+          let bet = this.refs['ether-bet'].value
+    
+          if(!bet) bet = 0.1
+    
+          if(parseFloat(bet) < this.state.minimumBet){
+             alert('You must bet more than the minimum')
+             cb()
+          } else {
+             this.state.ContractInstance.bet(number, {
+                gas: 300000,
+                from: web3.eth.accounts[0],
+                value: web3.toWei(bet, 'ether')
+             }, (err, result) => {
+                cb()
+             })
+          }
+       }
+    
+       render(){
+          return (
+             <div className="main-container">
+                <h1>Bet for your best number and win huge amounts of Ether</h1>
+    
+                <div className="block">
+                   <b>Number of bets:</b> &nbsp;
+                   <span>{this.state.numberOfBets}</span>
+                </div>
+    
+                <div className="block">
+                   <b>Last number winner:</b> &nbsp;
+                   <span>{this.state.lastWinner}</span>
+                </div>
+    
+                <div className="block">
+                   <b>Total ether bet:</b> &nbsp;
+                   <span>{this.state.totalBet} ether</span>
+                </div>
+    
+                <div className="block">
+                   <b>Minimum bet:</b> &nbsp;
+                   <span>{this.state.minimumBet} ether</span>
+                </div>
+    
+                <div className="block">
+                   <b>Max amount of bets:</b> &nbsp;
+                   <span>{this.state.maxAmountOfBets}</span>
+                </div>
+    
+                <hr/>
+    
+                <h2>Vote for the next number</h2>
+    
+                <label>
+                   <b>How much Ether do you want to bet? <input className="bet-input" ref="ether-bet" type="number" placeholder={this.state.minimumBet}/></b> ether
+                   <br/>
+                </label>
+    
+                <ul ref="numbers">
+                   <li>1</li>
+                   <li>2</li>
+                   <li>3</li>
+                   <li>4</li>
+                   <li>5</li>
+                   <li>6</li>
+                   <li>7</li>
+                   <li>8</li>
+                   <li>9</li>
+                   <li>10</li>
+                </ul>
+    
+                <hr/>
+    
+                <div><i>Only working with the Ropsten Test Network</i></div>
+                <div><i>You can only vote once per account</i></div>
+                <div><i>Your vote will be reflected when the next block is mined</i></div>
+             </div>
+          )
+       }
+    }
+    
+    ReactDOM.render(
+       <App />,
+       document.querySelector('#root')
+    )
+
+    ```
 
 7.  **index.css**
-
+    ```
+    body{
+        font-family: 'open sans';
+        margin: 0;
+    }
+    ul{
+        list-style-type: none;
+        padding-left: 0;
+        display: flex;
+        justify-content: space-around;
+        max-width: 1300px;
+    }
+    li{
+        padding: 40px;
+        border: 2px solid rgb(30,134,255);
+        margin-right: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    li:hover{
+        background-color: rgb(30,134,255);
+        color: white;
+    }
+    li:active{
+        opacity: 0.7;
+    }
+    *{
+        color: #444444;
+    }
+    .main-container{
+        padding: 20px;
+    }
+    .block{
+        display: flex;
+        align-items: center;
+    }
+    .number-selected{
+        background-color: rgb(30,134,255);
+        color: white;
+    }
+    .bet-input{
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid lightgrey;
+        font-size: 15pt;
+        margin: 0 10px;
+    }
+    
+    @media (max-width: 1100px){
+        ul{
+            flex-direction: column;
+        }
+        li{
+            margin: 5px 0;
+        }
+    }
+    ```
+    
 8.  Finally create folder **dist/** in the root folder and in this
     folder create **index.html** and paste the following code in it:
+    ```
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+       <title>Casino Ethereum DApp</title>
+    </head>
+    <body>
+       <div id="root"></div>
+    
+       <script src="build.js"></script>
+    </body>
+    </html>
+
+    ```
 
 9.  The **\<div id=\"root\"\>\</div\>** is where the react code will be
     inserted and the **\<script src=\"build.js\"\>\</script\>** to
@@ -151,7 +430,7 @@ Create Smart Contracts
     **oraclize\_newRandomDSQuery** which takes **delay**,
     **numberRandomBytes** and **callbackGas:**
 
-> ![](/assets/exercises-decentralized-casino-metamask-oraclize-011.png)
+ ![](/assets/exercises-decentralized-casino-metamask-oraclize-011.png)
 
 11. We should create a **callback** function which gets called by
     oraclize when the random number is generated, it gets the
@@ -160,13 +439,13 @@ Create Smart Contracts
     with a proof code to verify the authenticity of the number
     generation
 
-> ![](/assets/exercises-decentralized-casino-metamask-oraclize-012.png)
+ ![](/assets/exercises-decentralized-casino-metamask-oraclize-012.png)
 
 12. Finally, we should create the function to send the corresponding
     Ether to each winner then deletes all the players for the next game
     and resets the **total bet** and **number of bets**:
 
-> ![](/assets/exercises-decentralized-casino-metamask-oraclize-02.png)
+ ![](/assets/exercises-decentralized-casino-metamask-oraclize-02.png)
 
 Deploy the application online with IPFS
 ---------------------------------------
@@ -176,35 +455,34 @@ Deploy the application online with IPFS
 
 2.  Install webpack by **npm install -g webpack**
 
-  -------------------------
+  ```
   npm install --g webpack
-  -------------------------
+  ```
 
-Go to the directory **casino/** and then run**:**
+Go to the directory **casino/** and then run:
 
-  ---------
+  ```
   webpack
-  ---------
+  ```
 
 3.  Open another command line and run:
 
-  ---------
+  ```
   testrpc
-  ---------
+  ```
 
 4.  Then go to the **src/** folder and
 
-  -----------------
+  ```
   truffle compile
-  -----------------
+  ```
 
 and then:
 
-  -----------------
+  ```
   truffle migrate
-  -----------------
-
-> to compile and migrate the contracts.
+  ```
+to compile and migrate the contracts.
 
 5.  Go to <https://dist.ipfs.io/#go-ipfs> and download the go-ipfs then
     extract it
@@ -216,17 +494,17 @@ and then:
 
 8.  Then open another command line and type:
 
-  ------------------
+  ```
   ipfs swarm peers
-  ------------------
+  ```
 
 This will get you peers that will share your content.
 
 9.  Get the path of your **dist/** folder and run the command:
 
-  -----------------------------------------
-  ipfs add --r \<dist\_folder\_location\>
-  -----------------------------------------
+  ```
+  ipfs add --r <dist_folder_location\>
+  ```
 
 This will add your folder to the network. You will see a long hash,
 which has been generated for you.
@@ -238,22 +516,22 @@ which has been generated for you.
 
 11. Run the following command:
 
-  ---------------------------------------------
-  ipfs name publish \<hash\_of\_dir\_folder\>
-  ---------------------------------------------
+  ```
+  ipfs name publish <hash_of_dir_folder>
+  ```
 
 ![](/assets/exercises-decentralized-casino-metamask-oraclize-04.png)
 
 12. Open the following link. For example:
-    **<https://gateway.ipfs.io/ipfs/QmUCjkUigBFw4RuTLwUajvQ5q8QMqmFHpmAiTBhLVosEcR>
-    **
+https://gateway.ipfs.io/ipfs/QmUCjkUigBFw4RuTLwUajvQ5q8QMqmFHpmAiTBhLVosEcR
+    
 
 13. If you make changes to your files remember to execute **webpack**
-    then **ipfs add --r \<your\_location\>** and **ipfs name publish
-    \<hash\_of\_dir\_folder\>**. The publish name hash is always the
+    then **ipfs add --r <your_location>** and **ipfs name publish
+    <hash_of_dir_folder>**. The publish name hash is always the
     same:
 
-14. Play with the Dapp.
+14. Play with the DApp.
 
 15. The app should look like this go and play with it:
 

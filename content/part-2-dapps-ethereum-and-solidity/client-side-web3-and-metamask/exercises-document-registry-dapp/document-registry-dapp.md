@@ -17,11 +17,11 @@ web3 to html pages.
 
 Install http-server with
 
-npm install --g http-server
+**npm install --g http-server**
 
 After that go to the project and run in terminal
 
-http-server
+**http-server**
 
 Setup the Project
 -----------------
@@ -37,165 +37,154 @@ Setup the Project
 
 3.  Copy the following css code and paste it into
     **document-registry.css**
+```
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
 
-+-----------------------------------------------------------------------+
-| **document-registry.css**                                             |
-+=======================================================================+
-| **\@import                                                            |
-| url**(**\'https://fonts.googleapis.com/css?family=Lato:300,400\'**);\ |
-| \                                                                     |
-| **body** {\                                                           |
-| **font-family**: **Lato**;\                                           |
-| **font-weight**: 300;\                                                |
-| }                                                                     |
-|                                                                       |
-| **\#menu** {\                                                         |
-| **font-weight**: 400;\                                                |
-| **background**: **\#DDD**;\                                           |
-| **text-align**: **center**;\                                          |
-| **padding**: 5**px**;\                                                |
-| **line-height**: 1.5;\                                                |
-| **border-radius**: 3**px**;\                                          |
-| **overflow**: **auto**;\                                              |
-| }\                                                                    |
-| \                                                                     |
-| **\#menu a** {\                                                       |
-| **text-decoration**: **none**;\                                       |
-| **padding**: 5**px** 10**px**;\                                       |
-| **border-radius**: 5**px**;\                                          |
-| }\                                                                    |
-| \                                                                     |
-| **\#menu a**:**hover** {\                                             |
-| **background**: **\#BBB**;\                                           |
-| }\                                                                    |
-| \                                                                     |
-| **main** \> **section** {\                                            |
-| **display**: **none**;\                                               |
-| **padding**: 20**px** 5**px**;\                                       |
-| }\                                                                    |
-| \                                                                     |
-| **section\#viewHome** {\                                              |
-| **display**: **block**;\                                              |
-| }\                                                                    |
-| \                                                                     |
-| **section h1** {\                                                     |
-| **margin**: 10**px** 0**px**;\                                        |
-| **font-size**: 1.2**em**;\                                            |
-| }\                                                                    |
-| \                                                                     |
-| **\#infoBox**, **\#errorBox**, **\#loadingBox** {\                    |
-| **width**: 80%;\                                                      |
-| **margin**: 10**px auto**;\                                           |
-| **color**: **white**;\                                                |
-| **text-align**: **center**;\                                          |
-| **padding**: 5**px**;\                                                |
-| **border-radius**: 3**px**;\                                          |
-| }\                                                                    |
-| \                                                                     |
-| **\#infoBox**\>**header**, **\#errorBox**\>**header**,                |
-| **\#loadingBox**\>**header** {\                                       |
-| **float**: **right**;\                                                |
-| **margin-right**: 5**px**;\                                           |
-| }\                                                                    |
-| \                                                                     |
-| **\#infoBox**\>**header**:**hover**,                                  |
-| **\#errorBox**\>**header**:**hover**,                                 |
-| **\#loadingBox**\>**header**:**hover** {\                             |
-| **transition**: **all** 0.2**s**;\                                    |
-| **font-weight**: **bold**;\                                           |
-| **cursor**: **pointer**;\                                             |
-| }\                                                                    |
-| \                                                                     |
-| **\#loadingBox** {\                                                   |
-| **background**: **\#7CB3E9**;\                                        |
-| }\                                                                    |
-| **\#infoBox** {\                                                      |
-| **background**: **\#393**;\                                           |
-| }\                                                                    |
-| **\#errorBox** {\                                                     |
-| **background**: **\#F50**;\                                           |
-| }\                                                                    |
-| \                                                                     |
-| **footer** {\                                                         |
-| **background**: **\#DDD**;\                                           |
-| **padding**: 5**px** 10**px**;\                                       |
-| **font-size**: 0.8**em**;\                                            |
-| **text-align**: **center**;\                                          |
-| **border-radius**: 3**px**;\                                          |
-| }\                                                                    |
-| \                                                                     |
-| **div** {\                                                            |
-| **border**: 1**px solid \#DDD**;\                                     |
-| **border-radius**: 4**px**;\                                          |
-| **padding**: 5**px**;\                                                |
-| **max-width**: 100%;\                                                 |
-| **height**: **auto**;\                                                |
-| **margin**: 10**px**;\                                                |
-| }                                                                     |
-+-----------------------------------------------------------------------+
+body {
+    font-family: Lato;
+    font-weight: 300;
+}
 
-Create HTML
------------
+#menu {
+    font-weight: 400;
+    background: #DDD;
+    text-align: center;
+    padding: 5px;
+    line-height: 1.5;
+    border-radius: 3px;
+    overflow: auto;
+}
 
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **index.html**
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  \<!DOCTYPE **html**\>\
-  \
-  \<**html**\>\
-  \
-  \<**head**\>\
-  \<**meta charset=\"utf-8\"** /\>\
-  \<**title**\>Document Registry DApp\</**title**\>\
-  \<**link rel=\"stylesheet\" type=\"text/css\" href=\"document-registry.css\"** /\>\
-  \<**script src=\"lib/jquery-3.3.1.min.js\"**\>\</**script**\>\
-  \<**script src=\"lib/sha256.min.js\"**\>\</**script**\>\
-  \<**script src=\"document-registry.js\"**\>\</**script**\>\
-  \</**head**\>\
-  \
-  \<**body**\>\
-  \<**header id=\"menu\"**\>\
-  \<**a href=\"\#\" id=\"linkHome\"**\>Home\</**a**\>\
-  \<**a href=\"\#\" id=\"linkSubmitDocument\"**\>Submit Document\</**a**\>\
-  \<**a href=\"\#\" id=\"linkGetDocuments\"**\>View Documents\</**a**\>\
-  \</**header**\>\
-  \
-  \<**main**\>\
-  \<**section id=\"loadingBox\"**\>Loading \...\</**section**\>\
-  \
-  \<**section id=\"infoBox\"**\>\<**header**\>x\</**header**\>\<**p**\>Info\</**p**\>\</**section**\>\
-  \
-  \<**section id=\"errorBox\"**\>\<**header**\>x\</**header**\>\<**p**\>Error\</**p**\>\</**section**\>\
-  \
-  \<**section id=\"viewHome\"**\>\
-  \<**h1**\>Document Registry\</**h1**\>\
-  Welcome to the \"Document Registry\" DApp. This distributed app runs on the Ethereum blockchain network and holds a registry of documents as Solidity smart contract.\
-  \<**ul**\>\
-  \<**li**\>The registry keeps images of documents along with their publish date.\</**li**\>\
-  \<**li**\>\<**b**\>Contract owner\</**b**\> can submit new documents to be stored on the blockchain.\</**li**\>\
-  \<**li**\>\<**b**\>Users\</**b**\> can view the existence of certain documents in the registry.\</**li**\>\
-  \</**ul**\>\
-  \</**section**\>\
-  \
-  \<**section id=\"viewSubmitDocument\"**\>\
-  \<**h1**\>Submit a Document\</**h1**\>\
-  \<**p**\>Contract owners can register (upload) new documents to the \"Document Registry\" smart contract on the Ethereum blockchain decentralized network.\</**p**\>\
-  \<**input type=\"file\" id=\"documentForUpload\"** /\>\<**br**/\>\
-  \<**input type=\"button\" id=\"documentUploadButton\" value=\"Submit\"** /\>\
-  \</**section**\>\
-  \
-  \<**section id=\"viewGetDocuments\"**\>\
-  \<**h1**\>View Documents\</**h1**\>\
-  \<**p**\>Blockchain users can view documents in the registry on the Ethereum network.\</**p**\>\
-  \</**section**\>\
-  \</**main**\>\
-  \
-  \<**footer**\>Document Registry - JavaScript & Ethereum DApp\</**footer**\>\
-  \</**body**\>\
-  \</**html**\>
+#menu a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
 
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#menu a:hover {
+    background: #BBB;
+}
 
+main > section {
+    display: none;
+    padding: 20px 5px;
+}
+
+section#viewHome {
+    display: block;
+}
+
+section h1 {
+    margin: 10px 0px;
+    font-size: 1.2em;
+}
+
+#infoBox, #errorBox, #loadingBox {
+    width: 80%;
+    margin: 10px auto;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+#infoBox>header, #errorBox>header, #loadingBox>header {
+    float: right;
+    margin-right: 5px;
+}
+
+#infoBox>header:hover, #errorBox>header:hover, #loadingBox>header:hover {
+    transition: all 0.2s;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#loadingBox {
+    background: #7CB3E9;
+}
+#infoBox {
+    background: #393;
+}
+#errorBox {
+    background: #F50;
+}
+
+footer {
+    background: #DDD;
+    padding: 5px 10px;
+    font-size: 0.8em;
+    text-align: center;
+    border-radius: 3px;
+}
+div {
+    border: 1px solid #DDD;
+    border-radius: 4px;
+    padding: 5px;
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+```
+Create HTML - index.html
+-----------------
+```
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Document Registry DApp</title>
+    <link rel="stylesheet" type="text/css" href="document-registry.css" />
+    <script src="lib/jquery-3.3.1.min.js"></script>
+    <script src="lib/sha256.min.js"></script>
+    <script src="document-registry.js"></script>
+</head>
+
+<body>
+<header id="menu">
+    <a href="#" id="linkHome">Home</a>
+    <a href="#" id="linkSubmitDocument">Submit Document</a>
+    <a href="#" id="linkGetDocuments">View Documents</a>
+</header>
+
+<main>
+    <section id="loadingBox">Loading ...</section>
+
+    <section id="infoBox"><header>x</header><p>Info</p></section>
+
+    <section id="errorBox"><header>x</header><p>Error</p></section>
+
+    <section id="viewHome">
+        <h1>Document Registry</h1>
+        Welcome to the "Document Registry" DApp. This distributed app runs on the Ethereum blockchain network and holds a registry of documents as Solidity smart contract.
+        <ul>
+            <li>The registry keeps images of documents along with their publish date.</li>
+            <li><b>Contract owner</b> can submit new documents to be stored on the blockchain.</li>
+            <li><b>Users</b> can view the existence of certain documents in the registry.</li>
+        </ul>
+    </section>
+
+    <section id="viewSubmitDocument">
+        <h1>Submit a Document</h1>
+        <p>Contract owners can register (upload) new documents to the "Document Registry" smart contract on the Ethereum blockchain decentralized network.</p>
+        <input type="file" id="documentForUpload" /><br/>
+        <input type="button" id="documentUploadButton" value="Submit" />
+    </section>
+
+    <section id="viewGetDocuments">
+        <h1>View Documents</h1>
+        <p>Blockchain users can view documents in the registry on the Ethereum network.</p>
+    </section>
+</main>
+
+<footer>Document Registry - JavaScript & Ethereum DApp</footer>
+</body>
+</html>
+
+```
+  
 Create the Smart Contract
 -------------------------
 
@@ -249,65 +238,62 @@ Create JavaScript Front-end
 3.  Now it is time to **add** **IPFS API** to our project. Go to
     **index.html** and add in the script:
 
-  ----------------------------------------------------------------------------
-  **\<script src=\"https://unpkg.com/ipfs-api/dist/index.js\"\>\</script\>**
-  ----------------------------------------------------------------------------
+  ```
+  <script src="https://unpkg.com/ipfs-api/dist/index.js"></script>
+  ```
 
 > ![](/assets/exercises-decentralized-document-registry-metamask-ipfs-04.png)
 
 4.  Insert the code below for the buttons to the functions and
-    visibility:
+    visibility in **document-registry.js**:
 
-+------------------------------------------------------------------+
-| **document-registry.js**                                         |
-+==================================================================+
-| \$(**\'\#linkHome\'**).click(**function** () {\                  |
-| *showView*(**\"viewHome\"**)\                                    |
-| });\                                                             |
-| \$(**\'\#linkSubmitDocument\'**).click(**function** () {\        |
-| *showView*(**\"viewSubmitDocument\"**)\                          |
-| });\                                                             |
-| \$(**\'\#linkGetDocuments\'**).click(**function** () {           |
-|                                                                  |
-| \$(**\'\#viewGetDocuments div\'**).remove();\                    |
-| *showView*(**\"viewGetDocuments\"**);\                           |
-| *viewGetDocuments*();\                                           |
-| });\                                                             |
-| \$(**\'\#documentUploadButton\'**).click(*uploadDocument*);\     |
-| \                                                                |
-| *// Attach AJAX \"loading\" event listener\                      |
-| *\$(***document***).on({\                                        |
-| ajaxStart: **function** () {\                                    |
-| \$(**\"\#loadingBox\"**).show()\                                 |
-| },\                                                              |
-| ajaxStop: **function** () {\                                     |
-| \$(**\"\#loadingBox\"**).hide()\                                 |
-| }\                                                               |
-| });\                                                             |
-| \                                                                |
-| **function** *showView*(viewName) {\                             |
-| *// Hide all views and show the selected view only\              |
-| *\$(**\'main \> section\'**).hide();\                            |
-| \$(**\'\#\'** + viewName).show();\                               |
-| }\                                                               |
-| \                                                                |
-| **function** *showInfo*(message) {\                              |
-| \$(**\'\#infoBox\>p\'**).**html**(message);\                     |
-| \$(**\'\#infoBox\'**).show();\                                   |
-| \$(**\'\#infoBox\>header\'**).click(**function** () {\           |
-| \$(**\'\#infoBox\'**).hide();\                                   |
-| });\                                                             |
-| }\                                                               |
-| \                                                                |
-| **function** *showError*(errorMsg) {\                            |
-| \$(**\'\#errorBox\>p\'**).**html**(**\"Error: \"** + errorMsg);\ |
-| \$(**\'\#errorBox\'**).show();\                                  |
-| \$(**\'\#errorBox\>header\'**).click(**function** () {\          |
-| \$(**\'\#errorBox\'**).hide();\                                  |
-| });\                                                             |
-| }                                                                |
-+------------------------------------------------------------------+
-
+    ```
+    $('#linkHome').click(function () {
+        showView("viewHome")
+    });
+    $('#linkSubmitDocument').click(function () {
+        showView("viewSubmitDocument")
+    });
+    $('#linkGetDocuments').click(function () {
+        $('#viewGetDocuments div').remove();
+        showView("viewGetDocuments");
+        viewGetDocuments();
+    });
+    $('#documentUploadButton').click(uploadDocument);
+    
+    // Attach AJAX "loading" event listener
+    $(document).on({
+        ajaxStart: function () {
+            $("#loadingBox").show()
+        },
+        ajaxStop: function () {
+            $("#loadingBox").hide()
+        }
+    });
+    
+    function showView(viewName) {
+        // Hide all views and show the selected view only
+        $('main > section').hide();
+        $('#' + viewName).show();
+    }
+    
+    function showInfo(message) {
+        $('#infoBox>p').html(message);
+        $('#infoBox').show();
+        $('#infoBox>header').click(function () {
+            $('#infoBox').hide();
+        });
+    }
+    
+    function showError(errorMsg) {
+        $('#errorBox>p').html("Error: " + errorMsg);
+        $('#errorBox').show();
+        $('#errorBox>header').click(function () {
+            $('#errorBox').hide();
+        });
+    }
+    
+    ```
 5.  Create a function for **uploading** the document:
 
 ![](/assets/exercises-decentralized-document-registry-metamask-ipfs-05.png)
@@ -398,7 +384,7 @@ Play with the Document Registry
 13. Upload any kind of a file in the **\[Submit Document\]** section.
     Click **\[Submit\].** MetaMask will appear, Click **\[Submit\]**:
 
-    ![](/assets/exercises-decentralized-document-registry-metamask-ipfs-026.png)
+![](/assets/exercises-decentralized-document-registry-metamask-ipfs-026.png)
 
 What to Submit?
 ===============
