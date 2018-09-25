@@ -7,7 +7,9 @@ Miners get rewarded for helping secure the network in two ways:
 
 The block subsidy is a special transaction (called **"coinbase[^1]** transaction") that miners get to add **once per block**, with a pre-determined output amount. This is the only transaction that is allowed to not reference any inputs - it essentially creates new coins. In Bitcoin the subsidy started out at **50 BTC**, and is halved every **210,000 blocks**; at the time of writing this book, it's 12.5 BTC. It will go down to zero in the **year 2140**.
 
-The transaction fees are the difference between the sum of the inputs and the sum of the outputs - users determine what fees they want to pay by not using up the entire inputs, and miners determine what transactions they'll include in a block based on how much they will **profit**. Usually miners are looking at **"Satoshis[^2] per byte"**, because there's a limit to how big blocks can be, so accepting a large transaction might mean not having room for several smaller ones.
+The transaction fees are determined by the users, and miners pick what transactions they'll include in a block based on how much they will **profit**. This means there is essentially a "fee market", where users and miners agree on a price based on market principles. Usually miners are looking at **"Satoshis[^2] per byte"**, because there's a limit to how big blocks can be, so accepting a large transaction might mean not having room for several smaller ones.
+
+The end result is that if you want your transaction to be processed faster (or even *at all*), you have to offer an appropriate fee. Most wallets have "fee calculators" that will determine how much to pay automatically, based on whether you want "quick" or "regular" processing.
 
 # Mining Difficulty
 
