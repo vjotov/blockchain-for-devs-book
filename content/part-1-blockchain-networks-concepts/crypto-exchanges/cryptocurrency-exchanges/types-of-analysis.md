@@ -1,6 +1,6 @@
 ## Exchange Analysis
 
-Trading on exchanges and taking trading decisions is a very hard, complex and risky job. There are two main types of analysis that help traders make decisions in the ocean of data and information: fundamental and technical analysis.
+Trading on exchanges and taking trading decisions is a very hard, complex and risky job. There are two main types of analysis that help traders make decisions in the ocean of data and information: **fundamental** and **technical** analysis.
 
 * Fundamental Analysis
 
