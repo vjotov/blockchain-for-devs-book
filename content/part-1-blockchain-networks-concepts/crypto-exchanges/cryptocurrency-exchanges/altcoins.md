@@ -5,14 +5,14 @@ Some of the crypto currencies are newly created coins, and some of them are fork
 
 ![](/assets/Chapter 1.8. Crypto Trading and Exchang/Altcoins.png)
 
-Some of these crypto currencies are accepted for trading on different trading platforms or exchanges and traders can make deals with them. Others are not listed for trading on the exchanges. The reasons are on the one hand, because markets do not consider them to be meaningful enough. On the other hand, the creators of a new cripto currencyes have to pay a lot of money on the exchanges to accept their coins for trade.
+Some of these crypto currencies are accepted for trading on different trading platforms or exchanges and traders can make deals with them. Others are not listed for trading on the exchanges. The reasons are on the one hand, because markets do not consider them to be meaningful enough. On the other hand, the creators of a new crypto currencies have to pay a lot of money on the exchanges to accept their coins for trade.
 
-## Where to Buy/Sell Cryptocurrencies?
+## Where to Buy/Sell Crypto Currencies?
 
 ![](/assets/Chapter 1.8. Crypto Trading and Exchang/BuyCoins.png)
 
 
-If someone wants to own crypto currencies he have to buy them from somewhere (unless he's a crypto miner). On Buying Platforms like Coinbase and Bitpanda people can buy or sell bitcoins/altcoins for fiat money. This kind of institutions do not offer standard trading operations between coins that can be made on the crypto exchanges. We will talk more about this platforms in chapter: Cryptocurrency Buying Platforms and Exchanges
+If someone wants to own crypto currencies he has to buy them from somewhere (unless he's a crypto miner). On Buying Platforms like Coinbase and Bitpanda people can buy or sell bitcoins/altcoins for fiat money. This kind of institutions do not offer standard trading operations between coins that can be made on the crypto exchanges. We will talk more about this platforms in chapter: Cryptocurrency Buying Platforms and Exchanges
 
   
   
