@@ -1,6 +1,6 @@
 # Decentralized Trading Platforms
 
-In this chapter, we'll look at some of the more popular decentralized exchanges. The decentralized exchanges do not rely on a third party service to hold the customer's funds. Instead, trades occur directly between users through an automated process.  Decentralized cryptocurrency exchanges require users to register for an account before they can trade.
+The decentralized exchanges do not rely on a third party service to hold the customer's funds. Instead, trades occur directly between users through an automated process.  Decentralized cryptocurrency exchanges require users to register for an account before they can trade.
 
 Some of this exchanges use proxy tokens that represent a certain fiat or crypto currency. Others use assets that are like shares in a company. Another way to achieve decentralisation is using of a decentralized multi-signature escrow system.
 

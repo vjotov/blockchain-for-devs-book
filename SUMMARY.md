@@ -148,6 +148,7 @@
     * [Exercises: Hodl Hodl p2p Exchange](content/part-1-blockchain-networks-concepts/crypto-exchanges/exercises-hodl-hodl/play-with-hodl-hodl.md)
     * [Cryptocurrency Buying Platforms and Exchanges](content/part-1-blockchain-networks-concepts/crypto-exchanges/cryptocurrency-exchanges/cryptocurrency-buying-platforms.md)
     * [Decentralized Trading Platforms](content/part-1-blockchain-networks-concepts/crypto-exchanges/cryptocurrency-exchanges/decentralized-trading-platforms.md)
+    * [Trading APIs](content/part-1-blockchain-networks-concepts/crypto-exchanges/cryptocurrency-exchanges/decentralized-trading-platforms/trading-apis.md)
     * [Exercises: Exchange APIs](content/part-1-blockchain-networks-concepts/crypto-exchanges/exercises-exchange-apis/using-exchange-apis.md)
   * [1.9. Blockchain Networks Scalability](content/part-1-blockchain-networks-concepts/blockchain-networks-scalability/overview.md)
     * [Offchain and Payment Channels](content/part-1-blockchain-networks-concepts/blockchain-networks-scalability/offchain-transactions-payment-channels/offchain-transactions.md)
