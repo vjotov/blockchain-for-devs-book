@@ -127,6 +127,8 @@
   * [1.6. Blockchain Transactions](content/part-1-blockchain-networks-concepts/transactions/overview.md)
     * [The UTXO Transaction Model](content/part-1-blockchain-networks-concepts/transactions/exercises-ethereum-wallet-csharp/the-utxo-transaction-model.md)
     * [The Account Transaction Model](content/part-1-blockchain-networks-concepts/transactions/exercises-ethereum-wallet-csharp/the-account-transaction-model.md)
+    * [Bitcoin Transactions](content/part-1-blockchain-networks-concepts/transactions/exercises-ethereum-wallet-csharp/bitcoin-transactions.md)
+    * [Ethereum Transactions](content/part-1-blockchain-networks-concepts/transactions/exercises-ethereum-wallet-csharp/ethereum-transactions.md)
     * [Exercises: Create Ethereum Wallet in C\#](content/part-1-blockchain-networks-concepts/transactions/exercises-ethereum-wallet-csharp/exercises-create-ethereum-wallet-in-csharp.md)
     * [Exercises: Create Ethereum Wallet in JS](content/part-1-blockchain-networks-concepts/transactions/exercises-ethereum-wallet-in-js/create-ethereum-wallet-in-js.md)
     * [Exercises: Create Bitcoin Wallet in C\#](content/part-1-blockchain-networks-concepts/transactions/exercises-create-bitcoin-wallet-in-csharp/create-bitcoin-wallet-csharp.md)
