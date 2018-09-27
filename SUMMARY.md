@@ -211,6 +211,7 @@
     * [Exercises: IPFS JavaScript API](content/part-2-dapps-ethereum-and-solidity/decentralized-storage/exercises-ipfs-js-api/accessing-ipfs-from-javascript.md)
   * [2.8. Server-Side Ethereum APIs](content/part-2-dapps-ethereum-and-solidity/server-side-ethereum-apis/overview.md)
     * [Server Side Ethereum Libraries](content/part-2-dapps-ethereum-and-solidity/server-side-ethereum-apis/server-side-ethereum-libraries/ethereum-server-side-apis.md)
+    * [Solc-js](content/part-2-dapps-ethereum-and-solidity/server-side-ethereum-apis/server-side-ethereum-libraries/solc-js.md)
     * [Exercises: Using Web3.js from JS](content/part-2-dapps-ethereum-and-solidity/server-side-ethereum-apis/exercises-web3js/using-web3-javascript.md)
     * [Exercises: Simple Voting \(Web3.js\)](content/part-2-dapps-ethereum-and-solidity/server-side-ethereum-apis/exercises-simple-voting-contract/simple-voting-contract.md)
     * [Exercises: Using Ethers.js from JS](content/part-2-dapps-ethereum-and-solidity/server-side-ethereum-apis/exercises-ethers-js/using-ethers-js.md)
