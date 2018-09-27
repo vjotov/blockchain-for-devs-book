@@ -17,7 +17,6 @@ Some of the crypto currencies are newly created coins, and some of them are fork
 
 
 
-
 ![](/assets/Chapter 1.8. Crypto Trading and Exchang/Altcoins.png)
 
 Some of these crypto currencies are accepted for trading on different trading platforms or exchanges and traders can make deals with them. Others are not listed for trading on the exchanges. The reasons are on the one hand, because markets do not consider them to be meaningful enough. On the other hand, the creators of a new crypto currencies have to pay a lot of money on the exchanges to accept their coins for trade.

@@ -1,6 +1,23 @@
 ## Exchange Analysis
 
 Trading on exchanges and taking trading decisions is a very hard, complex and risky job. There are two main types of analysis that help traders make decisions in the ocean of data and information: **fundamental** and **technical** analysis.
+<div class="video-player">
+  Watch the video: <a target="_blank" https://youtu.be/GIYZdeZAbVg">https://youtu.be/GIYZdeZAbVg</a>.
+</div>
+<script src="/assets/js/video.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 * Fundamental Analysis
 
