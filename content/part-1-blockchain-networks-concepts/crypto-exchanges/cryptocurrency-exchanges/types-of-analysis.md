@@ -23,6 +23,7 @@ With oscillators the analyzers try to catch the **overbought** and **oversold** 
 
 ![](/assets/Chapter 1.8. Crypto Trading and Exchang/macd-indicator.png)
 
+
 Mathematical Indicators are form of interpretation of price and volume charts. When there is a discrepancy in the signals that give the indicators and signals that come from the charts themselves, the charts are of greater importance.
 
 * Chart Patterns
@@ -30,12 +31,27 @@ Mathematical Indicators are form of interpretation of price and volume charts. W
 The next large group of technical analysis tools are the so-called **chart patterns**. The most known authors divided patterns into three groups: **trend-confirming** \(continuation\),  **turning** \(reversal\) and **bilateral** figures.
 
 The most common continuation chart patterns are Wedge \(Falling or Rising\), Rectangle \(Bullish or Bearish\), Pennant \(Bullish or Bearish\) etc.  
+![](/assets/Chapter 1.8. Crypto Trading and Exchang/ChartPatternsContinuation.png)
+
+
+
+
 ![](/assets/Chapter 1.8. Crypto Trading and Exchang/pennant.jpg)
 
+
+
 The reversed figures includes the following patterns: Double Top or Double Bottom, Head and Shoulders or Inversive Head and Shoulders, Rising Wedge or Falling Wedge etc.  
+![](/assets/Chapter 1.8. Crypto Trading and Exchang/ChartPatternsReversal.png)
+
 ![](/assets/Chapter 1.8. Crypto Trading and Exchang/double_top_01.jpg)
 
 The group of Bilateral Patterns included patterns possibly following into two scenarios depending on the direction of the price break.
+
+![](/assets/Chapter 1.8. Crypto Trading and Exchang/ChartPatternsBillateral.png)
+
+
+
+
 
 * Wave Theory of Elliot
 
