@@ -11,6 +11,15 @@ Decentralized exchanges require the registration of a trading account. But unlik
 When people use centralized exchanges, they lost control over private keys and have only records in exchange database. Decentralized exchanges on the other hand leave ownership of cryptocurrency in the hands of their users and simply act as a place for peer-to-peer trading.
 
 Decentralized exchanges are less used than traditional ones, which is reflected in weaker liquidity. Generally, they are more complex to use and create difficulties for new users. The weak regulation of this type of exchanges is both an advantage and a disadvantage. Very often it is not known who is behind these exchanges and who controls them.
+<div class="video-player">
+  Watch the video: <a target="_blank"https://youtu.be/BulQT1oM3Oo">https://youtu.be/BulQT1oM3Oo</a>.
+</div>
+<script src="/assets/js/video.js"></script>
+
+
+
+
+
 
 ![](/assets/DecentralizedTradingPlatforms.png)
 

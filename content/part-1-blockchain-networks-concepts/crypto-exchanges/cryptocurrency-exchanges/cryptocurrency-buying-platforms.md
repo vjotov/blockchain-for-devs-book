@@ -1,6 +1,13 @@
 # Cryptocurrency Buying Platforms and Exchanges
 
 Cryptocurrency Buying Platforms give the traders opportunities to buy and sell coins but do not offer standard operations that can be made on the crypto exchanges.
+<div class="video-player">
+  Watch the video: <a target="_blank"https://youtu.be/wjN6NoXl8rM">https://youtu.be/wjN6NoXl8rM</a>.
+</div>
+<script src="/assets/js/video.js"></script>
+
+
+
 
 ![](/assets/Chapter 1.8. Crypto Trading and Exchang/CryptocurrencyBuyingPlatforms.png)
 

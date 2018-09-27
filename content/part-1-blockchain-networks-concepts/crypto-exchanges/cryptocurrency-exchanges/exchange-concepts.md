@@ -1,6 +1,12 @@
 # Exchange Concept
 
 Now we will learn about some of the major concepts which traders encounter in the world of **exchanges**. We'll talk about concepts like Order Book, Margin Trading etc.
+<div class="video-player">
+  Watch the video: <a target="_blank"https://youtu.be/wzXf6W9kU8Y">https://youtu.be/wzXf6W9kU8Y</a>.
+</div>
+<script src="/assets/js/video.js"></script>
+
+
 
 ![](/assets/Chapter 1.8. Crypto Trading and Exchang/Exchange-Concept.jpg)
 

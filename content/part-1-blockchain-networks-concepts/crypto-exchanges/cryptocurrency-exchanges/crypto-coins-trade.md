@@ -1,6 +1,11 @@
 # Crypto Coins Trade
 
 Now we will talk about the key steps that need to be taken to buy crypto coins. When make deals on the exchange traders use different types of orders. Now we will learn about them.
+<div class="video-player">
+  Watch the video: <a target="_blank"https://youtu.be/FYdL9KWMz7Y">https://youtu.be/FYdL9KWMz7Y</a>.
+</div>
+<script src="/assets/js/video.js"></script>
+
 
 ![](/assets/Chapter 1.8. Crypto Trading and Exchang/trading-1024x727.png)
 
