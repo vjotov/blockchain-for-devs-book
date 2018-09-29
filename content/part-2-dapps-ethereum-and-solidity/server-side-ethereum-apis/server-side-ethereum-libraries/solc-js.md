@@ -32,10 +32,9 @@ You can install it as a dev dependency so in the **package.json** it will be onl
 ```npm install --save-dev solc```
 
 
-The contract can be compilated in *JavaScript*. We have to define the variable and get the contract code as a string literal. 
+The contract can be compilated in **JavaScript**. We have to define the variable and get the contract code as a string literal. 
 
-
-```const solc = require('solc');```
+`const solc = require('solc');`
 
 
 Here we don`t use single quote but back tilt. This is becouse of ACMA 6 so if you use only single quote it get only the first line of code. In another way we can just read the code from file.
