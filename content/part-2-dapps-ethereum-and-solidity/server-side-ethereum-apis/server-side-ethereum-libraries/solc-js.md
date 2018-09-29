@@ -53,7 +53,8 @@ Here we don`t use single quote but **back tilt**. This is becouse of ECMAScript 
 
 Now let`s do the exercise: Playing with Smart Contracts using Ethers.js
 
-*Demo Video: try the compilation.*
+*TODO: Demo Video: try the compilation.*
+*TODO: Compile Contract Result*
 
 
 <div class="video-player">
