@@ -51,7 +51,7 @@ let output = solc.compile(contractStr);
 
 Here we don`t use single quote but **back tilt**. This is becouse of ECMAScript 6 so if you use only single quote it get only the first line of code. In another way we can just read the code from file.
 
-Now try the code with Solc-js exercise.
+Now let`s do the exercise: Playing with Smart Contracts using Ethers.js
 
 *Demo Video: try the compilation.*
 
