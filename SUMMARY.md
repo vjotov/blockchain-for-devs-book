@@ -218,6 +218,7 @@
     * [Exercises: Using Nethereum from C\#](content/part-2-dapps-ethereum-and-solidity/server-side-ethereum-apis/exercises-nethereum/using-nethereum-csharp.md)
     * [Exercises: Using Web3j from Java](content/part-2-dapps-ethereum-and-solidity/server-side-ethereum-apis/exercises-web3j/using-web3j-java.md)
     * [Exercises: Using Web3.py from Python](content/part-2-dapps-ethereum-and-solidity/server-side-ethereum-apis/exercises-web3py/using-web3py-python.md)
+    * Web3.js
   * [2.9. Blockchain Security](content/part-2-dapps-ethereum-and-solidity/ethereum-introduction/29-blockchain-security.md)
   * [2.10. Practical Project: DApp](content/part-2-dapps-ethereum-and-solidity/practical-project-dapp/overview.md)
     * [DApp: Project Requirements](content/part-2-dapps-ethereum-and-solidity/practical-project-dapp/dapp-project-requirements/dapp-project-requirements.md)
