@@ -8,13 +8,16 @@ It can be installed with node package manager.
 
 We can compile contract using command **solcjs** and as a parameters we will use what we would like to be generated. For example if we use file **SimpleStorage.sol**:
 ```cs
-let contractStr = `contract SimpleStorage {
-   uint private storedData;
-   function set(uint x) public { storedData = x;}
-   function get() view public returns (uint) {
-      return storedData; }
-}`;
-let output = solc.compile(contractStr);
+contract SimpleStorage {
+	uint private storedData;
+	function set(uint x) public {
+	    storedData = x;
+	}
+
+	function get() view public returns (uint){
+	    return storedData;
+	}
+}
 ```
 
 
@@ -35,6 +38,19 @@ You can install it as a dev dependency so in the **package.json** it will be onl
 The contract can be compilated in **JavaScript**. We have to define the variable and get the contract code as a string literal. 
 
 `const solc = require('solc');`
+
+```cs
+**let** contractStr = `contract SimpleStorage {
+   uint private storedData;
+   function set(uint x) public { storedData = x;}
+   function get() view public returns (uint) {
+      return storedData; }
+}`;
+let output = solc.compile(contractStr);
+```
+
+
+
 
 
 Here we don`t use single quote but back tilt. This is becouse of ACMA 6 so if you use only single quote it get only the first line of code. In another way we can just read the code from file.
