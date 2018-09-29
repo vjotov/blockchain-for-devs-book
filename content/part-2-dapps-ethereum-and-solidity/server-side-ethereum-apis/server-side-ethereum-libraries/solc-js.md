@@ -1,6 +1,47 @@
 # Solidity Compiler
 
-In this chapter we will learn about the server side Ethereum libraries. We will start with solidity compiler we will see how we can compile locally using java script and our solidity contracts. We will take a look at a web3.js and ether.js witch is mentioned as a java script libraries for blockchain interactions but are developed by the community not by the Ethereum developers themselves. We will see how to interact with blockchain with CSharp and Nethereum CSharp libraries. We will talk about how to use web3j which is the java library and web3.py the python library. 
+Solc-js (Solidity Compiler js) is a JavaScript binding for the solidity compiler. 
+
+It can be installed with node package manager. 
+
+      npm install -g solc
+
+We can compile contract using command **solcjs** and as a parameters we will use what we would like to be generated. For example if we use file **SimpleStorage.sol**:
+```cs
+let contractStr = `contract SimpleStorage {
+   uint private storedData;
+   function set(uint x) public { storedData = x;}
+   function get() view public returns (uint) {
+      return storedData; }
+}`;
+let output = solc.compile(contractStr);
+```
+
+
+     solcjs SimpleStorage.sol --bin --abi 
+
+This command will generate **two files**: the **ABI definition** and the **bytecode**.
+![](/assets/server-side-ethereum-libraries-solc-js-01.png) SimpleStorage.sol
+![](/assets/server-side-ethereum-libraries-solc-js-02.png) SimpleStorage_sol_SimpleStorage.abi
+![](/assets/server-side-ethereum-libraries-solc-js-03.png) SimpleStorage_sol_SimpleStorage.bin
+
+
+
+You can install it as a dev dependency so in the **package.json** it will be only used in the development enviroment. 
+
+```npm install --save-dev solc```
+
+
+The contract can be compilated in *JavaScript*. We have to define the variable and get the contract code as a string literal. 
+
+
+```const solc = require('solc');```
+
+
+Here we don`t use single quote but back tilt. This is becouse of ACMA 6 so if you use only single quote it get only the first line of code. In another way we can just read the code from file.
+Demo: try the compilation.
+solcjs SimpleStorage.sol --bin --abi
+ 
 
 <div class="video-player">
   Watch the video: <a target="_blank" href="https://youtu.be/_p7EJ2m6iu8">https://youtu.be/_p7EJ2m6iu8</a>.
