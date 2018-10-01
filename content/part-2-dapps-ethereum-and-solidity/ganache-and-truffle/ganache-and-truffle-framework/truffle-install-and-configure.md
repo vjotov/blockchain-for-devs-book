@@ -1,4 +1,11 @@
 # Truffle Install and Configure
+
+<div class="video-player">
+  Watch the video: <a target="_blank" href="https://www.youtube.com/watch?v=9Jf6y6oM1pE">https://www.youtube.com/watch?v=9Jf6y6oM1pE</a>.
+</div>
+<script src="/assets/js/video.js"></script>
+
+
 Truffle is built with JavaScript and we can install it with the **npm** package manager:
 
 ```
