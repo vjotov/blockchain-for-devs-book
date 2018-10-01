@@ -83,11 +83,14 @@ This is how we can create an instance of web3 and define the provider.
 
 If we provide the provider only with the URL it defaults to HTTP provider. If the user wants, for example, WebSocket provider he needs to declare it in the constructor of the web3 object instance.
 
+In web3 we have a large variety of methods. This are examples of some basic methods. With them we can get the Coinbase and balance for the given address.
+
+      web3.eth.getCoinbase().then(console.log)
+      
+      web3.eth.getBalance("0xc0bd7545d126d14c39e5f2a28744bac2641b94bc").then(console.log)
 
 
-
-
-If we provide the provider only with the URL it defaults to HTTP provider if you want for example WebSocket provider you need to declare it in the constructor of the web tree object instance so this is some basic methods for example the get balanced. You get the balance for the given address. For Windows you need to install first Windows build tools then you need to configure a target and then you install the "web3" package.
+ For Windows you need to install first Windows build tools then you need to configure a target and then you install the "web3" package.
 Solc-js (Solidity Compiler js) is a JavaScript binding for the solidity compiler.
 
 
