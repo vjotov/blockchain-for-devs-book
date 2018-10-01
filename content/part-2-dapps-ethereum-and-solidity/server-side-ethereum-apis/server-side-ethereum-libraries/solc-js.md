@@ -75,7 +75,17 @@ It can be installed with node package manager.
 
       npm install -g web3
 
-We can compile 
+This is how we can create an instance of web3 and define the provider.  
+
+      let Web3 = require('web3');
+
+      let web3 = new Web3("http://localhost:8545");
+
+If we provide the provider only with the URL it defaults to HTTP provider. If the user wants, for example, WebSocket provider he needs to declare it in the constructor of the web3 object instance.
+
+
+
+
 
 If we provide the provider only with the URL it defaults to HTTP provider if you want for example WebSocket provider you need to declare it in the constructor of the web tree object instance so this is some basic methods for example the get balanced. You get the balance for the given address. For Windows you need to install first Windows build tools then you need to configure a target and then you install the "web3" package.
 Solc-js (Solidity Compiler js) is a JavaScript binding for the solidity compiler.
