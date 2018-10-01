@@ -216,10 +216,11 @@
     * [ethers.js](content/part-2-dapps-ethereum-and-solidity/server-side-ethereum-apis/server-side-ethereum-libraries/aaaa.md)
     * [Exercises: Using Web3.js from JS](content/part-2-dapps-ethereum-and-solidity/server-side-ethereum-apis/exercises-web3js/using-web3-javascript.md)
     * [Nethereum](content/part-2-dapps-ethereum-and-solidity/server-side-ethereum-apis/server-side-ethereum-libraries/nethereum.md)
-    * [Exercises: Simple Voting \(Web3.js\)](content/part-2-dapps-ethereum-and-solidity/server-side-ethereum-apis/exercises-simple-voting-contract/simple-voting-contract.md)
-    * [Exercises: Using Ethers.js from JS](content/part-2-dapps-ethereum-and-solidity/server-side-ethereum-apis/exercises-ethers-js/using-ethers-js.md)
     * [Exercises: Using Nethereum from C\#](content/part-2-dapps-ethereum-and-solidity/server-side-ethereum-apis/exercises-nethereum/using-nethereum-csharp.md)
     * [Web3.j](content/part-2-dapps-ethereum-and-solidity/server-side-ethereum-apis/server-side-ethereum-libraries/web3j.md)
+    * [Exercises: Simple Voting \(Web3.js\)](content/part-2-dapps-ethereum-and-solidity/server-side-ethereum-apis/exercises-simple-voting-contract/simple-voting-contract.md)
+    * [Web3.py](content/part-2-dapps-ethereum-and-solidity/server-side-ethereum-apis/server-side-ethereum-libraries/web3py.md)
+    * Intro
   * [2.9. Blockchain Security](content/part-2-dapps-ethereum-and-solidity/ethereum-introduction/29-blockchain-security.md)
   * [2.10. Practical Project: DApp](content/part-2-dapps-ethereum-and-solidity/practical-project-dapp/overview.md)
     * [DApp: Project Requirements](content/part-2-dapps-ethereum-and-solidity/practical-project-dapp/dapp-project-requirements/dapp-project-requirements.md)
