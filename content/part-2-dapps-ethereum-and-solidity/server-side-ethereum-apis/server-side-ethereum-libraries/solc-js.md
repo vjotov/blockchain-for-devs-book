@@ -138,4 +138,15 @@ And then deploy the contract.
 
     let contract = MyContract.new({data: '0x12345...', from: myAccount, gas: 4700000});
 
-  ,,
+  
+## Infura API
+Infura provides a gateway to the Ethereum blockchain. We can signup and get a free JSON RPC endpoint to the Ethereum Mainnet, Ropsten, Kovan, Rinkeby and other networks. 
+Instead of running a local Ethereum node, we can just use Infura.io. 
+
+    let web3 = new Web3();
+    web3.setProvider(new web3.providers.HttpProvider('https://ropsten.infura.io/8HIzwWmxZbPPDZmBnth4'));
+   Then we can interact with the blockchain.
+    
+    web3.eth.getBalance("0x7cB57B5A97eAbe94205C07890BE4c1aD31E486A8").toString();
+
+
