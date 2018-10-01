@@ -138,6 +138,28 @@ And then we can deploy the contract. For this we must create a **transaction** f
 
     let contract = MyContract.new({data: '0x12345...', from: myAccount, gas: 4700000});
 
+Invoking functions from existing smart contract. For this we must 
+    const contractAddress = '0x987ae6c8837e88dff419ac01a9a41c693ddeda33';
+   001
+    const contractABI = [{"constant":false,"inputs":[{"name":"hash","type":"string"}],"name":"add","outputs":[{"name":"dateAdded","type":"uint256"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"hash","type":"string"}],"name":"verify","outputs":[{"name":"dateAdded","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"}];
+
+002
+
+    let contract = new web3.eth.Contract(contractABI, contractAddress);
+ 003sads
+ sdfsdfsdf
+     
+     contract.verify(documentHash).call().then(console.log);
+ sdfsfd
+      
+    
+   esdf
+
+
+     
+                 
+
+   
   
 ## Infura API
 Infura provides a gateway to the Ethereum blockchain. We can signup and get a free JSON RPC endpoint to the Ethereum Mainnet, Ropsten, Kovan, Rinkeby and other networks. 
