@@ -108,9 +108,12 @@ We can create an instance of web3 using HTTP provider with commands:
 
       let Web3 = require('web3');
 
-      let web3 = new Web3("http://localhost:8545");
-or
+      
       let web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+or
+      let web3 = new Web3("http://localhost:8545");
+
+
 
 If we provide the provider only with the URL it defaults to HTTP provider. If the user wants, for example, WebSocket provider he needs to declare it in the constructor of the web3 object instance.
 
