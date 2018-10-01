@@ -92,7 +92,45 @@ This are examples of some basic methods. With first of them we can get the coinb
 
 ## Installing Web3 in Windows
 
-For Windows we need to install first **Windows build tools**, then configure a target and then install the "web3" package. 
+For Windows we need to install first **Windows build tools** for Node.js from 
+[https://www.npmjs.com/package/windows-build-tools](https://www.npmjs.com/package/windows-build-tools)
+
+It can be installed with npm. Run as administrator:
+
+      npm install --global --production windows-build-tools
+
+
+
+Then, configure the VC++ target.
+
+       set VCTargetsPath=C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\v140
+
+
+
+
+
+  Finally, install the "web3" package
+
+    npm install -g web3
+
+## Using Web3 API
+We can create an instance of web3 using HTTP provider with commands:
+
+       let Web3 = require('web3');
+       let web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+
+
+
+hjhjk
+
+
+       set VCTargetsPath=C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\v140
+
+
+
+
+
+
 
 
 
