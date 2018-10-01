@@ -164,7 +164,8 @@ To invoke functions from existing smart contract, we need to create again contra
    
   
 ## Infura API
-Infura provides a gateway to the Ethereum blockchain. We can signup and get a free JSON RPC endpoint to the Ethereum Mainnet, Ropsten, Kovan, Rinkeby and other networks. 
+
+Infura provides a gateway to the Ethereum blockchain. Infura is a third-party web provider. With it we can signup and get a free JSON RPC endpoint to the Ethereum Mainnet, Ropsten, Kovan, Rinkeby and other networks. 
 Instead of running a local Ethereum node, we can just use Infura.io. 
 
     let web3 = new Web3();
