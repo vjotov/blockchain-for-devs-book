@@ -118,38 +118,24 @@ or
 If we provide the provider only with the URL it defaults to HTTP provider. If the user wants, for example, WebSocket provider he needs to declare it in the constructor of the web3 object instance.
 
 In web3 we have a large variety of methods. The web3-eth package allows you to interact with an Ethereum blockchain and Ethereum smart contracts.
-This are examples of some basic methods. With first of them we can get the coinbase address to which mining rewards will go. In the second example we will get balance for the given address.
+This are examples of some basic methods. 
+We can get the coinbase address to which mining rewards will go. 
 
-      web3.eth.getCoinbase().then(console.log)
-      
-      web3.eth.getBalance("0xc0bd7545d126d14c39e5f2a28744bac2641b94bc").then(console.log)
+      web3.eth.getCoinbase().then(console.log)  
+Here we will get balance for the given address.
 
+     let balance = web3.eth.getBalance("0x407d73d8a49eeb85d32cf465507dd71d507100c1");
 
+List all accounts.
 
+    let accounts = web3.eth.accounts;
+    
+With web3.eth we can create contract object.
 
+    let MyContract = new web3.eth.Contract(abiArray);
 
-hjhjk
+And then deploy the contract.
 
+    let contract = MyContract.new({data: '0x12345...', from: myAccount, gas: 4700000});
 
-       set VCTargetsPath=C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\v140
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  ,,
