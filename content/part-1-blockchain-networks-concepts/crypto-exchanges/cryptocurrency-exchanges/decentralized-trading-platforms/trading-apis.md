@@ -4,7 +4,7 @@ A trading API, allows traders to interact with a trading system. They can get pr
 
 
 <div class="video-player">
-  Watch the video: <a target="_blank" href="https://youtu.be/VtXy9rYBvXA">https://youtu.be/VtXy9rYBvXA</a>.
+  Watch the video: <a target="_blank" href="https://www.youtube.com/watch?v=VtXy9rYBvXA&feature=youtu.be">https://www.youtube.com/watch?v=VtXy9rYBvXA&feature=youtu.be</a>.
 </div>
 <script src="/assets/js/video.js"></script>
 
