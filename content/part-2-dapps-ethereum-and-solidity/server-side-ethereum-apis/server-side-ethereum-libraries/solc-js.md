@@ -134,7 +134,7 @@ With web3.eth we can create contract object. We need to paste the ABI.
 
     let MyContract = new web3.eth.Contract(abiArray);
 
-And then deploy the contract.
+And then we can deploy the contract. For this we must create a **transaction** from our account and again we need to paste the bytecode here.
 
     let contract = MyContract.new({data: '0x12345...', from: myAccount, gas: 4700000});
 
