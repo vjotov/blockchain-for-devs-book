@@ -1,4 +1,10 @@
 # Code coverage
+<div class="video-player">
+  Watch the video: <a target="_blank" href="https://www.youtube.com/watch?v=uTI8zXP2iCE">https://www.youtube.com/watch?v=uTI8zXP2iCE</a>.
+</div>
+<script src="/assets/js/video.js"></script>
+
+
 Code coverage helps determine how much code is being tested; with code coverage you can see how well your unit tests exercise your codebase. The library that we will use is **istanbul.js** 
 
 We need a truffle project to use `solidity-coverage`, create a new project:
