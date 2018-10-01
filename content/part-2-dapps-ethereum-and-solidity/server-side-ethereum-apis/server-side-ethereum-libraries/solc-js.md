@@ -149,4 +149,5 @@ Instead of running a local Ethereum node, we can just use Infura.io.
     
     web3.eth.getBalance("0x7cB57B5A97eAbe94205C07890BE4c1aD31E486A8").toString();
 
-
+Let`s do the Exercise: Smart Contracts Web3 and Infura
+ 
