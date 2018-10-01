@@ -75,20 +75,7 @@ It can be installed with node package manager.
 
       npm install -g web3
 
-This is how we can create an instance of web3 and define the provider.  
 
-      let Web3 = require('web3');
-
-      let web3 = new Web3("http://localhost:8545");
-
-If we provide the provider only with the URL it defaults to HTTP provider. If the user wants, for example, WebSocket provider he needs to declare it in the constructor of the web3 object instance.
-
-In web3 we have a large variety of methods. The web3-eth package allows you to interact with an Ethereum blockchain and Ethereum smart contracts.
-This are examples of some basic methods. With first of them we can get the coinbase address to which mining rewards will go. In the second example we will get balance for the given address.
-
-      web3.eth.getCoinbase().then(console.log)
-      
-      web3.eth.getBalance("0xc0bd7545d126d14c39e5f2a28744bac2641b94bc").then(console.log)
 
 ## Installing Web3 in Windows
 
@@ -107,8 +94,6 @@ Then, configure the VC++ target.
 
 
 
-
-
   Finally, install the "web3" package
 
     npm install -g web3
@@ -117,7 +102,26 @@ Then, configure the VC++ target.
 We can create an instance of web3 using HTTP provider with commands:
 
        let Web3 = require('web3');
-       let web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+       
+       
+ This is how we can define the provider.  
+
+      let Web3 = require('web3');
+
+      let web3 = new Web3("http://localhost:8545");
+or
+      let web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+
+If we provide the provider only with the URL it defaults to HTTP provider. If the user wants, for example, WebSocket provider he needs to declare it in the constructor of the web3 object instance.
+
+In web3 we have a large variety of methods. The web3-eth package allows you to interact with an Ethereum blockchain and Ethereum smart contracts.
+This are examples of some basic methods. With first of them we can get the coinbase address to which mining rewards will go. In the second example we will get balance for the given address.
+
+      web3.eth.getCoinbase().then(console.log)
+      
+      web3.eth.getBalance("0xc0bd7545d126d14c39e5f2a28744bac2641b94bc").then(console.log)
+
+
 
 
 
