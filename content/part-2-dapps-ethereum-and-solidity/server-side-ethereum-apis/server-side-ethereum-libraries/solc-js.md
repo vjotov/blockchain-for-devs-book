@@ -83,7 +83,8 @@ This is how we can create an instance of web3 and define the provider.
 
 If we provide the provider only with the URL it defaults to HTTP provider. If the user wants, for example, WebSocket provider he needs to declare it in the constructor of the web3 object instance.
 
-In web3 we have a large variety of methods. This are examples of some basic methods. With them we can get the Coinbase and balance for the given address.
+In web3 we have a large variety of methods. The web3-eth package allows you to interact with an Ethereum blockchain and Ethereum smart contracts.
+This are examples of some basic methods. With first of them we can get the coinbase address to which mining rewards will go. In the second example we will get balance for the given address.
 
       web3.eth.getCoinbase().then(console.log)
       
