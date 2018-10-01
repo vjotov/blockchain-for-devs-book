@@ -91,7 +91,7 @@ This are examples of some basic methods. With first of them we can get the coinb
       web3.eth.getBalance("0xc0bd7545d126d14c39e5f2a28744bac2641b94bc").then(console.log)
 
 
- For Windows you need to install first Windows build tools then you need to configure a target and then you install the "web3" package.
+For Windows you need to install first Windows build tools then you need to configure a target and then you install the "web3" package.
 Solc-js (Solidity Compiler js) is a JavaScript binding for the solidity compiler.
 
 
