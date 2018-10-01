@@ -130,7 +130,7 @@ List all accounts.
 
     let accounts = web3.eth.accounts;
     
-With web3.eth we can create contract object.
+With web3.eth we can create contract object. We need to paste the ABI. 
 
     let MyContract = new web3.eth.Contract(abiArray);
 
