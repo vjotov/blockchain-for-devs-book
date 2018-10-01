@@ -1,4 +1,9 @@
 # Unit Testing
+<div class="video-player">
+  Watch the video: <a target="_blank" href="https://www.youtube.com/watch?v=Z4mPF1XGZaU">https://www.youtube.com/watch?v=Z4mPF1XGZaU</a>.
+</div>
+<script src="/assets/js/video.js"></script>
+
 Truffle uses the Mocha testing framework and Chai for assertions. If you are not familiar with Mocha go to https://mochajs.org and read the "Getting Started" section, it will help you to understand the tests better.
 
 In the `test` directory, add new file. There is no convention, if you want you can add `test` to the contract name, e.g. `SimpleStorageTest.js`.
