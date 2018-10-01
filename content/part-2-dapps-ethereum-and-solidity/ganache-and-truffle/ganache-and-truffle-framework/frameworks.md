@@ -1,4 +1,10 @@
 # Frameworks
+<div class="video-player">
+  Watch the video: <a target="_blank" href="https://www.youtube.com/watch?v=fVnw3pFuQHo">https://www.youtube.com/watch?v=fVnw3pFuQHo</a>.
+</div>
+<script src="/assets/js/video.js"></script>
+
+
 Truffle works with almost every JavaScript framework; you can use **Vue.js, Angular, React** or other front end frameworks. 
 
 ### Truffle boxes
