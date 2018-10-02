@@ -206,4 +206,45 @@ With this code we can **wait for transaction** to be mined and then just specify
 
      provider.waitForTransaction(transactionHash).then(transaction => console.log(transaction));
 
-jhk
+
+With next code we can **create a wallet** instance for a particular chain. For this purpose we must specify the **provider**.
+
+    let wallet = new ethers.Wallet(privateKey, provider);
+
+Get the balance of the address.
+
+    wallet.getBalance().then(console.log);
+    
+With next 
+
+    let walle;
+
+
+
+With next 
+
+    let walle;
+
+
+
+With next
+
+    let walle;
+
+
+
+With next  .
+
+    let walle;
+
+
+
+With next  .
+
+    let walle;
+
+
+
+
+
+
