@@ -167,6 +167,7 @@ To invoke functions from existing smart contract, we need to create again contra
 
 Infura provides a gateway to the Ethereum blockchain. Infura is a third-party web provider. With it we can signup and get a free JSON RPC endpoint to the Ethereum Mainnet, Ropsten, Kovan, Rinkeby and other networks. 
 Instead of running a local Ethereum node, we can just use Infura.io. 
+To connect to Infura API we must set the provider. Just use the appropriate URL (in the example we are connecting to the Ropsten network). If we want another network, for example Rinkeby we should type it's name here. The next number (8HIzwWmxZbPPDZmBnth4) is the token that Infura provides us so they can controll the proces. 
 
     let web3 = new Web3();
     web3.setProvider(new web3.providers.HttpProvider('https://ropsten.infura.io/8HIzwWmxZbPPDZmBnth4'));
@@ -174,6 +175,11 @@ Instead of running a local Ethereum node, we can just use Infura.io.
     
     web3.eth.getBalance("0x7cB57B5A97eAbe94205C07890BE4c1aD31E486A8").toString();
 
+The Infura's API is free in some way, but you cannot just flood the Infura API with a lot of requests because they will either ban you or they will just charge you. So, for testing purposes Infura is very good option. But if you`re going to be using and interacting with the blockchain a lot it will be better to run on your own client and interact with it.
+
+
 Let`s do the Exercise: Smart Contracts Web3 and Infura
  
 ## ethers.js
+
+
