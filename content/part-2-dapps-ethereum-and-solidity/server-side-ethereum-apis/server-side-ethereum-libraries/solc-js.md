@@ -180,6 +180,14 @@ The Infura's API is free in some way, but you cannot just flood the Infura API w
 
 Let`s do the Exercise: Smart Contracts Web3 and Infura
  
-## ethers.js
+## Ethers.js
 
+Ethers.js is a Feature-Complete library for Ethereum applications in JavaScript. It is a web3 alternative. Web3 is developed with ethereum developers, where the Ethers.js is developed from the community. It is very easy to use and more intuitive. 
 
+    npm install --save-dev ethers
+
+sdf
+
+    let ethers = require('ethers');
+
+kjh
