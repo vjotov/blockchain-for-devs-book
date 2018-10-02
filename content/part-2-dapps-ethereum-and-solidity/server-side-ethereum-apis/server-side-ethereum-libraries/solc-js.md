@@ -165,7 +165,7 @@ To invoke functions from existing smart contract, we need to create again contra
   
 ## Infura API
 
-Infura provides a gateway to the Ethereum blockchain. Infura is a third-party web provider. With it we can signup and get a free JSON RPC endpoint to the Ethereum Mainnet, Ropsten, Kovan, Rinkeby and other networks. 
+**Infura** provides a **gateway** to the Ethereum blockchain. Infura is a **third-party web provider**. With it we can signup and get a free JSON RPC endpoint to the Ethereum Mainnet, Ropsten, Kovan, Rinkeby and other networks. 
 Instead of running a local Ethereum node, we can just use Infura.io. 
 To connect to Infura API we must set the provider. Just use the appropriate URL (in the example we are connecting to the Ropsten network). If we want another network, for example Rinkeby we should type it's name here. The next number (8HIzwWmxZbPPDZmBnth4) is the token that Infura provides us so they can controll the proces. 
 
@@ -175,14 +175,15 @@ To connect to Infura API we must set the provider. Just use the appropriate URL 
     
     web3.eth.getBalance("0x7cB57B5A97eAbe94205C07890BE4c1aD31E486A8").toString();
 
-The Infura's API is free in some way, but you cannot just flood the Infura API with a lot of requests because they will either ban you or they will just charge you. So, for testing purposes Infura is very good option. But if you`re going to be using and interacting with the blockchain a lot it will be better to run on your own client and interact with it.
+The Infura's API is free in some way, but you cannot just flood the Infura API with a lot of requests because they will either ban you or they will just charge you. So, for **testing purposes** Infura is very good option. But if you`re going to be using and interacting with the blockchain a lot it will be better to run on your own client and interact with it.
 
 
 Let`s do the Exercise: Smart Contracts Web3 and Infura
  
 ## Ethers.js
 
-Ethers.js is a Feature-Complete library for Ethereum applications in JavaScript. It is a web3 alternative. Web3 is developed with ethereum developers, where the Ethers.js is developed from the community. It is very easy to use and more intuitive. 
+**Ethers.js** is a Feature-Complete library for Ethereum applications in JavaScript. It is a web3 alternative. Web3 is developed with ethereum developers, where the Ethers.js is developed from the community. It is very easy to use and more intuitive. 
+It can be installed with node package manager.
 
     npm install --save-dev ethers
 
@@ -191,7 +192,7 @@ sdf
     let ethers = require('ethers');
 
 kjh
-In ethers.js the things are devided into modules and each of them take care of something. For example: 
-**ethers.Wallet** take care of holding the keys, signing transactions and everything connected with the wallet features. 
-**ethers.providers** manages the connection to the etherium network checking the states and sending the transaction after it is signed by the wallet module. 
+In ethers.js the things are devided into **modules** and each of them take care of something. For example: 
+**ethers.Wallet** take care of holding the **keys**, **signing transactions** and everything connected with the wallet features. 
+**ethers.providers** manages the **connection to the etherium network**, checking the states and sending the transaction after it is signed by the wallet module. 
 
