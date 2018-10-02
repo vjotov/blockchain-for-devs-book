@@ -191,3 +191,7 @@ sdf
     let ethers = require('ethers');
 
 kjh
+In ethers.js the things are devided into modules and each of them take care of something. For example: 
+**ethers.Wallet** take care of holding the keys, signing transactions and everything connected with the wallet features. 
+**ethers.providers** manages the connection to the etherium network checking the states and sending the transaction after it is signed by the wallet module. 
+
