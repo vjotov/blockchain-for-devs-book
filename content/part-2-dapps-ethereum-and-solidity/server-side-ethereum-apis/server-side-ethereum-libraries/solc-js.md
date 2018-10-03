@@ -183,7 +183,7 @@ Let`s do the Exercise: Smart Contracts Web3 and Infura
 
 ## Ethers.js
 
-**Ethers.js** is a Feature-Complete library for Ethereum applications in JavaScript. It is a web3 alternative. Web3 is developed with ethereum developers, where the Ethers.js is developed from the community. It is very easy to use and more intuitive. 
+**Ethers.js** is a Feature-Complete library for Ethereum applications in JavaScript. It is a web3 alternative. Web3 is developed with ethereum developers, where the Ethers.js is developed from the community. It is very easy to use and very intuitive. Ethers.js has a very good documentation:  [https://docs.ethers.io/ethers.js/html/](https://docs.ethers.io/ethers.js/html/). 
 It can be installed with node package manager.
 
     npm install --save-dev ethers
@@ -217,7 +217,7 @@ When we want to **get the balance** of the wallet it's not like in web3 where we
     wallet.getBalance().then(console.log);
     
 To **deploy a contract** with **ethers.js** we must include **0x** in the begining of the bytecode (let bytecode = "**0x**6060060c57fe5b60405161012d3803…") but the solidity compiler don't put this automaticaly so if we just copy the bytecode it won't be deployed. 
-To **deploy a transaction** we use **ethers.Contract.getDeployTransaction(bytecode, abi)**. This construct our raw transaction. Then we use the wallet module to send transaction **wallet.sendTransaction(deployTransaction)**.
+To **deploy a transaction** we use **ethers.Contract.getDeployTransaction(bytecode, abi)**. This construct our raw transaction. Then we use the wallet module to send transaction **wallet.sendTransaction(deployTransaction)**. The code here is much cleaner and much readable then web3 library. 
 
 
 
