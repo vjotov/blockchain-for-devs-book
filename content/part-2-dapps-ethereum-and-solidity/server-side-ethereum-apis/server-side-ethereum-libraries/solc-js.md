@@ -217,6 +217,9 @@ When we want to **get the balance** of the wallet it's not like in web3 where we
     wallet.getBalance().then(console.log);
     
 To **deploy a contract** with **ethers.js** we must include **0x** in the begining of the bytecode (let bytecode = "**0x**6060060c57fe5b60405161012d3803…") but the solidity compiler don't put this automaticaly so if we just copy the bytecode it won't be deployed. 
+To **deploy a transaction** we use **ethers.Contract.getDeployTransaction(bytecode, abi)**. This construct our raw transaction. Then we use the wallet module to send transaction **wallet.sendTransaction(deployTransaction)**.
+
+
 
     let bytecode = "0x6060060c57fe5b60405161012d3803…";
     let abi = [{"constant":false,"inputs"…];
@@ -226,7 +229,7 @@ To **deploy a contract** with **ethers.js** we must include **0x** in the begini
 
 
 
-With next 
+To deploy a transaction we just use the ethers.and this construct your raw transaction and then we use the wallet module to sendTransaction.
 
     let walle;
 
