@@ -2,7 +2,7 @@
 
 Now we will learn about some of the major concepts which traders encounter in the world of **exchanges**. We'll talk about concepts like Order Book, Margin Trading etc.
 <div class="video-player">
-  Watch the video: <a target="_blank"https://youtu.be/wzXf6W9kU8Y">https://youtu.be/wzXf6W9kU8Y</a>.
+  Watch the video: <a target="_blank"https://www.youtube.com/watch?v=wzXf6W9kU8Y&feature">https://www.youtube.com/watch?v=wzXf6W9kU8Y&feature</a>.
 </div>
 <script src="/assets/js/video.js"></script>
 

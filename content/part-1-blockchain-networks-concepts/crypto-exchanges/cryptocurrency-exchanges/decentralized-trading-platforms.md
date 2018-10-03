@@ -12,7 +12,7 @@ When people use centralized exchanges, they lost control over private keys and h
 
 Decentralized exchanges are less used than traditional ones, which is reflected in weaker liquidity. Generally, they are more complex to use and create difficulties for new users. The weak regulation of this type of exchanges is both an advantage and a disadvantage. Very often it is not known who is behind these exchanges and who controls them.
 <div class="video-player">
-  Watch the video: <a target="_blank"https://youtu.be/BulQT1oM3Oo">https://youtu.be/BulQT1oM3Oo</a>.
+  Watch the video: <a target="_blank"https://www.youtube.com/watch?v=BulQT1oM3Oo&feature">https://www.youtube.com/watch?v=BulQT1oM3Oo&feature</a>.
 </div>
 <script src="/assets/js/video.js"></script>
 
