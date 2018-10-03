@@ -212,11 +212,11 @@ With next code we can **create a wallet** instance for a particular chain. For t
 
     let wallet = new ethers.Wallet(privateKey, provider);
 
-Get the balance of the address.
+When we want to **get the balance** of the wallet it's not like in web3 where we need to pass our address and etc. In **ethers.js** we just type **wallet.getBalance()** because here we have an **instance** of our wallet. 
 
     wallet.getBalance().then(console.log);
     
-With next 
+To deploy a contract 
 
     let walle;
 
