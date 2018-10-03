@@ -3,7 +3,7 @@
 The first and most popular crypto coin is **Bitcoin**. All another coins created after this are known like alternative coins or just **“altcoins”**. In nowadays we have a thousands of altcoins and nobody knows their exact count. The most popular altcoins are Ethereum, DASH, Monero etc.  
 Some of the crypto currencies are newly created coins, and some of them are forks of already existing ones. For example, Bitcoin Gold and Bitcoin Cash are forks of the Bitcoin, and EtherZero is fork of Ethereum.
 <div class="video-player">
-  Watch the video: <a target="_blank" href="https://youtu.be/auuu41c_TuA">https://youtu.be/auuu41c_TuA</a>.
+  Watch the video: <a target="_blank" href="https://www.youtube.com/watch?v=auuu41c_TuA&feature">https://www.youtube.com/watch?v=auuu41c_TuA&feature</a>.
 </div>
 <script src="/assets/js/video.js"></script>
 
