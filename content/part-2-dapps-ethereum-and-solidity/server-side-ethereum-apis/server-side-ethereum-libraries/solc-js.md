@@ -228,8 +228,8 @@ To **deploy a transaction** we use **ethers.Contract.getDeployTransaction(byteco
 
 
 
-
-To deploy a transaction we just use the ethers.and this construct your raw transaction and then we use the wallet module to sendTransaction.
+TODO: Live demo: Interact with Contracts
+To deploy a transaction.
 
     let walle;
 
