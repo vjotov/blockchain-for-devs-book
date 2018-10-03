@@ -67,9 +67,7 @@ Here we don`t use single quote but **back tilt**. This is becouse of ECMAScript 
 
 
 # Server-Side Ethereum Libraries
-
-
-## Web3.js
+# Web3.js
 Web3.js is a library that interacts with the ethereum nodes. 
 It can be installed with node package manager. 
 
@@ -180,6 +178,9 @@ The Infura's API is free in some way, but you cannot just flood the Infura API w
 
 Let`s do the Exercise: Smart Contracts Web3 and Infura
  
+
+
+
 ## Ethers.js
 
 **Ethers.js** is a Feature-Complete library for Ethereum applications in JavaScript. It is a web3 alternative. Web3 is developed with ethereum developers, where the Ethers.js is developed from the community. It is very easy to use and more intuitive. 
