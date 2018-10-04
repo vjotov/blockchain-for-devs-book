@@ -336,7 +336,7 @@ This is how we can deploy a contract. Here we have to specify gas limit, but act
 
      ArrayOfFacts contract = ArrayOfFacts.deploy(web3, credentials, ManagedTransaction.GAS_PRICE,      Contract.GAS_LIMIT).send();
 
-Load the Contract from an address. We must paste the address, the web3 provider, the credential, the gas price and the gas limit. We can get gas limit and gas price *by default if we get it from the manage transaction* and the contract from the contract object we get the gas limit. 
+Load the Contract from an address. We must paste the address, the web3 provider, the credential, the gas price and the gas limit. *We can get gas limit and gas price by default if we get it from the manage transaction and the contract from the contract object we get the gas limit*. 
 
     String address = "0x356E7677971C952bAe7...";
     ArrayOfFacts contract = ArrayOfFacts.load(address, web3j, credentials, gasPrice, gasLimit);
