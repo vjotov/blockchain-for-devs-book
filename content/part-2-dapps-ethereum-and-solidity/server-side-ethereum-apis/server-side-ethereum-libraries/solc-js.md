@@ -287,6 +287,23 @@ If we want to send transaction. We need to **get the function** from the contrac
 
 
 
+To read from the contract we must initialize the **get function**. Then make asynchronous method and again we should specify the **contract method return type** (in our case **int**) because this is a statically typed language.
+
+    var getFunction = contract.GetFunction("get");
+    var value = getFunction.CallAsync<int>().Result;
+    Console.WriteLine("Storage value data: " + value)
+
+
+If we want to **get transaction hash** and **don't wait for it to be mined**. We just have to send asynchronous transaction and use **.ConfigureAwait** method set to **false**. 
+
+    var txHash = setFunction.SendTransactionAsync(…)
+    .ConfigureAwait(false).GetAwaiter().GetResult();
+
+
+If we use this line of code we need to add some other point to check if this transaction has been approved or not. In some cases this would be very useful. *We can just provide the transaction hash for the user to check himselves is his transaction is has passed or not. So if we only need to provide with transaction hash just don't wait for the transaction to be mined, because the user will be just waiting for his transaction hash so he can manually check his transaction himselves in the block explorer. If we want to be sure that the transaction is mined we must just make a synchronous call and wait transaction to be mined. This can be done with Drizzle. Drizzle listen the blockchain for us. *
+
+
+
 
 
 
