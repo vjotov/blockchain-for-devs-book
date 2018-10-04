@@ -353,5 +353,30 @@ Reading from a contract. Here again we use the contract method **getFact**. But 
 
 TODO: Exercise web3j and Infura.
 
+##Web3.py
+Python library for interaction with Ethereum. Web3.py API is derived from Web3.js and in whole the two libraries are very familiar. 
+We can install Web3.py package via Python Package Manager **pip**. 
 
+    pip install web3
+
+This is haw we can import web3.py modules in a project.
+
+    from web3 import Web3, HTTPProvider
+
+We can create a new instance of web3 using HTTP provider. 
+
+    Creating an instance of web3 using HTTP provider
+
+This is how we can create an instance of already created smart contract. We need an address and ABI definition. 
+
+    CONTRACT_ADDRESS = '0x356E767797774D9D231C56C94ac76951C952bAe7'
+    ABI = '[{"constant":false,"inputs":[{"name":"newFact","type":"string"}],"name":"add","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"constant":true,"inputs":[],"name":"count","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"index","type":"uint256"}],"name":"getFact","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"}]'
+    contract = web3.eth.contract(CONTRACT_ADDRESS, ABI)
+
+Now if we want to **add a fact** in our contract we must call the function. All functions are stored in a function object, so if we call **contract.functions.add** we can invoke the **add** function. In python it's a bit complicated, so we have a **buildTransaction** method where we need to create a nonce with ourselves. Here we need to construct the transaction ourself which may result in some problems and wasting some more time to debug. Then we need to **signTransaction** and then to **sendRawTransaction** to the network. 
+
+If we want to get facts from the Contract we must use the **.count()** and next **.call()** which is the equivalent of the **.send()** in web3j. 
+If we want to invoke **get** methods we use **.call** method, if we want to **set** a value we must to **build a transaction** and send this transaction. 
+
+    count = contract.functions.count().call()
 
