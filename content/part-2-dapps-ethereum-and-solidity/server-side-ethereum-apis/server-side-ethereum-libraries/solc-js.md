@@ -316,8 +316,13 @@ If we use Maven dependency it will make the work with web3j more easy.
       <artifactId>core</artifactId> 
       <version>3.4.0</version> 
     </dependency>
+    
+![](/assets/server-side-ethereum-libraries-web3j-01.png)
 
-We can create an instance of web3 using HTTP provider. In this case we connect to Ganache.
+
+
+
+We can create an instance of web3 using HTTP provider. In this case we connect to Ganache CLI on port: 8545.
 
     Web3j web3 = Web3j.build(new HttpService("http://localhost:8545"));
 
