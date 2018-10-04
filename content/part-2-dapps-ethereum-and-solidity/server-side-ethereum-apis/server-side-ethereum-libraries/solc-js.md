@@ -309,7 +309,7 @@ We have Web3j **command line tools** to generate wrapper code.
 
     web3j solidity generate Contract.bin Contract.abi –o …
 
-If we use Maven dependency it will make the work with web3j more easy. 
+It is advisable to use **Maven** dependency, because it will make the work with web3j more easy. 
 
     <dependency> 
       <groupId>org.web3j</groupId> 
@@ -322,7 +322,7 @@ If we use Maven dependency it will make the work with web3j more easy.
 
 
 
-We can create an instance of web3 using HTTP provider. In this case we connect to Ganache CLI on port: 8545.
+We can create an instance of web3 using HTTP provider. In the example below we connect to Ganache CLI on port: 8545.
 
     Web3j web3 = Web3j.build(new HttpService("http://localhost:8545"));
 
@@ -336,7 +336,7 @@ This is how we can deploy a contract. Here we have to specify gas limit, but act
 
      ArrayOfFacts contract = ArrayOfFacts.deploy(web3, credentials, ManagedTransaction.GAS_PRICE,      Contract.GAS_LIMIT).send();
 
-Load the Contract from an address. We must paste the address, the web3 provider, the credential, the gas price, the gas limit. We can get gas limit and gas price *by default if we get it from the manage transaction* and the contract from the contract object we get the gas limit. 
+Load the Contract from an address. We must paste the address, the web3 provider, the credential, the gas price and the gas limit. We can get gas limit and gas price *by default if we get it from the manage transaction* and the contract from the contract object we get the gas limit. 
 
     String address = "0x356E7677971C952bAe7...";
     ArrayOfFacts contract = ArrayOfFacts.load(address, web3j, credentials, gasPrice, gasLimit);
