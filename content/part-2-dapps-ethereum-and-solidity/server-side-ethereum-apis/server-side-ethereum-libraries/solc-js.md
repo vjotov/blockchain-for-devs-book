@@ -302,8 +302,51 @@ If we want to **get transaction hash** and **don't wait for it to be mined**. We
 
 If we use this line of code we need to add some other point to check if this transaction has been approved or not. In some cases this would be very useful. *We can just provide the transaction hash for the user to check himselves is his transaction is has passed or not. So if we only need to provide with transaction hash just don't wait for the transaction to be mined, because the user will be just waiting for his transaction hash so he can manually check his transaction himselves in the block explorer. If we want to be sure that the transaction is mined we must just make a synchronous call and wait transaction to be mined. This can be done with Drizzle. Drizzle listen the blockchain for us. *
 
+##Web3j
+**Web3j** is **Java** and **Android** library for integration with **Ethereum**. It creates contract **wrappers** from native Java code. 
+
+We have Web3j **command line tools** to generate wrapper code.
+
+    web3j solidity generate Contract.bin Contract.abi –o …
+
+If we use Maven dependency it will make the work with web3j more easy. 
+
+    <dependency> 
+      <groupId>org.web3j</groupId> 
+      <artifactId>core</artifactId> 
+      <version>3.4.0</version> 
+    </dependency>
+
+We can create an instance of web3 using HTTP provider. In this case we connect to Ganache.
+
+    Web3j web3 = Web3j.build(new HttpService("http://localhost:8545"));
+
+We have a cretential object which actually is our wallet credentials. With this code we can load credentials by private key. 
+
+    String privateKey = "0x6881c714c323c2f5798568866344…";
+    Credentials credentials = Credentials.create(privateKey);
+
+This is how we can deploy a contract. Here we have to specify gas limit, but actually the gas limit can be used from the contract wrapper. 
 
 
+     ArrayOfFacts contract = ArrayOfFacts.deploy(web3, credentials, ManagedTransaction.GAS_PRICE,      Contract.GAS_LIMIT).send();
+
+Load the Contract from an address. We must paste the address, the web3 provider, the credential, the gas price, the gas limit. We can get gas limit and gas price *by default if we get it from the manage transaction* and the contract from the contract object we get the gas limit. 
+
+    String address = "0x356E7677971C952bAe7...";
+    ArrayOfFacts contract = ArrayOfFacts.load(address, web3j, credentials, gasPrice, gasLimit);
+
+Here is how we can write to the contract, wait until is mined. We have a **TransactionReceipt** object which is actually the response. We have a wrapper so we just use the native method of the contract. 
+
+    String fact = "Random fact";
+    TransactionReceipt tx = contract.addFact(fact).send();
+
+Reading from a contract. Here again we use the contract method **getFact**. But we must pass bigIntegers as an input. Then we use **.send()**. 
+
+    BigInteger index = new BigInteger("0");
+    String fact = contract.getFact(index).send();
+
+TODO: Exercise web3j and Infura.
 
 
 
