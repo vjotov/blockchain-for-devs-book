@@ -251,7 +251,41 @@ With next  .
 
     let walle;
 
+## Nethereum
+**Nethereum** is a .NET integration library for Ethereum. It simplifying the access and smart contract interaction with Ethereum nodes.
+We can get the Nethereum libraryes via NuGetPackages. In Nethereum we have a differente modules. For example:
+
+Nethereum.Contracts is a module that interacts with the smart contracts. 
+
+    Nethereum.Contracts
+
+For the web we have another NuGet package Nethereum.Web3.
+
+    Nethereum.Web3
+
+
+We can **create account** from **private key**. We just **create new Account object** with passing the **private ke**y in the **constructor**.
+
+    var account = new Account("0x688…");
  
+
+We can create an instance of **web3** using **HTTP provider**. 
+
+    var web3 = new Web3(account, provider);
+
+To **create an instance** of an **existing contract** we need **abi definition** and **contract's address**.
+
+    var abi = "[{\"constant\":false,…]";
+    var contractAddress = "0x356E7677971C952bAe7...";
+    var contract = web3.Eth.GetContract(abi, contractAddress);
+
+
+If we want to send transaction. We need to **get the function** from the contract and then use it. 
+
+    var setFunction = contract.GetFunction("set");
+    setFunction.SendTransactionAsync(account.Address, gas, gasPrice, value);
+
+
 
 
 
