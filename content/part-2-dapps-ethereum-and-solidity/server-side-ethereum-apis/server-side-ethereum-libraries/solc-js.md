@@ -1,29 +1,29 @@
 # Solidity Compiler
 
-Solc-js (Solidity Compiler js) is a JavaScript binding for the solidity compiler. 
+Solc-js (Solidity Compiler js) is a JavaScript binding for the solidity compiler. It is a JavaScript library that can help us to compile solidity code.  
 
 It can be installed with node package manager. 
 
       npm install -g solc
 
-We can compile contract using command **solcjs** and as a parameters we will use what we would like to be generated. For example if we use file **SimpleStorage.sol**:
+To deploy and interact with a smart contract we need a **ABI definition** and **bycode**. We can get them by compile contract using command **solcjs** and as a parameters we will use what we would like to be generated. For example if we use solidity file **SimpleStorage.sol** the command will be:
 ```cs
-contract SimpleStorage {
-	uint private storedData;
-	function set(uint x) public {
-	    storedData = x;
-	}
+    contract SimpleStorage {
+	    uint private storedData;
+	    function set(uint x) public {
+	        storedData = x;
+	    }
 
-	function get() view public returns (uint){
-	    return storedData;
-	}
-}
+	    function get() view public returns (uint){
+	        return storedData;
+	    }
+    }
 ```
 
 
      solcjs SimpleStorage.sol --bin --abi 
 
-This command will generate **two files**: the **ABI definition** and the **bytecode**.
+This command will generate **two files**: the **ABI definition** and the **bytecode**. We can require this files in our prokects and use it.
 ![](/assets/server-side-ethereum-libraries-solc-js-01.png) SimpleStorage.sol
 ![](/assets/server-side-ethereum-libraries-solc-js-02.png) SimpleStorage_sol_SimpleStorage.abi
 ![](/assets/server-side-ethereum-libraries-solc-js-03.png) SimpleStorage_sol_SimpleStorage.bin
