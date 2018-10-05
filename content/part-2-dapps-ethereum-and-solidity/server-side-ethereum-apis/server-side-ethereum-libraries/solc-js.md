@@ -68,7 +68,8 @@ Here we don`t use single quote but **back tilt**. This is becouse of ECMAScript 
 
 # Server-Side Ethereum Libraries
 # Web3.js
-Web3.js is a library that interacts with the ethereum nodes. 
+Web3.js is a library that interacts with the ethereum nodes. There are two versions.  For server side there is version 1.0, it is very heavy for the browser. When you use MetaMask you use Web3 JavaScript app API 0.20 it can be changed.
+
 It can be installed with node package manager. 
 
       npm install -g web3
